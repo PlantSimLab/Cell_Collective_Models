@@ -1,0 +1,696 @@
+{
+"model": {
+  "description": "Samaga R, Saez-Rodriguez J, Alexopoulos LG, Sorger PK, Klamt S (2009) The Logic of EGFR/ErbB Signaling: Theoretical Properties and Analysis of High- Throughput Data. PLoS Comput Biol 5(8): e1000438. doi:10.1371/journal.pcbi.1000438",
+  "name": "EGFR_ErbB_Signaling",
+  "parameters": [],
+  "updateRules": {
+    "x1": {
+      "polynomialFunction": "x30",
+      "possibleInputVariables": ["x30"]
+      },
+    "x2": {
+      "polynomialFunction": "(k21*k23+k21)*x41*x51*x52+(k21*k23+k21)*x41*x51+(k21*k23+k21)*x41*x52",
+      "possibleInputVariables": ["x51","x52","k21","k23","x41"]
+      },
+    "x3": {
+      "polynomialFunction": "x2",
+      "possibleInputVariables": ["x2"]
+      },
+    "x4": {
+      "polynomialFunction": "x8*x9",
+      "possibleInputVariables": ["x9","x8"]
+      },
+    "x5": {
+      "polynomialFunction": "x2*x49+1",
+      "possibleInputVariables": ["x49","x2"]
+      },
+    "x6": {
+      "polynomialFunction": "x28",
+      "possibleInputVariables": ["x28"]
+      },
+    "x7": {
+      "polynomialFunction": "x15",
+      "possibleInputVariables": ["x15"]
+      },
+    "x8": {
+      "polynomialFunction": "(k23+1)*x23*x29*x47+(k23+1)*x23*x47+(k23+1)*x29",
+      "possibleInputVariables": ["x23","x29","k23","x47"]
+      },
+    "x9": {
+      "polynomialFunction": "x29",
+      "possibleInputVariables": ["x29"]
+      },
+    "x10": {
+      "polynomialFunction": "x26*x43+x43",
+      "possibleInputVariables": ["x43","x26"]
+      },
+    "x11": {
+      "polynomialFunction": "x34*x47+x34+x47",
+      "possibleInputVariables": ["x34","x47"]
+      },
+    "x12": {
+      "polynomialFunction": "x54",
+      "possibleInputVariables": ["x54"]
+      },
+    "x13": {
+      "polynomialFunction": "(k24+1)*x43",
+      "possibleInputVariables": ["k24","x43"]
+      },
+    "x14": {
+      "polynomialFunction": "x7*x57",
+      "possibleInputVariables": ["x7","x57"]
+      },
+    "x15": {
+      "polynomialFunction": "(k1*k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k6*k7*k28+k1*k2*k3*k5*k7*k12*k28+k1*k2*k3*k6*k7*k12*k28+k1*k2*k5*k6*k7*k12*k28+k1*k3*k5*k6*k7*k12*k28+k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7+k1*k2*k3*k5*k7*k12+k1*k2*k3*k6*k7*k12+k1*k2*k5*k6*k7*k12+k1*k3*k5*k6*k7*k12+k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k7*k28+k1*k2*k3*k6*k7*k28+k1*k2*k5*k6*k7*k28+k1*k3*k5*k6*k7*k28+k2*k3*k5*k6*k7*k28+k1*k2*k3*k7*k12*k28+k1*k2*k5*k7*k12*k28+k1*k3*k5*k7*k12*k28+k2*k3*k5*k7*k12*k28+k1*k2*k6*k7*k12*k28+k1*k3*k6*k7*k12*k28+k2*k3*k6*k7*k12*k28+k1*k5*k6*k7*k12*k28+k2*k5*k6*k7*k12*k28+k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k7+k1*k2*k3*k6*k7+k1*k2*k5*k6*k7+k1*k3*k5*k6*k7+k2*k3*k5*k6*k7+k1*k2*k3*k7*k12+k1*k2*k5*k7*k12+k1*k3*k5*k7*k12+k2*k3*k5*k7*k12+k1*k2*k6*k7*k12+k1*k3*k6*k7*k12+k2*k3*k6*k7*k12+k1*k5*k6*k7*k12+k2*k5*k6*k7*k12+k3*k5*k6*k7*k12+k1*k2*k3*k7*k28+k1*k2*k5*k7*k28+k1*k3*k5*k7*k28+k2*k3*k5*k7*k28+k1*k2*k6*k7*k28+k1*k3*k6*k7*k28+k2*k3*k6*k7*k28+k1*k5*k6*k7*k28+k2*k5*k6*k7*k28+k3*k5*k6*k7*k28+k1*k2*k7*k12*k28+k1*k3*k7*k12*k28+k2*k3*k7*k12*k28+k1*k5*k7*k12*k28+k2*k5*k7*k12*k28+k3*k5*k7*k12*k28+k1*k6*k7*k12*k28+k2*k6*k7*k12*k28+k3*k6*k7*k12*k28+k5*k6*k7*k12*k28+k1*k2*k3*k7+k1*k2*k5*k7+k1*k3*k5*k7+k2*k3*k5*k7+k1*k2*k6*k7+k1*k3*k6*k7+k2*k3*k6*k7+k1*k5*k6*k7+k2*k5*k6*k7+k3*k5*k6*k7+k1*k2*k7*k12+k1*k3*k7*k12+k2*k3*k7*k12+k1*k5*k7*k12+k2*k5*k7*k12+k3*k5*k7*k12+k1*k6*k7*k12+k2*k6*k7*k12+k3*k6*k7*k12+k5*k6*k7*k12+k1*k2*k7*k28+k1*k3*k7*k28+k2*k3*k7*k28+k1*k5*k7*k28+k2*k5*k7*k28+k3*k5*k7*k28+k1*k6*k7*k28+k2*k6*k7*k28+k3*k6*k7*k28+k5*k6*k7*k28+k1*k7*k12*k28+k2*k7*k12*k28+k3*k7*k12*k28+k5*k7*k12*k28+k6*k7*k12*k28+k1*k2*k7+k1*k3*k7+k2*k3*k7+k1*k5*k7+k2*k5*k7+k3*k5*k7+k1*k6*k7+k2*k6*k7+k3*k6*k7+k5*k6*k7+k1*k7*k12+k2*k7*k12+k3*k7*k12+k5*k7*k12+k6*k7*k12+k1*k7*k28+k2*k7*k28+k3*k7*k28+k5*k7*k28+k6*k7*k28+k7*k12*k28+k1*k7+k2*k7+k3*k7+k5*k7+k6*k7+k7*k12+k7*k28)*x14*x68+(k1*k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k6*k7*k28+k1*k2*k3*k5*k7*k12*k28+k1*k2*k3*k6*k7*k12*k28+k1*k2*k5*k6*k7*k12*k28+k1*k3*k5*k6*k7*k12*k28+k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7+k1*k2*k3*k5*k7*k12+k1*k2*k3*k6*k7*k12+k1*k2*k5*k6*k7*k12+k1*k3*k5*k6*k7*k12+k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k7*k28+k1*k2*k3*k6*k7*k28+k1*k2*k5*k6*k7*k28+k1*k3*k5*k6*k7*k28+k2*k3*k5*k6*k7*k28+k1*k2*k3*k7*k12*k28+k1*k2*k5*k7*k12*k28+k1*k3*k5*k7*k12*k28+k2*k3*k5*k7*k12*k28+k1*k2*k6*k7*k12*k28+k1*k3*k6*k7*k12*k28+k2*k3*k6*k7*k12*k28+k1*k5*k6*k7*k12*k28+k2*k5*k6*k7*k12*k28+k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k7+k1*k2*k3*k6*k7+k1*k2*k5*k6*k7+k1*k3*k5*k6*k7+k2*k3*k5*k6*k7+k1*k2*k3*k7*k12+k1*k2*k5*k7*k12+k1*k3*k5*k7*k12+k2*k3*k5*k7*k12+k1*k2*k6*k7*k12+k1*k3*k6*k7*k12+k2*k3*k6*k7*k12+k1*k5*k6*k7*k12+k2*k5*k6*k7*k12+k3*k5*k6*k7*k12+k1*k2*k3*k7*k28+k1*k2*k5*k7*k28+k1*k3*k5*k7*k28+k2*k3*k5*k7*k28+k1*k2*k6*k7*k28+k1*k3*k6*k7*k28+k2*k3*k6*k7*k28+k1*k5*k6*k7*k28+k2*k5*k6*k7*k28+k3*k5*k6*k7*k28+k1*k2*k7*k12*k28+k1*k3*k7*k12*k28+k2*k3*k7*k12*k28+k1*k5*k7*k12*k28+k2*k5*k7*k12*k28+k3*k5*k7*k12*k28+k1*k6*k7*k12*k28+k2*k6*k7*k12*k28+k3*k6*k7*k12*k28+k5*k6*k7*k12*k28+k1*k2*k3*k7+k1*k2*k5*k7+k1*k3*k5*k7+k2*k3*k5*k7+k1*k2*k6*k7+k1*k3*k6*k7+k2*k3*k6*k7+k1*k5*k6*k7+k2*k5*k6*k7+k3*k5*k6*k7+k1*k2*k7*k12+k1*k3*k7*k12+k2*k3*k7*k12+k1*k5*k7*k12+k2*k5*k7*k12+k3*k5*k7*k12+k1*k6*k7*k12+k2*k6*k7*k12+k3*k6*k7*k12+k5*k6*k7*k12+k1*k2*k7*k28+k1*k3*k7*k28+k2*k3*k7*k28+k1*k5*k7*k28+k2*k5*k7*k28+k3*k5*k7*k28+k1*k6*k7*k28+k2*k6*k7*k28+k3*k6*k7*k28+k5*k6*k7*k28+k1*k7*k12*k28+k2*k7*k12*k28+k3*k7*k12*k28+k5*k7*k12*k28+k6*k7*k12*k28+k1*k2*k7+k1*k3*k7+k2*k3*k7+k1*k5*k7+k2*k5*k7+k3*k5*k7+k1*k6*k7+k2*k6*k7+k3*k6*k7+k5*k6*k7+k1*k7*k12+k2*k7*k12+k3*k7*k12+k5*k7*k12+k6*k7*k12+k1*k7*k28+k2*k7*k28+k3*k7*k28+k5*k7*k28+k6*k7*k28+k7*k12*k28+k1*k7+k2*k7+k3*k7+k5*k7+k6*k7+k7*k12+k7*k28)*x14+(k1*k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k6*k7*k28+k1*k2*k3*k5*k7*k12*k28+k1*k2*k3*k6*k7*k12*k28+k1*k2*k5*k6*k7*k12*k28+k1*k3*k5*k6*k7*k12*k28+k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7+k1*k2*k3*k5*k7*k12+k1*k2*k3*k6*k7*k12+k1*k2*k5*k6*k7*k12+k1*k3*k5*k6*k7*k12+k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k7*k28+k1*k2*k3*k6*k7*k28+k1*k2*k5*k6*k7*k28+k1*k3*k5*k6*k7*k28+k2*k3*k5*k6*k7*k28+k1*k2*k3*k7*k12*k28+k1*k2*k5*k7*k12*k28+k1*k3*k5*k7*k12*k28+k2*k3*k5*k7*k12*k28+k1*k2*k6*k7*k12*k28+k1*k3*k6*k7*k12*k28+k2*k3*k6*k7*k12*k28+k1*k5*k6*k7*k12*k28+k2*k5*k6*k7*k12*k28+k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k7+k1*k2*k3*k6*k7+k1*k2*k5*k6*k7+k1*k3*k5*k6*k7+k2*k3*k5*k6*k7+k1*k2*k3*k7*k12+k1*k2*k5*k7*k12+k1*k3*k5*k7*k12+k2*k3*k5*k7*k12+k1*k2*k6*k7*k12+k1*k3*k6*k7*k12+k2*k3*k6*k7*k12+k1*k5*k6*k7*k12+k2*k5*k6*k7*k12+k3*k5*k6*k7*k12+k1*k2*k3*k7*k28+k1*k2*k5*k7*k28+k1*k3*k5*k7*k28+k2*k3*k5*k7*k28+k1*k2*k6*k7*k28+k1*k3*k6*k7*k28+k2*k3*k6*k7*k28+k1*k5*k6*k7*k28+k2*k5*k6*k7*k28+k3*k5*k6*k7*k28+k1*k2*k7*k12*k28+k1*k3*k7*k12*k28+k2*k3*k7*k12*k28+k1*k5*k7*k12*k28+k2*k5*k7*k12*k28+k3*k5*k7*k12*k28+k1*k6*k7*k12*k28+k2*k6*k7*k12*k28+k3*k6*k7*k12*k28+k5*k6*k7*k12*k28+k1*k2*k3*k7+k1*k2*k5*k7+k1*k3*k5*k7+k2*k3*k5*k7+k1*k2*k6*k7+k1*k3*k6*k7+k2*k3*k6*k7+k1*k5*k6*k7+k2*k5*k6*k7+k3*k5*k6*k7+k1*k2*k7*k12+k1*k3*k7*k12+k2*k3*k7*k12+k1*k5*k7*k12+k2*k5*k7*k12+k3*k5*k7*k12+k1*k6*k7*k12+k2*k6*k7*k12+k3*k6*k7*k12+k5*k6*k7*k12+k1*k2*k7*k28+k1*k3*k7*k28+k2*k3*k7*k28+k1*k5*k7*k28+k2*k5*k7*k28+k3*k5*k7*k28+k1*k6*k7*k28+k2*k6*k7*k28+k3*k6*k7*k28+k5*k6*k7*k28+k1*k7*k12*k28+k2*k7*k12*k28+k3*k7*k12*k28+k5*k7*k12*k28+k6*k7*k12*k28+k1*k2*k7+k1*k3*k7+k2*k3*k7+k1*k5*k7+k2*k5*k7+k3*k5*k7+k1*k6*k7+k2*k6*k7+k3*k6*k7+k5*k6*k7+k1*k7*k12+k2*k7*k12+k3*k7*k12+k5*k7*k12+k6*k7*k12+k1*k7*k28+k2*k7*k28+k3*k7*k28+k5*k7*k28+k6*k7*k28+k7*k12*k28+k1*k7+k2*k7+k3*k7+k5*k7+k6*k7+k7*k12+k7*k28)*x68+k1*k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k6*k7*k28+k1*k2*k3*k5*k7*k12*k28+k1*k2*k3*k6*k7*k12*k28+k1*k2*k5*k6*k7*k12*k28+k1*k3*k5*k6*k7*k12*k28+k2*k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k6*k7+k1*k2*k3*k5*k7*k12+k1*k2*k3*k6*k7*k12+k1*k2*k5*k6*k7*k12+k1*k3*k5*k6*k7*k12+k2*k3*k5*k6*k7*k12+k1*k2*k3*k5*k7*k28+k1*k2*k3*k6*k7*k28+k1*k2*k5*k6*k7*k28+k1*k3*k5*k6*k7*k28+k2*k3*k5*k6*k7*k28+k1*k2*k3*k7*k12*k28+k1*k2*k5*k7*k12*k28+k1*k3*k5*k7*k12*k28+k2*k3*k5*k7*k12*k28+k1*k2*k6*k7*k12*k28+k1*k3*k6*k7*k12*k28+k2*k3*k6*k7*k12*k28+k1*k5*k6*k7*k12*k28+k2*k5*k6*k7*k12*k28+k3*k5*k6*k7*k12*k28+k1*k2*k3*k5*k7+k1*k2*k3*k6*k7+k1*k2*k5*k6*k7+k1*k3*k5*k6*k7+k2*k3*k5*k6*k7+k1*k2*k3*k7*k12+k1*k2*k5*k7*k12+k1*k3*k5*k7*k12+k2*k3*k5*k7*k12+k1*k2*k6*k7*k12+k1*k3*k6*k7*k12+k2*k3*k6*k7*k12+k1*k5*k6*k7*k12+k2*k5*k6*k7*k12+k3*k5*k6*k7*k12+k1*k2*k3*k7*k28+k1*k2*k5*k7*k28+k1*k3*k5*k7*k28+k2*k3*k5*k7*k28+k1*k2*k6*k7*k28+k1*k3*k6*k7*k28+k2*k3*k6*k7*k28+k1*k5*k6*k7*k28+k2*k5*k6*k7*k28+k3*k5*k6*k7*k28+k1*k2*k7*k12*k28+k1*k3*k7*k12*k28+k2*k3*k7*k12*k28+k1*k5*k7*k12*k28+k2*k5*k7*k12*k28+k3*k5*k7*k12*k28+k1*k6*k7*k12*k28+k2*k6*k7*k12*k28+k3*k6*k7*k12*k28+k5*k6*k7*k12*k28+k1*k2*k3*k7+k1*k2*k5*k7+k1*k3*k5*k7+k2*k3*k5*k7+k1*k2*k6*k7+k1*k3*k6*k7+k2*k3*k6*k7+k1*k5*k6*k7+k2*k5*k6*k7+k3*k5*k6*k7+k1*k2*k7*k12+k1*k3*k7*k12+k2*k3*k7*k12+k1*k5*k7*k12+k2*k5*k7*k12+k3*k5*k7*k12+k1*k6*k7*k12+k2*k6*k7*k12+k3*k6*k7*k12+k5*k6*k7*k12+k1*k2*k7*k28+k1*k3*k7*k28+k2*k3*k7*k28+k1*k5*k7*k28+k2*k5*k7*k28+k3*k5*k7*k28+k1*k6*k7*k28+k2*k6*k7*k28+k3*k6*k7*k28+k5*k6*k7*k28+k1*k7*k12*k28+k2*k7*k12*k28+k3*k7*k12*k28+k5*k7*k12*k28+k6*k7*k12*k28+k1*k2*k7+k1*k3*k7+k2*k3*k7+k1*k5*k7+k2*k5*k7+k3*k5*k7+k1*k6*k7+k2*k6*k7+k3*k6*k7+k5*k6*k7+k1*k7*k12+k2*k7*k12+k3*k7*k12+k5*k7*k12+k6*k7*k12+k1*k7*k28+k2*k7*k28+k3*k7*k28+k5*k7*k28+k6*k7*k28+k7*k12*k28+k1*k7+k2*k7+k3*k7+k5*k7+k6*k7+k7*k12+k7*k28",
+      "possibleInputVariables": ["k28","k7","x68","k2","k3","x14","k5","k6","k1","k12"]
+      },
+    "x16": {
+      "polynomialFunction": "(k2*k3*k5*k6*k7*k8*k12*k28+k2*k3*k5*k6*k7*k8*k12+k2*k3*k5*k6*k7*k8*k28+k2*k3*k5*k7*k8*k12*k28+k2*k3*k6*k7*k8*k12*k28+k2*k5*k6*k7*k8*k12*k28+k3*k5*k6*k7*k8*k12*k28+k2*k3*k5*k6*k7*k8+k2*k3*k5*k7*k8*k12+k2*k3*k6*k7*k8*k12+k2*k5*k6*k7*k8*k12+k3*k5*k6*k7*k8*k12+k2*k3*k5*k7*k8*k28+k2*k3*k6*k7*k8*k28+k2*k5*k6*k7*k8*k28+k3*k5*k6*k7*k8*k28+k2*k3*k7*k8*k12*k28+k2*k5*k7*k8*k12*k28+k3*k5*k7*k8*k12*k28+k2*k6*k7*k8*k12*k28+k3*k6*k7*k8*k12*k28+k5*k6*k7*k8*k12*k28+k2*k3*k5*k7*k8+k2*k3*k6*k7*k8+k2*k5*k6*k7*k8+k3*k5*k6*k7*k8+k2*k3*k7*k8*k12+k2*k5*k7*k8*k12+k3*k5*k7*k8*k12+k2*k6*k7*k8*k12+k3*k6*k7*k8*k12+k5*k6*k7*k8*k12+k2*k3*k7*k8*k28+k2*k5*k7*k8*k28+k3*k5*k7*k8*k28+k2*k6*k7*k8*k28+k3*k6*k7*k8*k28+k5*k6*k7*k8*k28+k2*k7*k8*k12*k28+k3*k7*k8*k12*k28+k5*k7*k8*k12*k28+k6*k7*k8*k12*k28+k2*k3*k7*k8+k2*k5*k7*k8+k3*k5*k7*k8+k2*k6*k7*k8+k3*k6*k7*k8+k5*k6*k7*k8+k2*k7*k8*k12+k3*k7*k8*k12+k5*k7*k8*k12+k6*k7*k8*k12+k2*k7*k8*k28+k3*k7*k8*k28+k5*k7*k8*k28+k6*k7*k8*k28+k7*k8*k12*k28+k2*k7*k8+k3*k7*k8+k5*k7*k8+k6*k7*k8+k7*k8*k12+k7*k8*k28)*x68+k2*k3*k5*k6*k7*k8*k12*k28+k2*k3*k5*k6*k7*k8*k12+k2*k3*k5*k6*k7*k8*k28+k2*k3*k5*k7*k8*k12*k28+k2*k3*k6*k7*k8*k12*k28+k2*k5*k6*k7*k8*k12*k28+k3*k5*k6*k7*k8*k12*k28+k2*k3*k5*k6*k7*k8+k2*k3*k5*k7*k8*k12+k2*k3*k6*k7*k8*k12+k2*k5*k6*k7*k8*k12+k3*k5*k6*k7*k8*k12+k2*k3*k5*k7*k8*k28+k2*k3*k6*k7*k8*k28+k2*k5*k6*k7*k8*k28+k3*k5*k6*k7*k8*k28+k2*k3*k7*k8*k12*k28+k2*k5*k7*k8*k12*k28+k3*k5*k7*k8*k12*k28+k2*k6*k7*k8*k12*k28+k3*k6*k7*k8*k12*k28+k5*k6*k7*k8*k12*k28+k2*k3*k5*k7*k8+k2*k3*k6*k7*k8+k2*k5*k6*k7*k8+k3*k5*k6*k7*k8+k2*k3*k7*k8*k12+k2*k5*k7*k8*k12+k3*k5*k7*k8*k12+k2*k6*k7*k8*k12+k3*k6*k7*k8*k12+k5*k6*k7*k8*k12+k2*k3*k7*k8*k28+k2*k5*k7*k8*k28+k3*k5*k7*k8*k28+k2*k6*k7*k8*k28+k3*k6*k7*k8*k28+k5*k6*k7*k8*k28+k2*k7*k8*k12*k28+k3*k7*k8*k12*k28+k5*k7*k8*k12*k28+k6*k7*k8*k12*k28+k2*k3*k7*k8+k2*k5*k7*k8+k3*k5*k7*k8+k2*k6*k7*k8+k3*k6*k7*k8+k5*k6*k7*k8+k2*k7*k8*k12+k3*k7*k8*k12+k5*k7*k8*k12+k6*k7*k8*k12+k2*k7*k8*k28+k3*k7*k8*k28+k5*k7*k8*k28+k6*k7*k8*k28+k7*k8*k12*k28+k2*k7*k8+k3*k7*k8+k5*k7*k8+k6*k7*k8+k7*k8*k12+k7*k8*k28",
+      "possibleInputVariables": ["k28","k7","k8","x68","k2","k3","k5","k6","k12"]
+      },
+    "x17": {
+      "polynomialFunction": "(k1*k3*k5*k6*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k8*k9*k15*k16*k17+k1*k3*k5*k6*k7*k8*k9*k15*k16*k28+k1*k3*k5*k6*k7*k8*k9*k15*k17*k28+k1*k3*k5*k6*k7*k8*k9*k16*k17*k28+k1*k3*k6*k7*k8*k9*k15*k16*k17*k28+k1*k5*k6*k7*k8*k9*k15*k16*k17*k28+k3*k5*k6*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k8*k9*k15*k16+k1*k3*k5*k6*k7*k8*k9*k15*k17+k1*k3*k5*k6*k7*k8*k9*k16*k17+k1*k3*k6*k7*k8*k9*k15*k16*k17+k1*k5*k6*k7*k8*k9*k15*k16*k17+k3*k5*k6*k7*k8*k9*k15*k16*k17+k1*k3*k5*k6*k7*k8*k9*k15*k28+k1*k3*k5*k6*k7*k8*k9*k16*k28+k1*k3*k6*k7*k8*k9*k15*k16*k28+k1*k5*k6*k7*k8*k9*k15*k16*k28+k3*k5*k6*k7*k8*k9*k15*k16*k28+k1*k3*k5*k6*k7*k8*k9*k17*k28+k1*k3*k6*k7*k8*k9*k15*k17*k28+k1*k5*k6*k7*k8*k9*k15*k17*k28+k3*k5*k6*k7*k8*k9*k15*k17*k28+k1*k3*k6*k7*k8*k9*k16*k17*k28+k1*k5*k6*k7*k8*k9*k16*k17*k28+k3*k5*k6*k7*k8*k9*k16*k17*k28+k1*k6*k7*k8*k9*k15*k16*k17*k28+k3*k6*k7*k8*k9*k15*k16*k17*k28+k5*k6*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k8*k9*k15+k1*k3*k5*k6*k7*k8*k9*k16+k1*k3*k6*k7*k8*k9*k15*k16+k1*k5*k6*k7*k8*k9*k15*k16+k3*k5*k6*k7*k8*k9*k15*k16+k1*k3*k5*k6*k7*k8*k9*k17+k1*k3*k6*k7*k8*k9*k15*k17+k1*k5*k6*k7*k8*k9*k15*k17+k3*k5*k6*k7*k8*k9*k15*k17+k1*k3*k6*k7*k8*k9*k16*k17+k1*k5*k6*k7*k8*k9*k16*k17+k3*k5*k6*k7*k8*k9*k16*k17+k1*k6*k7*k8*k9*k15*k16*k17+k3*k6*k7*k8*k9*k15*k16*k17+k5*k6*k7*k8*k9*k15*k16*k17+k1*k3*k5*k6*k7*k8*k9*k28+k1*k3*k6*k7*k8*k9*k15*k28+k1*k5*k6*k7*k8*k9*k15*k28+k3*k5*k6*k7*k8*k9*k15*k28+k1*k3*k6*k7*k8*k9*k16*k28+k1*k5*k6*k7*k8*k9*k16*k28+k3*k5*k6*k7*k8*k9*k16*k28+k1*k6*k7*k8*k9*k15*k16*k28+k3*k6*k7*k8*k9*k15*k16*k28+k5*k6*k7*k8*k9*k15*k16*k28+k1*k3*k6*k7*k8*k9*k17*k28+k1*k5*k6*k7*k8*k9*k17*k28+k3*k5*k6*k7*k8*k9*k17*k28+k1*k6*k7*k8*k9*k15*k17*k28+k3*k6*k7*k8*k9*k15*k17*k28+k5*k6*k7*k8*k9*k15*k17*k28+k1*k6*k7*k8*k9*k16*k17*k28+k3*k6*k7*k8*k9*k16*k17*k28+k5*k6*k7*k8*k9*k16*k17*k28+k6*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k8*k9+k1*k3*k6*k7*k8*k9*k15+k1*k5*k6*k7*k8*k9*k15+k3*k5*k6*k7*k8*k9*k15+k1*k3*k6*k7*k8*k9*k16+k1*k5*k6*k7*k8*k9*k16+k3*k5*k6*k7*k8*k9*k16+k1*k6*k7*k8*k9*k15*k16+k3*k6*k7*k8*k9*k15*k16+k5*k6*k7*k8*k9*k15*k16+k1*k3*k6*k7*k8*k9*k17+k1*k5*k6*k7*k8*k9*k17+k3*k5*k6*k7*k8*k9*k17+k1*k6*k7*k8*k9*k15*k17+k3*k6*k7*k8*k9*k15*k17+k5*k6*k7*k8*k9*k15*k17+k1*k6*k7*k8*k9*k16*k17+k3*k6*k7*k8*k9*k16*k17+k5*k6*k7*k8*k9*k16*k17+k6*k7*k8*k9*k15*k16*k17+k1*k3*k6*k7*k8*k9*k28+k1*k5*k6*k7*k8*k9*k28+k3*k5*k6*k7*k8*k9*k28+k1*k6*k7*k8*k9*k15*k28+k3*k6*k7*k8*k9*k15*k28+k5*k6*k7*k8*k9*k15*k28+k1*k6*k7*k8*k9*k16*k28+k3*k6*k7*k8*k9*k16*k28+k5*k6*k7*k8*k9*k16*k28+k6*k7*k8*k9*k15*k16*k28+k1*k6*k7*k8*k9*k17*k28+k3*k6*k7*k8*k9*k17*k28+k5*k6*k7*k8*k9*k17*k28+k6*k7*k8*k9*k15*k17*k28+k6*k7*k8*k9*k16*k17*k28+k1*k3*k6*k7*k8*k9+k1*k5*k6*k7*k8*k9+k3*k5*k6*k7*k8*k9+k1*k6*k7*k8*k9*k15+k3*k6*k7*k8*k9*k15+k5*k6*k7*k8*k9*k15+k1*k6*k7*k8*k9*k16+k3*k6*k7*k8*k9*k16+k5*k6*k7*k8*k9*k16+k6*k7*k8*k9*k15*k16+k1*k6*k7*k8*k9*k17+k3*k6*k7*k8*k9*k17+k5*k6*k7*k8*k9*k17+k6*k7*k8*k9*k15*k17+k6*k7*k8*k9*k16*k17+k1*k6*k7*k8*k9*k28+k3*k6*k7*k8*k9*k28+k5*k6*k7*k8*k9*k28+k6*k7*k8*k9*k15*k28+k6*k7*k8*k9*k16*k28+k6*k7*k8*k9*k17*k28+k1*k6*k7*k8*k9+k3*k6*k7*k8*k9+k5*k6*k7*k8*k9+k6*k7*k8*k9*k15+k6*k7*k8*k9*k16+k6*k7*k8*k9*k17+k6*k7*k8*k9*k28+k6*k8*k9)*x15*x68+(k1*k3*k5*k6*k7*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k9*k15*k16*k17+k1*k3*k5*k6*k7*k9*k15*k16*k28+k1*k3*k5*k6*k7*k9*k15*k17*k28+k1*k3*k5*k6*k7*k9*k16*k17*k28+k1*k3*k6*k7*k9*k15*k16*k17*k28+k1*k5*k6*k7*k9*k15*k16*k17*k28+k3*k5*k6*k7*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k9*k15*k16+k1*k3*k5*k6*k7*k9*k15*k17+k1*k3*k5*k6*k7*k9*k16*k17+k1*k3*k6*k7*k9*k15*k16*k17+k1*k5*k6*k7*k9*k15*k16*k17+k3*k5*k6*k7*k9*k15*k16*k17+k1*k3*k5*k6*k7*k9*k15*k28+k1*k3*k5*k6*k7*k9*k16*k28+k1*k3*k6*k7*k9*k15*k16*k28+k1*k5*k6*k7*k9*k15*k16*k28+k3*k5*k6*k7*k9*k15*k16*k28+k1*k3*k5*k6*k7*k9*k17*k28+k1*k3*k6*k7*k9*k15*k17*k28+k1*k5*k6*k7*k9*k15*k17*k28+k3*k5*k6*k7*k9*k15*k17*k28+k1*k3*k6*k7*k9*k16*k17*k28+k1*k5*k6*k7*k9*k16*k17*k28+k3*k5*k6*k7*k9*k16*k17*k28+k1*k6*k7*k9*k15*k16*k17*k28+k3*k6*k7*k9*k15*k16*k17*k28+k5*k6*k7*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k9*k15+k1*k3*k5*k6*k7*k9*k16+k1*k3*k6*k7*k9*k15*k16+k1*k5*k6*k7*k9*k15*k16+k3*k5*k6*k7*k9*k15*k16+k1*k3*k5*k6*k7*k9*k17+k1*k3*k6*k7*k9*k15*k17+k1*k5*k6*k7*k9*k15*k17+k3*k5*k6*k7*k9*k15*k17+k1*k3*k6*k7*k9*k16*k17+k1*k5*k6*k7*k9*k16*k17+k3*k5*k6*k7*k9*k16*k17+k1*k6*k7*k9*k15*k16*k17+k3*k6*k7*k9*k15*k16*k17+k5*k6*k7*k9*k15*k16*k17+k1*k3*k5*k6*k7*k9*k28+k1*k3*k6*k7*k9*k15*k28+k1*k5*k6*k7*k9*k15*k28+k3*k5*k6*k7*k9*k15*k28+k1*k3*k6*k7*k9*k16*k28+k1*k5*k6*k7*k9*k16*k28+k3*k5*k6*k7*k9*k16*k28+k1*k6*k7*k9*k15*k16*k28+k3*k6*k7*k9*k15*k16*k28+k5*k6*k7*k9*k15*k16*k28+k1*k3*k6*k7*k9*k17*k28+k1*k5*k6*k7*k9*k17*k28+k3*k5*k6*k7*k9*k17*k28+k1*k6*k7*k9*k15*k17*k28+k3*k6*k7*k9*k15*k17*k28+k5*k6*k7*k9*k15*k17*k28+k1*k6*k7*k9*k16*k17*k28+k3*k6*k7*k9*k16*k17*k28+k5*k6*k7*k9*k16*k17*k28+k6*k7*k9*k15*k16*k17*k28+k1*k3*k5*k6*k7*k9+k1*k3*k6*k7*k9*k15+k1*k5*k6*k7*k9*k15+k3*k5*k6*k7*k9*k15+k1*k3*k6*k7*k9*k16+k1*k5*k6*k7*k9*k16+k3*k5*k6*k7*k9*k16+k1*k6*k7*k9*k15*k16+k3*k6*k7*k9*k15*k16+k5*k6*k7*k9*k15*k16+k1*k3*k6*k7*k9*k17+k1*k5*k6*k7*k9*k17+k3*k5*k6*k7*k9*k17+k1*k6*k7*k9*k15*k17+k3*k6*k7*k9*k15*k17+k5*k6*k7*k9*k15*k17+k1*k6*k7*k9*k16*k17+k3*k6*k7*k9*k16*k17+k5*k6*k7*k9*k16*k17+k6*k7*k9*k15*k16*k17+k1*k3*k6*k7*k9*k28+k1*k5*k6*k7*k9*k28+k3*k5*k6*k7*k9*k28+k1*k6*k7*k9*k15*k28+k3*k6*k7*k9*k15*k28+k5*k6*k7*k9*k15*k28+k1*k6*k7*k9*k16*k28+k3*k6*k7*k9*k16*k28+k5*k6*k7*k9*k16*k28+k6*k7*k9*k15*k16*k28+k1*k6*k7*k9*k17*k28+k3*k6*k7*k9*k17*k28+k5*k6*k7*k9*k17*k28+k6*k7*k9*k15*k17*k28+k6*k7*k9*k16*k17*k28+k1*k3*k6*k7*k9+k1*k5*k6*k7*k9+k3*k5*k6*k7*k9+k1*k6*k7*k9*k15+k3*k6*k7*k9*k15+k5*k6*k7*k9*k15+k1*k6*k7*k9*k16+k3*k6*k7*k9*k16+k5*k6*k7*k9*k16+k6*k7*k9*k15*k16+k1*k6*k7*k9*k17+k3*k6*k7*k9*k17+k5*k6*k7*k9*k17+k6*k7*k9*k15*k17+k6*k7*k9*k16*k17+k1*k6*k7*k9*k28+k3*k6*k7*k9*k28+k5*k6*k7*k9*k28+k6*k7*k9*k15*k28+k6*k7*k9*k16*k28+k6*k7*k9*k17*k28+k1*k6*k7*k9+k3*k6*k7*k9+k5*k6*k7*k9+k6*k7*k9*k15+k6*k7*k9*k16+k6*k7*k9*k17+k6*k7*k9*k28+k6*k9)*x15+(k1*k3*k5*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k7*k8*k9*k15*k16*k17+k1*k3*k5*k7*k8*k9*k15*k16*k28+k1*k3*k5*k7*k8*k9*k15*k17*k28+k1*k3*k5*k7*k8*k9*k16*k17*k28+k1*k3*k7*k8*k9*k15*k16*k17*k28+k1*k5*k7*k8*k9*k15*k16*k17*k28+k3*k5*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k7*k8*k9*k15*k16+k1*k3*k5*k7*k8*k9*k15*k17+k1*k3*k5*k7*k8*k9*k16*k17+k1*k3*k7*k8*k9*k15*k16*k17+k1*k5*k7*k8*k9*k15*k16*k17+k3*k5*k7*k8*k9*k15*k16*k17+k1*k3*k5*k7*k8*k9*k15*k28+k1*k3*k5*k7*k8*k9*k16*k28+k1*k3*k7*k8*k9*k15*k16*k28+k1*k5*k7*k8*k9*k15*k16*k28+k3*k5*k7*k8*k9*k15*k16*k28+k1*k3*k5*k7*k8*k9*k17*k28+k1*k3*k7*k8*k9*k15*k17*k28+k1*k5*k7*k8*k9*k15*k17*k28+k3*k5*k7*k8*k9*k15*k17*k28+k1*k3*k7*k8*k9*k16*k17*k28+k1*k5*k7*k8*k9*k16*k17*k28+k3*k5*k7*k8*k9*k16*k17*k28+k1*k7*k8*k9*k15*k16*k17*k28+k3*k7*k8*k9*k15*k16*k17*k28+k5*k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k7*k8*k9*k15+k1*k3*k5*k7*k8*k9*k16+k1*k3*k7*k8*k9*k15*k16+k1*k5*k7*k8*k9*k15*k16+k3*k5*k7*k8*k9*k15*k16+k1*k3*k5*k7*k8*k9*k17+k1*k3*k7*k8*k9*k15*k17+k1*k5*k7*k8*k9*k15*k17+k3*k5*k7*k8*k9*k15*k17+k1*k3*k7*k8*k9*k16*k17+k1*k5*k7*k8*k9*k16*k17+k3*k5*k7*k8*k9*k16*k17+k1*k7*k8*k9*k15*k16*k17+k3*k7*k8*k9*k15*k16*k17+k5*k7*k8*k9*k15*k16*k17+k1*k3*k5*k7*k8*k9*k28+k1*k3*k7*k8*k9*k15*k28+k1*k5*k7*k8*k9*k15*k28+k3*k5*k7*k8*k9*k15*k28+k1*k3*k7*k8*k9*k16*k28+k1*k5*k7*k8*k9*k16*k28+k3*k5*k7*k8*k9*k16*k28+k1*k7*k8*k9*k15*k16*k28+k3*k7*k8*k9*k15*k16*k28+k5*k7*k8*k9*k15*k16*k28+k1*k3*k7*k8*k9*k17*k28+k1*k5*k7*k8*k9*k17*k28+k3*k5*k7*k8*k9*k17*k28+k1*k7*k8*k9*k15*k17*k28+k3*k7*k8*k9*k15*k17*k28+k5*k7*k8*k9*k15*k17*k28+k1*k7*k8*k9*k16*k17*k28+k3*k7*k8*k9*k16*k17*k28+k5*k7*k8*k9*k16*k17*k28+k7*k8*k9*k15*k16*k17*k28+k1*k3*k5*k7*k8*k9+k1*k3*k7*k8*k9*k15+k1*k5*k7*k8*k9*k15+k3*k5*k7*k8*k9*k15+k1*k3*k7*k8*k9*k16+k1*k5*k7*k8*k9*k16+k3*k5*k7*k8*k9*k16+k1*k7*k8*k9*k15*k16+k3*k7*k8*k9*k15*k16+k5*k7*k8*k9*k15*k16+k1*k3*k7*k8*k9*k17+k1*k5*k7*k8*k9*k17+k3*k5*k7*k8*k9*k17+k1*k7*k8*k9*k15*k17+k3*k7*k8*k9*k15*k17+k5*k7*k8*k9*k15*k17+k1*k7*k8*k9*k16*k17+k3*k7*k8*k9*k16*k17+k5*k7*k8*k9*k16*k17+k7*k8*k9*k15*k16*k17+k1*k3*k7*k8*k9*k28+k1*k5*k7*k8*k9*k28+k3*k5*k7*k8*k9*k28+k1*k7*k8*k9*k15*k28+k3*k7*k8*k9*k15*k28+k5*k7*k8*k9*k15*k28+k1*k7*k8*k9*k16*k28+k3*k7*k8*k9*k16*k28+k5*k7*k8*k9*k16*k28+k7*k8*k9*k15*k16*k28+k1*k7*k8*k9*k17*k28+k3*k7*k8*k9*k17*k28+k5*k7*k8*k9*k17*k28+k7*k8*k9*k15*k17*k28+k7*k8*k9*k16*k17*k28+k1*k3*k7*k8*k9+k1*k5*k7*k8*k9+k3*k5*k7*k8*k9+k1*k7*k8*k9*k15+k3*k7*k8*k9*k15+k5*k7*k8*k9*k15+k1*k7*k8*k9*k16+k3*k7*k8*k9*k16+k5*k7*k8*k9*k16+k7*k8*k9*k15*k16+k1*k7*k8*k9*k17+k3*k7*k8*k9*k17+k5*k7*k8*k9*k17+k7*k8*k9*k15*k17+k7*k8*k9*k16*k17+k1*k7*k8*k9*k28+k3*k7*k8*k9*k28+k5*k7*k8*k9*k28+k7*k8*k9*k15*k28+k7*k8*k9*k16*k28+k7*k8*k9*k17*k28+k1*k7*k8*k9+k3*k7*k8*k9+k5*k7*k8*k9+k7*k8*k9*k15+k7*k8*k9*k16+k7*k8*k9*k17+k7*k8*k9*k28)*x68+k1*k3*k5*k7*k9*k15*k16*k17*k28+k1*k3*k5*k7*k9*k15*k16*k17+k1*k3*k5*k7*k9*k15*k16*k28+k1*k3*k5*k7*k9*k15*k17*k28+k1*k3*k5*k7*k9*k16*k17*k28+k1*k3*k7*k9*k15*k16*k17*k28+k1*k5*k7*k9*k15*k16*k17*k28+k3*k5*k7*k9*k15*k16*k17*k28+k1*k3*k5*k7*k9*k15*k16+k1*k3*k5*k7*k9*k15*k17+k1*k3*k5*k7*k9*k16*k17+k1*k3*k7*k9*k15*k16*k17+k1*k5*k7*k9*k15*k16*k17+k3*k5*k7*k9*k15*k16*k17+k1*k3*k5*k7*k9*k15*k28+k1*k3*k5*k7*k9*k16*k28+k1*k3*k7*k9*k15*k16*k28+k1*k5*k7*k9*k15*k16*k28+k3*k5*k7*k9*k15*k16*k28+k1*k3*k5*k7*k9*k17*k28+k1*k3*k7*k9*k15*k17*k28+k1*k5*k7*k9*k15*k17*k28+k3*k5*k7*k9*k15*k17*k28+k1*k3*k7*k9*k16*k17*k28+k1*k5*k7*k9*k16*k17*k28+k3*k5*k7*k9*k16*k17*k28+k1*k7*k9*k15*k16*k17*k28+k3*k7*k9*k15*k16*k17*k28+k5*k7*k9*k15*k16*k17*k28+k1*k3*k5*k7*k9*k15+k1*k3*k5*k7*k9*k16+k1*k3*k7*k9*k15*k16+k1*k5*k7*k9*k15*k16+k3*k5*k7*k9*k15*k16+k1*k3*k5*k7*k9*k17+k1*k3*k7*k9*k15*k17+k1*k5*k7*k9*k15*k17+k3*k5*k7*k9*k15*k17+k1*k3*k7*k9*k16*k17+k1*k5*k7*k9*k16*k17+k3*k5*k7*k9*k16*k17+k1*k7*k9*k15*k16*k17+k3*k7*k9*k15*k16*k17+k5*k7*k9*k15*k16*k17+k1*k3*k5*k7*k9*k28+k1*k3*k7*k9*k15*k28+k1*k5*k7*k9*k15*k28+k3*k5*k7*k9*k15*k28+k1*k3*k7*k9*k16*k28+k1*k5*k7*k9*k16*k28+k3*k5*k7*k9*k16*k28+k1*k7*k9*k15*k16*k28+k3*k7*k9*k15*k16*k28+k5*k7*k9*k15*k16*k28+k1*k3*k7*k9*k17*k28+k1*k5*k7*k9*k17*k28+k3*k5*k7*k9*k17*k28+k1*k7*k9*k15*k17*k28+k3*k7*k9*k15*k17*k28+k5*k7*k9*k15*k17*k28+k1*k7*k9*k16*k17*k28+k3*k7*k9*k16*k17*k28+k5*k7*k9*k16*k17*k28+k7*k9*k15*k16*k17*k28+k1*k3*k5*k7*k9+k1*k3*k7*k9*k15+k1*k5*k7*k9*k15+k3*k5*k7*k9*k15+k1*k3*k7*k9*k16+k1*k5*k7*k9*k16+k3*k5*k7*k9*k16+k1*k7*k9*k15*k16+k3*k7*k9*k15*k16+k5*k7*k9*k15*k16+k1*k3*k7*k9*k17+k1*k5*k7*k9*k17+k3*k5*k7*k9*k17+k1*k7*k9*k15*k17+k3*k7*k9*k15*k17+k5*k7*k9*k15*k17+k1*k7*k9*k16*k17+k3*k7*k9*k16*k17+k5*k7*k9*k16*k17+k7*k9*k15*k16*k17+k1*k3*k7*k9*k28+k1*k5*k7*k9*k28+k3*k5*k7*k9*k28+k1*k7*k9*k15*k28+k3*k7*k9*k15*k28+k5*k7*k9*k15*k28+k1*k7*k9*k16*k28+k3*k7*k9*k16*k28+k5*k7*k9*k16*k28+k7*k9*k15*k16*k28+k1*k7*k9*k17*k28+k3*k7*k9*k17*k28+k5*k7*k9*k17*k28+k7*k9*k15*k17*k28+k7*k9*k16*k17*k28+k1*k3*k7*k9+k1*k5*k7*k9+k3*k5*k7*k9+k1*k7*k9*k15+k3*k7*k9*k15+k5*k7*k9*k15+k1*k7*k9*k16+k3*k7*k9*k16+k5*k7*k9*k16+k7*k9*k15*k16+k1*k7*k9*k17+k3*k7*k9*k17+k5*k7*k9*k17+k7*k9*k15*k17+k7*k9*k16*k17+k1*k7*k9*k28+k3*k7*k9*k28+k5*k7*k9*k28+k7*k9*k15*k28+k7*k9*k16*k28+k7*k9*k17*k28+k1*k7*k9+k3*k7*k9+k5*k7*k9+k7*k9*k15+k7*k9*k16+k7*k9*k17+k7*k9*k28",
+      "possibleInputVariables": ["k28","k9","k7","k8","x68","k3","k5","x15","k17","k6","k16","k15","k1"]
+      },
+    "x18": {
+      "polynomialFunction": "(k5*k6*k7*k8*k10*k15*k16*k17*k18*k20*k28+k5*k6*k7*k8*k10*k15*k16*k17*k18*k20+k5*k6*k7*k8*k10*k15*k16*k17*k18*k28+k5*k6*k7*k8*k10*k15*k16*k17*k20*k28+k5*k6*k7*k8*k10*k15*k16*k18*k20*k28+k5*k6*k7*k8*k10*k15*k17*k18*k20*k28+k5*k6*k7*k8*k10*k16*k17*k18*k20*k28+k5*k7*k8*k10*k15*k16*k17*k18*k20*k28+k6*k7*k8*k10*k15*k16*k17*k18*k20*k28+k5*k6*k7*k8*k10*k15*k16*k17*k18+k5*k6*k7*k8*k10*k15*k16*k17*k20+k5*k6*k7*k8*k10*k15*k16*k18*k20+k5*k6*k7*k8*k10*k15*k17*k18*k20+k5*k6*k7*k8*k10*k16*k17*k18*k20+k5*k7*k8*k10*k15*k16*k17*k18*k20+k6*k7*k8*k10*k15*k16*k17*k18*k20+k5*k6*k7*k8*k10*k15*k16*k17*k28+k5*k6*k7*k8*k10*k15*k16*k18*k28+k5*k6*k7*k8*k10*k15*k17*k18*k28+k5*k6*k7*k8*k10*k16*k17*k18*k28+k5*k7*k8*k10*k15*k16*k17*k18*k28+k6*k7*k8*k10*k15*k16*k17*k18*k28+k5*k6*k7*k8*k10*k15*k16*k20*k28+k5*k6*k7*k8*k10*k15*k17*k20*k28+k5*k6*k7*k8*k10*k16*k17*k20*k28+k5*k7*k8*k10*k15*k16*k17*k20*k28+k6*k7*k8*k10*k15*k16*k17*k20*k28+k5*k6*k7*k8*k10*k15*k18*k20*k28+k5*k6*k7*k8*k10*k16*k18*k20*k28+k5*k7*k8*k10*k15*k16*k18*k20*k28+k6*k7*k8*k10*k15*k16*k18*k20*k28+k5*k6*k7*k8*k10*k17*k18*k20*k28+k5*k7*k8*k10*k15*k17*k18*k20*k28+k6*k7*k8*k10*k15*k17*k18*k20*k28+k5*k7*k8*k10*k16*k17*k18*k20*k28+k6*k7*k8*k10*k16*k17*k18*k20*k28+k7*k8*k10*k15*k16*k17*k18*k20*k28+k5*k6*k7*k8*k10*k15*k16*k17+k5*k6*k7*k8*k10*k15*k16*k18+k5*k6*k7*k8*k10*k15*k17*k18+k5*k6*k7*k8*k10*k16*k17*k18+k5*k7*k8*k10*k15*k16*k17*k18+k6*k7*k8*k10*k15*k16*k17*k18+k5*k6*k7*k8*k10*k15*k16*k20+k5*k6*k7*k8*k10*k15*k17*k20+k5*k6*k7*k8*k10*k16*k17*k20+k5*k7*k8*k10*k15*k16*k17*k20+k6*k7*k8*k10*k15*k16*k17*k20+k5*k6*k7*k8*k10*k15*k18*k20+k5*k6*k7*k8*k10*k16*k18*k20+k5*k7*k8*k10*k15*k16*k18*k20+k6*k7*k8*k10*k15*k16*k18*k20+k5*k6*k7*k8*k10*k17*k18*k20+k5*k7*k8*k10*k15*k17*k18*k20+k6*k7*k8*k10*k15*k17*k18*k20+k5*k7*k8*k10*k16*k17*k18*k20+k6*k7*k8*k10*k16*k17*k18*k20+k7*k8*k10*k15*k16*k17*k18*k20+k5*k6*k7*k8*k10*k15*k16*k28+k5*k6*k7*k8*k10*k15*k17*k28+k5*k6*k7*k8*k10*k16*k17*k28+k5*k7*k8*k10*k15*k16*k17*k28+k6*k7*k8*k10*k15*k16*k17*k28+k5*k6*k7*k8*k10*k15*k18*k28+k5*k6*k7*k8*k10*k16*k18*k28+k5*k7*k8*k10*k15*k16*k18*k28+k6*k7*k8*k10*k15*k16*k18*k28+k5*k6*k7*k8*k10*k17*k18*k28+k5*k7*k8*k10*k15*k17*k18*k28+k6*k7*k8*k10*k15*k17*k18*k28+k5*k7*k8*k10*k16*k17*k18*k28+k6*k7*k8*k10*k16*k17*k18*k28+k7*k8*k10*k15*k16*k17*k18*k28+k5*k6*k7*k8*k10*k15*k20*k28+k5*k6*k7*k8*k10*k16*k20*k28+k5*k7*k8*k10*k15*k16*k20*k28+k6*k7*k8*k10*k15*k16*k20*k28+k5*k6*k7*k8*k10*k17*k20*k28+k5*k7*k8*k10*k15*k17*k20*k28+k6*k7*k8*k10*k15*k17*k20*k28+k5*k7*k8*k10*k16*k17*k20*k28+k6*k7*k8*k10*k16*k17*k20*k28+k7*k8*k10*k15*k16*k17*k20*k28+k5*k6*k7*k8*k10*k18*k20*k28+k5*k7*k8*k10*k15*k18*k20*k28+k6*k7*k8*k10*k15*k18*k20*k28+k5*k7*k8*k10*k16*k18*k20*k28+k6*k7*k8*k10*k16*k18*k20*k28+k7*k8*k10*k15*k16*k18*k20*k28+k5*k7*k8*k10*k17*k18*k20*k28+k6*k7*k8*k10*k17*k18*k20*k28+k7*k8*k10*k15*k17*k18*k20*k28+k7*k8*k10*k16*k17*k18*k20*k28+k5*k6*k7*k8*k10*k15*k16+k5*k6*k7*k8*k10*k15*k17+k5*k6*k7*k8*k10*k16*k17+k5*k7*k8*k10*k15*k16*k17+k6*k7*k8*k10*k15*k16*k17+k5*k6*k7*k8*k10*k15*k18+k5*k6*k7*k8*k10*k16*k18+k5*k7*k8*k10*k15*k16*k18+k6*k7*k8*k10*k15*k16*k18+k5*k6*k7*k8*k10*k17*k18+k5*k7*k8*k10*k15*k17*k18+k6*k7*k8*k10*k15*k17*k18+k5*k7*k8*k10*k16*k17*k18+k6*k7*k8*k10*k16*k17*k18+k7*k8*k10*k15*k16*k17*k18+k5*k6*k7*k8*k10*k15*k20+k5*k6*k7*k8*k10*k16*k20+k5*k7*k8*k10*k15*k16*k20+k6*k7*k8*k10*k15*k16*k20+k5*k6*k7*k8*k10*k17*k20+k5*k7*k8*k10*k15*k17*k20+k6*k7*k8*k10*k15*k17*k20+k5*k7*k8*k10*k16*k17*k20+k6*k7*k8*k10*k16*k17*k20+k7*k8*k10*k15*k16*k17*k20+k5*k6*k7*k8*k10*k18*k20+k5*k7*k8*k10*k15*k18*k20+k6*k7*k8*k10*k15*k18*k20+k5*k7*k8*k10*k16*k18*k20+k6*k7*k8*k10*k16*k18*k20+k7*k8*k10*k15*k16*k18*k20+k5*k7*k8*k10*k17*k18*k20+k6*k7*k8*k10*k17*k18*k20+k7*k8*k10*k15*k17*k18*k20+k7*k8*k10*k16*k17*k18*k20+k5*k6*k7*k8*k10*k15*k28+k5*k6*k7*k8*k10*k16*k28+k5*k7*k8*k10*k15*k16*k28+k6*k7*k8*k10*k15*k16*k28+k5*k6*k7*k8*k10*k17*k28+k5*k7*k8*k10*k15*k17*k28+k6*k7*k8*k10*k15*k17*k28+k5*k7*k8*k10*k16*k17*k28+k6*k7*k8*k10*k16*k17*k28+k7*k8*k10*k15*k16*k17*k28+k5*k6*k7*k8*k10*k18*k28+k5*k7*k8*k10*k15*k18*k28+k6*k7*k8*k10*k15*k18*k28+k5*k7*k8*k10*k16*k18*k28+k6*k7*k8*k10*k16*k18*k28+k7*k8*k10*k15*k16*k18*k28+k5*k7*k8*k10*k17*k18*k28+k6*k7*k8*k10*k17*k18*k28+k7*k8*k10*k15*k17*k18*k28+k7*k8*k10*k16*k17*k18*k28+k5*k6*k7*k8*k10*k20*k28+k5*k7*k8*k10*k15*k20*k28+k6*k7*k8*k10*k15*k20*k28+k5*k7*k8*k10*k16*k20*k28+k6*k7*k8*k10*k16*k20*k28+k7*k8*k10*k15*k16*k20*k28+k5*k7*k8*k10*k17*k20*k28+k6*k7*k8*k10*k17*k20*k28+k7*k8*k10*k15*k17*k20*k28+k7*k8*k10*k16*k17*k20*k28+k5*k7*k8*k10*k18*k20*k28+k6*k7*k8*k10*k18*k20*k28+k7*k8*k10*k15*k18*k20*k28+k7*k8*k10*k16*k18*k20*k28+k7*k8*k10*k17*k18*k20*k28+k5*k6*k7*k8*k10*k15+k5*k6*k7*k8*k10*k16+k5*k7*k8*k10*k15*k16+k6*k7*k8*k10*k15*k16+k5*k6*k7*k8*k10*k17+k5*k7*k8*k10*k15*k17+k6*k7*k8*k10*k15*k17+k5*k7*k8*k10*k16*k17+k6*k7*k8*k10*k16*k17+k7*k8*k10*k15*k16*k17+k5*k6*k7*k8*k10*k18+k5*k7*k8*k10*k15*k18+k6*k7*k8*k10*k15*k18+k5*k7*k8*k10*k16*k18+k6*k7*k8*k10*k16*k18+k7*k8*k10*k15*k16*k18+k5*k7*k8*k10*k17*k18+k6*k7*k8*k10*k17*k18+k7*k8*k10*k15*k17*k18+k7*k8*k10*k16*k17*k18+k5*k6*k7*k8*k10*k20+k5*k7*k8*k10*k15*k20+k6*k7*k8*k10*k15*k20+k5*k7*k8*k10*k16*k20+k6*k7*k8*k10*k16*k20+k7*k8*k10*k15*k16*k20+k5*k7*k8*k10*k17*k20+k6*k7*k8*k10*k17*k20+k7*k8*k10*k15*k17*k20+k7*k8*k10*k16*k17*k20+k5*k7*k8*k10*k18*k20+k6*k7*k8*k10*k18*k20+k7*k8*k10*k15*k18*k20+k7*k8*k10*k16*k18*k20+k7*k8*k10*k17*k18*k20+k5*k6*k7*k8*k10*k28+k5*k7*k8*k10*k15*k28+k6*k7*k8*k10*k15*k28+k5*k7*k8*k10*k16*k28+k6*k7*k8*k10*k16*k28+k7*k8*k10*k15*k16*k28+k5*k7*k8*k10*k17*k28+k6*k7*k8*k10*k17*k28+k7*k8*k10*k15*k17*k28+k7*k8*k10*k16*k17*k28+k5*k7*k8*k10*k18*k28+k6*k7*k8*k10*k18*k28+k7*k8*k10*k15*k18*k28+k7*k8*k10*k16*k18*k28+k7*k8*k10*k17*k18*k28+k5*k7*k8*k10*k20*k28+k6*k7*k8*k10*k20*k28+k7*k8*k10*k15*k20*k28+k7*k8*k10*k16*k20*k28+k7*k8*k10*k17*k20*k28+k7*k8*k10*k18*k20*k28+k5*k6*k7*k8*k10+k5*k7*k8*k10*k15+k6*k7*k8*k10*k15+k5*k7*k8*k10*k16+k6*k7*k8*k10*k16+k7*k8*k10*k15*k16+k5*k7*k8*k10*k17+k6*k7*k8*k10*k17+k7*k8*k10*k15*k17+k7*k8*k10*k16*k17+k5*k7*k8*k10*k18+k6*k7*k8*k10*k18+k7*k8*k10*k15*k18+k7*k8*k10*k16*k18+k7*k8*k10*k17*k18+k5*k7*k8*k10*k20+k6*k7*k8*k10*k20+k7*k8*k10*k15*k20+k7*k8*k10*k16*k20+k7*k8*k10*k17*k20+k7*k8*k10*k18*k20+k5*k7*k8*k10*k28+k6*k7*k8*k10*k28+k7*k8*k10*k15*k28+k7*k8*k10*k16*k28+k7*k8*k10*k17*k28+k7*k8*k10*k18*k28+k7*k8*k10*k20*k28+k5*k7*k8*k10+k6*k7*k8*k10+k7*k8*k10*k15+k7*k8*k10*k16+k7*k8*k10*k17+k7*k8*k10*k18+k7*k8*k10*k20+k7*k8*k10*k28)*x68+k5*k6*k7*k10*k15*k16*k17*k18*k20*k28+k5*k6*k7*k10*k15*k16*k17*k18*k20+k5*k6*k7*k10*k15*k16*k17*k18*k28+k5*k6*k7*k10*k15*k16*k17*k20*k28+k5*k6*k7*k10*k15*k16*k18*k20*k28+k5*k6*k7*k10*k15*k17*k18*k20*k28+k5*k6*k7*k10*k16*k17*k18*k20*k28+k5*k7*k10*k15*k16*k17*k18*k20*k28+k6*k7*k10*k15*k16*k17*k18*k20*k28+k5*k6*k7*k10*k15*k16*k17*k18+k5*k6*k7*k10*k15*k16*k17*k20+k5*k6*k7*k10*k15*k16*k18*k20+k5*k6*k7*k10*k15*k17*k18*k20+k5*k6*k7*k10*k16*k17*k18*k20+k5*k7*k10*k15*k16*k17*k18*k20+k6*k7*k10*k15*k16*k17*k18*k20+k5*k6*k7*k10*k15*k16*k17*k28+k5*k6*k7*k10*k15*k16*k18*k28+k5*k6*k7*k10*k15*k17*k18*k28+k5*k6*k7*k10*k16*k17*k18*k28+k5*k7*k10*k15*k16*k17*k18*k28+k6*k7*k10*k15*k16*k17*k18*k28+k5*k6*k7*k10*k15*k16*k20*k28+k5*k6*k7*k10*k15*k17*k20*k28+k5*k6*k7*k10*k16*k17*k20*k28+k5*k7*k10*k15*k16*k17*k20*k28+k6*k7*k10*k15*k16*k17*k20*k28+k5*k6*k7*k10*k15*k18*k20*k28+k5*k6*k7*k10*k16*k18*k20*k28+k5*k7*k10*k15*k16*k18*k20*k28+k6*k7*k10*k15*k16*k18*k20*k28+k5*k6*k7*k10*k17*k18*k20*k28+k5*k7*k10*k15*k17*k18*k20*k28+k6*k7*k10*k15*k17*k18*k20*k28+k5*k7*k10*k16*k17*k18*k20*k28+k6*k7*k10*k16*k17*k18*k20*k28+k7*k10*k15*k16*k17*k18*k20*k28+k5*k6*k7*k10*k15*k16*k17+k5*k6*k7*k10*k15*k16*k18+k5*k6*k7*k10*k15*k17*k18+k5*k6*k7*k10*k16*k17*k18+k5*k7*k10*k15*k16*k17*k18+k6*k7*k10*k15*k16*k17*k18+k5*k6*k7*k10*k15*k16*k20+k5*k6*k7*k10*k15*k17*k20+k5*k6*k7*k10*k16*k17*k20+k5*k7*k10*k15*k16*k17*k20+k6*k7*k10*k15*k16*k17*k20+k5*k6*k7*k10*k15*k18*k20+k5*k6*k7*k10*k16*k18*k20+k5*k7*k10*k15*k16*k18*k20+k6*k7*k10*k15*k16*k18*k20+k5*k6*k7*k10*k17*k18*k20+k5*k7*k10*k15*k17*k18*k20+k6*k7*k10*k15*k17*k18*k20+k5*k7*k10*k16*k17*k18*k20+k6*k7*k10*k16*k17*k18*k20+k7*k10*k15*k16*k17*k18*k20+k5*k6*k7*k10*k15*k16*k28+k5*k6*k7*k10*k15*k17*k28+k5*k6*k7*k10*k16*k17*k28+k5*k7*k10*k15*k16*k17*k28+k6*k7*k10*k15*k16*k17*k28+k5*k6*k7*k10*k15*k18*k28+k5*k6*k7*k10*k16*k18*k28+k5*k7*k10*k15*k16*k18*k28+k6*k7*k10*k15*k16*k18*k28+k5*k6*k7*k10*k17*k18*k28+k5*k7*k10*k15*k17*k18*k28+k6*k7*k10*k15*k17*k18*k28+k5*k7*k10*k16*k17*k18*k28+k6*k7*k10*k16*k17*k18*k28+k7*k10*k15*k16*k17*k18*k28+k5*k6*k7*k10*k15*k20*k28+k5*k6*k7*k10*k16*k20*k28+k5*k7*k10*k15*k16*k20*k28+k6*k7*k10*k15*k16*k20*k28+k5*k6*k7*k10*k17*k20*k28+k5*k7*k10*k15*k17*k20*k28+k6*k7*k10*k15*k17*k20*k28+k5*k7*k10*k16*k17*k20*k28+k6*k7*k10*k16*k17*k20*k28+k7*k10*k15*k16*k17*k20*k28+k5*k6*k7*k10*k18*k20*k28+k5*k7*k10*k15*k18*k20*k28+k6*k7*k10*k15*k18*k20*k28+k5*k7*k10*k16*k18*k20*k28+k6*k7*k10*k16*k18*k20*k28+k7*k10*k15*k16*k18*k20*k28+k5*k7*k10*k17*k18*k20*k28+k6*k7*k10*k17*k18*k20*k28+k7*k10*k15*k17*k18*k20*k28+k7*k10*k16*k17*k18*k20*k28+k5*k6*k7*k10*k15*k16+k5*k6*k7*k10*k15*k17+k5*k6*k7*k10*k16*k17+k5*k7*k10*k15*k16*k17+k6*k7*k10*k15*k16*k17+k5*k6*k7*k10*k15*k18+k5*k6*k7*k10*k16*k18+k5*k7*k10*k15*k16*k18+k6*k7*k10*k15*k16*k18+k5*k6*k7*k10*k17*k18+k5*k7*k10*k15*k17*k18+k6*k7*k10*k15*k17*k18+k5*k7*k10*k16*k17*k18+k6*k7*k10*k16*k17*k18+k7*k10*k15*k16*k17*k18+k5*k6*k7*k10*k15*k20+k5*k6*k7*k10*k16*k20+k5*k7*k10*k15*k16*k20+k6*k7*k10*k15*k16*k20+k5*k6*k7*k10*k17*k20+k5*k7*k10*k15*k17*k20+k6*k7*k10*k15*k17*k20+k5*k7*k10*k16*k17*k20+k6*k7*k10*k16*k17*k20+k7*k10*k15*k16*k17*k20+k5*k6*k7*k10*k18*k20+k5*k7*k10*k15*k18*k20+k6*k7*k10*k15*k18*k20+k5*k7*k10*k16*k18*k20+k6*k7*k10*k16*k18*k20+k7*k10*k15*k16*k18*k20+k5*k7*k10*k17*k18*k20+k6*k7*k10*k17*k18*k20+k7*k10*k15*k17*k18*k20+k7*k10*k16*k17*k18*k20+k5*k6*k7*k10*k15*k28+k5*k6*k7*k10*k16*k28+k5*k7*k10*k15*k16*k28+k6*k7*k10*k15*k16*k28+k5*k6*k7*k10*k17*k28+k5*k7*k10*k15*k17*k28+k6*k7*k10*k15*k17*k28+k5*k7*k10*k16*k17*k28+k6*k7*k10*k16*k17*k28+k7*k10*k15*k16*k17*k28+k5*k6*k7*k10*k18*k28+k5*k7*k10*k15*k18*k28+k6*k7*k10*k15*k18*k28+k5*k7*k10*k16*k18*k28+k6*k7*k10*k16*k18*k28+k7*k10*k15*k16*k18*k28+k5*k7*k10*k17*k18*k28+k6*k7*k10*k17*k18*k28+k7*k10*k15*k17*k18*k28+k7*k10*k16*k17*k18*k28+k5*k6*k7*k10*k20*k28+k5*k7*k10*k15*k20*k28+k6*k7*k10*k15*k20*k28+k5*k7*k10*k16*k20*k28+k6*k7*k10*k16*k20*k28+k7*k10*k15*k16*k20*k28+k5*k7*k10*k17*k20*k28+k6*k7*k10*k17*k20*k28+k7*k10*k15*k17*k20*k28+k7*k10*k16*k17*k20*k28+k5*k7*k10*k18*k20*k28+k6*k7*k10*k18*k20*k28+k7*k10*k15*k18*k20*k28+k7*k10*k16*k18*k20*k28+k7*k10*k17*k18*k20*k28+k5*k6*k7*k10*k15+k5*k6*k7*k10*k16+k5*k7*k10*k15*k16+k6*k7*k10*k15*k16+k5*k6*k7*k10*k17+k5*k7*k10*k15*k17+k6*k7*k10*k15*k17+k5*k7*k10*k16*k17+k6*k7*k10*k16*k17+k7*k10*k15*k16*k17+k5*k6*k7*k10*k18+k5*k7*k10*k15*k18+k6*k7*k10*k15*k18+k5*k7*k10*k16*k18+k6*k7*k10*k16*k18+k7*k10*k15*k16*k18+k5*k7*k10*k17*k18+k6*k7*k10*k17*k18+k7*k10*k15*k17*k18+k7*k10*k16*k17*k18+k5*k6*k7*k10*k20+k5*k7*k10*k15*k20+k6*k7*k10*k15*k20+k5*k7*k10*k16*k20+k6*k7*k10*k16*k20+k7*k10*k15*k16*k20+k5*k7*k10*k17*k20+k6*k7*k10*k17*k20+k7*k10*k15*k17*k20+k7*k10*k16*k17*k20+k5*k7*k10*k18*k20+k6*k7*k10*k18*k20+k7*k10*k15*k18*k20+k7*k10*k16*k18*k20+k7*k10*k17*k18*k20+k5*k6*k7*k10*k28+k5*k7*k10*k15*k28+k6*k7*k10*k15*k28+k5*k7*k10*k16*k28+k6*k7*k10*k16*k28+k7*k10*k15*k16*k28+k5*k7*k10*k17*k28+k6*k7*k10*k17*k28+k7*k10*k15*k17*k28+k7*k10*k16*k17*k28+k5*k7*k10*k18*k28+k6*k7*k10*k18*k28+k7*k10*k15*k18*k28+k7*k10*k16*k18*k28+k7*k10*k17*k18*k28+k5*k7*k10*k20*k28+k6*k7*k10*k20*k28+k7*k10*k15*k20*k28+k7*k10*k16*k20*k28+k7*k10*k17*k20*k28+k7*k10*k18*k20*k28+k5*k6*k7*k10+k5*k7*k10*k15+k6*k7*k10*k15+k5*k7*k10*k16+k6*k7*k10*k16+k7*k10*k15*k16+k5*k7*k10*k17+k6*k7*k10*k17+k7*k10*k15*k17+k7*k10*k16*k17+k5*k7*k10*k18+k6*k7*k10*k18+k7*k10*k15*k18+k7*k10*k16*k18+k7*k10*k17*k18+k5*k7*k10*k20+k6*k7*k10*k20+k7*k10*k15*k20+k7*k10*k16*k20+k7*k10*k17*k20+k7*k10*k18*k20+k5*k7*k10*k28+k6*k7*k10*k28+k7*k10*k15*k28+k7*k10*k16*k28+k7*k10*k17*k28+k7*k10*k18*k28+k7*k10*k20*k28+k5*k7*k10+k6*k7*k10+k7*k10*k15+k7*k10*k16+k7*k10*k17+k7*k10*k18+k7*k10*k20+k7*k10*k28",
+      "possibleInputVariables": ["k28","k10","k7","k8","x68","k5","k20","k17","k18","k6","k16","k15"]
+      },
+    "x19": {
+      "polynomialFunction": "k2*k3*k6*k8*k9*k15*k16*k18+k2*k3*k6*k8*k9*k15*k16+k2*k3*k6*k8*k9*k15*k18+k2*k3*k6*k8*k9*k16*k18+k2*k3*k8*k9*k15*k16*k18+k2*k6*k8*k9*k15*k16*k18+k3*k6*k8*k9*k15*k16*k18+k2*k3*k6*k8*k9*k15+k2*k3*k6*k8*k9*k16+k2*k3*k8*k9*k15*k16+k2*k6*k8*k9*k15*k16+k3*k6*k8*k9*k15*k16+k2*k3*k6*k8*k9*k18+k2*k3*k8*k9*k15*k18+k2*k6*k8*k9*k15*k18+k3*k6*k8*k9*k15*k18+k2*k3*k8*k9*k16*k18+k2*k6*k8*k9*k16*k18+k3*k6*k8*k9*k16*k18+k2*k8*k9*k15*k16*k18+k3*k8*k9*k15*k16*k18+k6*k8*k9*k15*k16*k18+k2*k3*k6*k8*k9+k2*k3*k8*k9*k15+k2*k6*k8*k9*k15+k3*k6*k8*k9*k15+k2*k3*k8*k9*k16+k2*k6*k8*k9*k16+k3*k6*k8*k9*k16+k2*k8*k9*k15*k16+k3*k8*k9*k15*k16+k6*k8*k9*k15*k16+k2*k3*k8*k9*k18+k2*k6*k8*k9*k18+k3*k6*k8*k9*k18+k2*k8*k9*k15*k18+k3*k8*k9*k15*k18+k6*k8*k9*k15*k18+k2*k8*k9*k16*k18+k3*k8*k9*k16*k18+k6*k8*k9*k16*k18+k8*k9*k15*k16*k18+k2*k3*k8*k9+k2*k6*k8*k9+k3*k6*k8*k9+k2*k8*k9*k15+k3*k8*k9*k15+k6*k8*k9*k15+k2*k8*k9*k16+k3*k8*k9*k16+k6*k8*k9*k16+k8*k9*k15*k16+k2*k8*k9*k18+k3*k8*k9*k18+k6*k8*k9*k18+k8*k9*k15*k18+k8*k9*k16*k18+k2*k8*k9+k3*k8*k9+k6*k8*k9+k8*k9*k15+k8*k9*k16+k8*k9*k18",
+      "possibleInputVariables": ["k9","k8","k2","k3","k18","k6","k16","k15"]
+      },
+    "x20": {
+      "polynomialFunction": "k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k19*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k15*k16*k18*k19*k20*k28+k2*k3*k5*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k3*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k5*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k3*k5*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k19+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k20+k2*k3*k5*k6*k8*k10*k12*k15*k16*k19*k20+k2*k3*k5*k6*k8*k10*k12*k15*k18*k19*k20+k2*k3*k5*k6*k8*k10*k12*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k15*k16*k18*k19*k20+k2*k3*k5*k8*k10*k12*k15*k16*k18*k19*k20+k2*k3*k6*k8*k10*k12*k15*k16*k18*k19*k20+k2*k5*k6*k8*k10*k12*k15*k16*k18*k19*k20+k3*k5*k6*k8*k10*k12*k15*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k19*k28+k2*k3*k5*k6*k8*k10*k12*k15*k18*k19*k28+k2*k3*k5*k6*k8*k10*k12*k16*k18*k19*k28+k2*k3*k5*k6*k8*k10*k15*k16*k18*k19*k28+k2*k3*k5*k8*k10*k12*k15*k16*k18*k19*k28+k2*k3*k6*k8*k10*k12*k15*k16*k18*k19*k28+k2*k5*k6*k8*k10*k12*k15*k16*k18*k19*k28+k3*k5*k6*k8*k10*k12*k15*k16*k18*k19*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k18*k20*k28+k2*k3*k5*k6*k8*k10*k12*k16*k18*k20*k28+k2*k3*k5*k6*k8*k10*k15*k16*k18*k20*k28+k2*k3*k5*k8*k10*k12*k15*k16*k18*k20*k28+k2*k3*k6*k8*k10*k12*k15*k16*k18*k20*k28+k2*k5*k6*k8*k10*k12*k15*k16*k18*k20*k28+k3*k5*k6*k8*k10*k12*k15*k16*k18*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k16*k19*k20*k28+k2*k3*k5*k6*k8*k10*k15*k16*k19*k20*k28+k2*k3*k5*k8*k10*k12*k15*k16*k19*k20*k28+k2*k3*k6*k8*k10*k12*k15*k16*k19*k20*k28+k2*k5*k6*k8*k10*k12*k15*k16*k19*k20*k28+k3*k5*k6*k8*k10*k12*k15*k16*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k15*k18*k19*k20*k28+k2*k3*k5*k8*k10*k12*k15*k18*k19*k20*k28+k2*k3*k6*k8*k10*k12*k15*k18*k19*k20*k28+k2*k5*k6*k8*k10*k12*k15*k18*k19*k20*k28+k3*k5*k6*k8*k10*k12*k15*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k16*k18*k19*k20*k28+k2*k3*k5*k8*k10*k12*k16*k18*k19*k20*k28+k2*k3*k6*k8*k10*k12*k16*k18*k19*k20*k28+k2*k5*k6*k8*k10*k12*k16*k18*k19*k20*k28+k3*k5*k6*k8*k10*k12*k16*k18*k19*k20*k28+k2*k3*k5*k8*k10*k15*k16*k18*k19*k20*k28+k2*k3*k6*k8*k10*k15*k16*k18*k19*k20*k28+k2*k5*k6*k8*k10*k15*k16*k18*k19*k20*k28+k3*k5*k6*k8*k10*k15*k16*k18*k19*k20*k28+k2*k3*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k5*k8*k10*k12*k15*k16*k18*k19*k20*k28+k3*k5*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k3*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k5*k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16*k18+k2*k3*k5*k6*k8*k10*k12*k15*k16*k19+k2*k3*k5*k6*k8*k10*k12*k15*k18*k19+k2*k3*k5*k6*k8*k10*k12*k16*k18*k19+k2*k3*k5*k6*k8*k10*k15*k16*k18*k19+k2*k3*k5*k8*k10*k12*k15*k16*k18*k19+k2*k3*k6*k8*k10*k12*k15*k16*k18*k19+k2*k5*k6*k8*k10*k12*k15*k16*k18*k19+k3*k5*k6*k8*k10*k12*k15*k16*k18*k19+k2*k3*k5*k6*k8*k10*k12*k15*k16*k20+k2*k3*k5*k6*k8*k10*k12*k15*k18*k20+k2*k3*k5*k6*k8*k10*k12*k16*k18*k20+k2*k3*k5*k6*k8*k10*k15*k16*k18*k20+k2*k3*k5*k8*k10*k12*k15*k16*k18*k20+k2*k3*k6*k8*k10*k12*k15*k16*k18*k20+k2*k5*k6*k8*k10*k12*k15*k16*k18*k20+k3*k5*k6*k8*k10*k12*k15*k16*k18*k20+k2*k3*k5*k6*k8*k10*k12*k15*k19*k20+k2*k3*k5*k6*k8*k10*k12*k16*k19*k20+k2*k3*k5*k6*k8*k10*k15*k16*k19*k20+k2*k3*k5*k8*k10*k12*k15*k16*k19*k20+k2*k3*k6*k8*k10*k12*k15*k16*k19*k20+k2*k5*k6*k8*k10*k12*k15*k16*k19*k20+k3*k5*k6*k8*k10*k12*k15*k16*k19*k20+k2*k3*k5*k6*k8*k10*k12*k18*k19*k20+k2*k3*k5*k6*k8*k10*k15*k18*k19*k20+k2*k3*k5*k8*k10*k12*k15*k18*k19*k20+k2*k3*k6*k8*k10*k12*k15*k18*k19*k20+k2*k5*k6*k8*k10*k12*k15*k18*k19*k20+k3*k5*k6*k8*k10*k12*k15*k18*k19*k20+k2*k3*k5*k6*k8*k10*k16*k18*k19*k20+k2*k3*k5*k8*k10*k12*k16*k18*k19*k20+k2*k3*k6*k8*k10*k12*k16*k18*k19*k20+k2*k5*k6*k8*k10*k12*k16*k18*k19*k20+k3*k5*k6*k8*k10*k12*k16*k18*k19*k20+k2*k3*k5*k8*k10*k15*k16*k18*k19*k20+k2*k3*k6*k8*k10*k15*k16*k18*k19*k20+k2*k5*k6*k8*k10*k15*k16*k18*k19*k20+k3*k5*k6*k8*k10*k15*k16*k18*k19*k20+k2*k3*k8*k10*k12*k15*k16*k18*k19*k20+k2*k5*k8*k10*k12*k15*k16*k18*k19*k20+k3*k5*k8*k10*k12*k15*k16*k18*k19*k20+k2*k6*k8*k10*k12*k15*k16*k18*k19*k20+k3*k6*k8*k10*k12*k15*k16*k18*k19*k20+k5*k6*k8*k10*k12*k15*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k12*k15*k16*k28+k2*k3*k5*k6*k8*k10*k12*k15*k18*k28+k2*k3*k5*k6*k8*k10*k12*k16*k18*k28+k2*k3*k5*k6*k8*k10*k15*k16*k18*k28+k2*k3*k5*k8*k10*k12*k15*k16*k18*k28+k2*k3*k6*k8*k10*k12*k15*k16*k18*k28+k2*k5*k6*k8*k10*k12*k15*k16*k18*k28+k3*k5*k6*k8*k10*k12*k15*k16*k18*k28+k2*k3*k5*k6*k8*k10*k12*k15*k19*k28+k2*k3*k5*k6*k8*k10*k12*k16*k19*k28+k2*k3*k5*k6*k8*k10*k15*k16*k19*k28+k2*k3*k5*k8*k10*k12*k15*k16*k19*k28+k2*k3*k6*k8*k10*k12*k15*k16*k19*k28+k2*k5*k6*k8*k10*k12*k15*k16*k19*k28+k3*k5*k6*k8*k10*k12*k15*k16*k19*k28+k2*k3*k5*k6*k8*k10*k12*k18*k19*k28+k2*k3*k5*k6*k8*k10*k15*k18*k19*k28+k2*k3*k5*k8*k10*k12*k15*k18*k19*k28+k2*k3*k6*k8*k10*k12*k15*k18*k19*k28+k2*k5*k6*k8*k10*k12*k15*k18*k19*k28+k3*k5*k6*k8*k10*k12*k15*k18*k19*k28+k2*k3*k5*k6*k8*k10*k16*k18*k19*k28+k2*k3*k5*k8*k10*k12*k16*k18*k19*k28+k2*k3*k6*k8*k10*k12*k16*k18*k19*k28+k2*k5*k6*k8*k10*k12*k16*k18*k19*k28+k3*k5*k6*k8*k10*k12*k16*k18*k19*k28+k2*k3*k5*k8*k10*k15*k16*k18*k19*k28+k2*k3*k6*k8*k10*k15*k16*k18*k19*k28+k2*k5*k6*k8*k10*k15*k16*k18*k19*k28+k3*k5*k6*k8*k10*k15*k16*k18*k19*k28+k2*k3*k8*k10*k12*k15*k16*k18*k19*k28+k2*k5*k8*k10*k12*k15*k16*k18*k19*k28+k3*k5*k8*k10*k12*k15*k16*k18*k19*k28+k2*k6*k8*k10*k12*k15*k16*k18*k19*k28+k3*k6*k8*k10*k12*k15*k16*k18*k19*k28+k5*k6*k8*k10*k12*k15*k16*k18*k19*k28+k2*k3*k5*k6*k8*k10*k12*k15*k20*k28+k2*k3*k5*k6*k8*k10*k12*k16*k20*k28+k2*k3*k5*k6*k8*k10*k15*k16*k20*k28+k2*k3*k5*k8*k10*k12*k15*k16*k20*k28+k2*k3*k6*k8*k10*k12*k15*k16*k20*k28+k2*k5*k6*k8*k10*k12*k15*k16*k20*k28+k3*k5*k6*k8*k10*k12*k15*k16*k20*k28+k2*k3*k5*k6*k8*k10*k12*k18*k20*k28+k2*k3*k5*k6*k8*k10*k15*k18*k20*k28+k2*k3*k5*k8*k10*k12*k15*k18*k20*k28+k2*k3*k6*k8*k10*k12*k15*k18*k20*k28+k2*k5*k6*k8*k10*k12*k15*k18*k20*k28+k3*k5*k6*k8*k10*k12*k15*k18*k20*k28+k2*k3*k5*k6*k8*k10*k16*k18*k20*k28+k2*k3*k5*k8*k10*k12*k16*k18*k20*k28+k2*k3*k6*k8*k10*k12*k16*k18*k20*k28+k2*k5*k6*k8*k10*k12*k16*k18*k20*k28+k3*k5*k6*k8*k10*k12*k16*k18*k20*k28+k2*k3*k5*k8*k10*k15*k16*k18*k20*k28+k2*k3*k6*k8*k10*k15*k16*k18*k20*k28+k2*k5*k6*k8*k10*k15*k16*k18*k20*k28+k3*k5*k6*k8*k10*k15*k16*k18*k20*k28+k2*k3*k8*k10*k12*k15*k16*k18*k20*k28+k2*k5*k8*k10*k12*k15*k16*k18*k20*k28+k3*k5*k8*k10*k12*k15*k16*k18*k20*k28+k2*k6*k8*k10*k12*k15*k16*k18*k20*k28+k3*k6*k8*k10*k12*k15*k16*k18*k20*k28+k5*k6*k8*k10*k12*k15*k16*k18*k20*k28+k2*k3*k5*k6*k8*k10*k12*k19*k20*k28+k2*k3*k5*k6*k8*k10*k15*k19*k20*k28+k2*k3*k5*k8*k10*k12*k15*k19*k20*k28+k2*k3*k6*k8*k10*k12*k15*k19*k20*k28+k2*k5*k6*k8*k10*k12*k15*k19*k20*k28+k3*k5*k6*k8*k10*k12*k15*k19*k20*k28+k2*k3*k5*k6*k8*k10*k16*k19*k20*k28+k2*k3*k5*k8*k10*k12*k16*k19*k20*k28+k2*k3*k6*k8*k10*k12*k16*k19*k20*k28+k2*k5*k6*k8*k10*k12*k16*k19*k20*k28+k3*k5*k6*k8*k10*k12*k16*k19*k20*k28+k2*k3*k5*k8*k10*k15*k16*k19*k20*k28+k2*k3*k6*k8*k10*k15*k16*k19*k20*k28+k2*k5*k6*k8*k10*k15*k16*k19*k20*k28+k3*k5*k6*k8*k10*k15*k16*k19*k20*k28+k2*k3*k8*k10*k12*k15*k16*k19*k20*k28+k2*k5*k8*k10*k12*k15*k16*k19*k20*k28+k3*k5*k8*k10*k12*k15*k16*k19*k20*k28+k2*k6*k8*k10*k12*k15*k16*k19*k20*k28+k3*k6*k8*k10*k12*k15*k16*k19*k20*k28+k5*k6*k8*k10*k12*k15*k16*k19*k20*k28+k2*k3*k5*k6*k8*k10*k18*k19*k20*k28+k2*k3*k5*k8*k10*k12*k18*k19*k20*k28+k2*k3*k6*k8*k10*k12*k18*k19*k20*k28+k2*k5*k6*k8*k10*k12*k18*k19*k20*k28+k3*k5*k6*k8*k10*k12*k18*k19*k20*k28+k2*k3*k5*k8*k10*k15*k18*k19*k20*k28+k2*k3*k6*k8*k10*k15*k18*k19*k20*k28+k2*k5*k6*k8*k10*k15*k18*k19*k20*k28+k3*k5*k6*k8*k10*k15*k18*k19*k20*k28+k2*k3*k8*k10*k12*k15*k18*k19*k20*k28+k2*k5*k8*k10*k12*k15*k18*k19*k20*k28+k3*k5*k8*k10*k12*k15*k18*k19*k20*k28+k2*k6*k8*k10*k12*k15*k18*k19*k20*k28+k3*k6*k8*k10*k12*k15*k18*k19*k20*k28+k5*k6*k8*k10*k12*k15*k18*k19*k20*k28+k2*k3*k5*k8*k10*k16*k18*k19*k20*k28+k2*k3*k6*k8*k10*k16*k18*k19*k20*k28+k2*k5*k6*k8*k10*k16*k18*k19*k20*k28+k3*k5*k6*k8*k10*k16*k18*k19*k20*k28+k2*k3*k8*k10*k12*k16*k18*k19*k20*k28+k2*k5*k8*k10*k12*k16*k18*k19*k20*k28+k3*k5*k8*k10*k12*k16*k18*k19*k20*k28+k2*k6*k8*k10*k12*k16*k18*k19*k20*k28+k3*k6*k8*k10*k12*k16*k18*k19*k20*k28+k5*k6*k8*k10*k12*k16*k18*k19*k20*k28+k2*k3*k8*k10*k15*k16*k18*k19*k20*k28+k2*k5*k8*k10*k15*k16*k18*k19*k20*k28+k3*k5*k8*k10*k15*k16*k18*k19*k20*k28+k2*k6*k8*k10*k15*k16*k18*k19*k20*k28+k3*k6*k8*k10*k15*k16*k18*k19*k20*k28+k5*k6*k8*k10*k15*k16*k18*k19*k20*k28+k2*k8*k10*k12*k15*k16*k18*k19*k20*k28+k3*k8*k10*k12*k15*k16*k18*k19*k20*k28+k5*k8*k10*k12*k15*k16*k18*k19*k20*k28+k6*k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15*k16+k2*k3*k5*k6*k8*k10*k12*k15*k18+k2*k3*k5*k6*k8*k10*k12*k16*k18+k2*k3*k5*k6*k8*k10*k15*k16*k18+k2*k3*k5*k8*k10*k12*k15*k16*k18+k2*k3*k6*k8*k10*k12*k15*k16*k18+k2*k5*k6*k8*k10*k12*k15*k16*k18+k3*k5*k6*k8*k10*k12*k15*k16*k18+k2*k3*k5*k6*k8*k10*k12*k15*k19+k2*k3*k5*k6*k8*k10*k12*k16*k19+k2*k3*k5*k6*k8*k10*k15*k16*k19+k2*k3*k5*k8*k10*k12*k15*k16*k19+k2*k3*k6*k8*k10*k12*k15*k16*k19+k2*k5*k6*k8*k10*k12*k15*k16*k19+k3*k5*k6*k8*k10*k12*k15*k16*k19+k2*k3*k5*k6*k8*k10*k12*k18*k19+k2*k3*k5*k6*k8*k10*k15*k18*k19+k2*k3*k5*k8*k10*k12*k15*k18*k19+k2*k3*k6*k8*k10*k12*k15*k18*k19+k2*k5*k6*k8*k10*k12*k15*k18*k19+k3*k5*k6*k8*k10*k12*k15*k18*k19+k2*k3*k5*k6*k8*k10*k16*k18*k19+k2*k3*k5*k8*k10*k12*k16*k18*k19+k2*k3*k6*k8*k10*k12*k16*k18*k19+k2*k5*k6*k8*k10*k12*k16*k18*k19+k3*k5*k6*k8*k10*k12*k16*k18*k19+k2*k3*k5*k8*k10*k15*k16*k18*k19+k2*k3*k6*k8*k10*k15*k16*k18*k19+k2*k5*k6*k8*k10*k15*k16*k18*k19+k3*k5*k6*k8*k10*k15*k16*k18*k19+k2*k3*k8*k10*k12*k15*k16*k18*k19+k2*k5*k8*k10*k12*k15*k16*k18*k19+k3*k5*k8*k10*k12*k15*k16*k18*k19+k2*k6*k8*k10*k12*k15*k16*k18*k19+k3*k6*k8*k10*k12*k15*k16*k18*k19+k5*k6*k8*k10*k12*k15*k16*k18*k19+k2*k3*k5*k6*k8*k10*k12*k15*k20+k2*k3*k5*k6*k8*k10*k12*k16*k20+k2*k3*k5*k6*k8*k10*k15*k16*k20+k2*k3*k5*k8*k10*k12*k15*k16*k20+k2*k3*k6*k8*k10*k12*k15*k16*k20+k2*k5*k6*k8*k10*k12*k15*k16*k20+k3*k5*k6*k8*k10*k12*k15*k16*k20+k2*k3*k5*k6*k8*k10*k12*k18*k20+k2*k3*k5*k6*k8*k10*k15*k18*k20+k2*k3*k5*k8*k10*k12*k15*k18*k20+k2*k3*k6*k8*k10*k12*k15*k18*k20+k2*k5*k6*k8*k10*k12*k15*k18*k20+k3*k5*k6*k8*k10*k12*k15*k18*k20+k2*k3*k5*k6*k8*k10*k16*k18*k20+k2*k3*k5*k8*k10*k12*k16*k18*k20+k2*k3*k6*k8*k10*k12*k16*k18*k20+k2*k5*k6*k8*k10*k12*k16*k18*k20+k3*k5*k6*k8*k10*k12*k16*k18*k20+k2*k3*k5*k8*k10*k15*k16*k18*k20+k2*k3*k6*k8*k10*k15*k16*k18*k20+k2*k5*k6*k8*k10*k15*k16*k18*k20+k3*k5*k6*k8*k10*k15*k16*k18*k20+k2*k3*k8*k10*k12*k15*k16*k18*k20+k2*k5*k8*k10*k12*k15*k16*k18*k20+k3*k5*k8*k10*k12*k15*k16*k18*k20+k2*k6*k8*k10*k12*k15*k16*k18*k20+k3*k6*k8*k10*k12*k15*k16*k18*k20+k5*k6*k8*k10*k12*k15*k16*k18*k20+k2*k3*k5*k6*k8*k10*k12*k19*k20+k2*k3*k5*k6*k8*k10*k15*k19*k20+k2*k3*k5*k8*k10*k12*k15*k19*k20+k2*k3*k6*k8*k10*k12*k15*k19*k20+k2*k5*k6*k8*k10*k12*k15*k19*k20+k3*k5*k6*k8*k10*k12*k15*k19*k20+k2*k3*k5*k6*k8*k10*k16*k19*k20+k2*k3*k5*k8*k10*k12*k16*k19*k20+k2*k3*k6*k8*k10*k12*k16*k19*k20+k2*k5*k6*k8*k10*k12*k16*k19*k20+k3*k5*k6*k8*k10*k12*k16*k19*k20+k2*k3*k5*k8*k10*k15*k16*k19*k20+k2*k3*k6*k8*k10*k15*k16*k19*k20+k2*k5*k6*k8*k10*k15*k16*k19*k20+k3*k5*k6*k8*k10*k15*k16*k19*k20+k2*k3*k8*k10*k12*k15*k16*k19*k20+k2*k5*k8*k10*k12*k15*k16*k19*k20+k3*k5*k8*k10*k12*k15*k16*k19*k20+k2*k6*k8*k10*k12*k15*k16*k19*k20+k3*k6*k8*k10*k12*k15*k16*k19*k20+k5*k6*k8*k10*k12*k15*k16*k19*k20+k2*k3*k5*k6*k8*k10*k18*k19*k20+k2*k3*k5*k8*k10*k12*k18*k19*k20+k2*k3*k6*k8*k10*k12*k18*k19*k20+k2*k5*k6*k8*k10*k12*k18*k19*k20+k3*k5*k6*k8*k10*k12*k18*k19*k20+k2*k3*k5*k8*k10*k15*k18*k19*k20+k2*k3*k6*k8*k10*k15*k18*k19*k20+k2*k5*k6*k8*k10*k15*k18*k19*k20+k3*k5*k6*k8*k10*k15*k18*k19*k20+k2*k3*k8*k10*k12*k15*k18*k19*k20+k2*k5*k8*k10*k12*k15*k18*k19*k20+k3*k5*k8*k10*k12*k15*k18*k19*k20+k2*k6*k8*k10*k12*k15*k18*k19*k20+k3*k6*k8*k10*k12*k15*k18*k19*k20+k5*k6*k8*k10*k12*k15*k18*k19*k20+k2*k3*k5*k8*k10*k16*k18*k19*k20+k2*k3*k6*k8*k10*k16*k18*k19*k20+k2*k5*k6*k8*k10*k16*k18*k19*k20+k3*k5*k6*k8*k10*k16*k18*k19*k20+k2*k3*k8*k10*k12*k16*k18*k19*k20+k2*k5*k8*k10*k12*k16*k18*k19*k20+k3*k5*k8*k10*k12*k16*k18*k19*k20+k2*k6*k8*k10*k12*k16*k18*k19*k20+k3*k6*k8*k10*k12*k16*k18*k19*k20+k5*k6*k8*k10*k12*k16*k18*k19*k20+k2*k3*k8*k10*k15*k16*k18*k19*k20+k2*k5*k8*k10*k15*k16*k18*k19*k20+k3*k5*k8*k10*k15*k16*k18*k19*k20+k2*k6*k8*k10*k15*k16*k18*k19*k20+k3*k6*k8*k10*k15*k16*k18*k19*k20+k5*k6*k8*k10*k15*k16*k18*k19*k20+k2*k8*k10*k12*k15*k16*k18*k19*k20+k3*k8*k10*k12*k15*k16*k18*k19*k20+k5*k8*k10*k12*k15*k16*k18*k19*k20+k6*k8*k10*k12*k15*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k12*k15*k28+k2*k3*k5*k6*k8*k10*k12*k16*k28+k2*k3*k5*k6*k8*k10*k15*k16*k28+k2*k3*k5*k8*k10*k12*k15*k16*k28+k2*k3*k6*k8*k10*k12*k15*k16*k28+k2*k5*k6*k8*k10*k12*k15*k16*k28+k3*k5*k6*k8*k10*k12*k15*k16*k28+k2*k3*k5*k6*k8*k10*k12*k18*k28+k2*k3*k5*k6*k8*k10*k15*k18*k28+k2*k3*k5*k8*k10*k12*k15*k18*k28+k2*k3*k6*k8*k10*k12*k15*k18*k28+k2*k5*k6*k8*k10*k12*k15*k18*k28+k3*k5*k6*k8*k10*k12*k15*k18*k28+k2*k3*k5*k6*k8*k10*k16*k18*k28+k2*k3*k5*k8*k10*k12*k16*k18*k28+k2*k3*k6*k8*k10*k12*k16*k18*k28+k2*k5*k6*k8*k10*k12*k16*k18*k28+k3*k5*k6*k8*k10*k12*k16*k18*k28+k2*k3*k5*k8*k10*k15*k16*k18*k28+k2*k3*k6*k8*k10*k15*k16*k18*k28+k2*k5*k6*k8*k10*k15*k16*k18*k28+k3*k5*k6*k8*k10*k15*k16*k18*k28+k2*k3*k8*k10*k12*k15*k16*k18*k28+k2*k5*k8*k10*k12*k15*k16*k18*k28+k3*k5*k8*k10*k12*k15*k16*k18*k28+k2*k6*k8*k10*k12*k15*k16*k18*k28+k3*k6*k8*k10*k12*k15*k16*k18*k28+k5*k6*k8*k10*k12*k15*k16*k18*k28+k2*k3*k5*k6*k8*k10*k12*k19*k28+k2*k3*k5*k6*k8*k10*k15*k19*k28+k2*k3*k5*k8*k10*k12*k15*k19*k28+k2*k3*k6*k8*k10*k12*k15*k19*k28+k2*k5*k6*k8*k10*k12*k15*k19*k28+k3*k5*k6*k8*k10*k12*k15*k19*k28+k2*k3*k5*k6*k8*k10*k16*k19*k28+k2*k3*k5*k8*k10*k12*k16*k19*k28+k2*k3*k6*k8*k10*k12*k16*k19*k28+k2*k5*k6*k8*k10*k12*k16*k19*k28+k3*k5*k6*k8*k10*k12*k16*k19*k28+k2*k3*k5*k8*k10*k15*k16*k19*k28+k2*k3*k6*k8*k10*k15*k16*k19*k28+k2*k5*k6*k8*k10*k15*k16*k19*k28+k3*k5*k6*k8*k10*k15*k16*k19*k28+k2*k3*k8*k10*k12*k15*k16*k19*k28+k2*k5*k8*k10*k12*k15*k16*k19*k28+k3*k5*k8*k10*k12*k15*k16*k19*k28+k2*k6*k8*k10*k12*k15*k16*k19*k28+k3*k6*k8*k10*k12*k15*k16*k19*k28+k5*k6*k8*k10*k12*k15*k16*k19*k28+k2*k3*k5*k6*k8*k10*k18*k19*k28+k2*k3*k5*k8*k10*k12*k18*k19*k28+k2*k3*k6*k8*k10*k12*k18*k19*k28+k2*k5*k6*k8*k10*k12*k18*k19*k28+k3*k5*k6*k8*k10*k12*k18*k19*k28+k2*k3*k5*k8*k10*k15*k18*k19*k28+k2*k3*k6*k8*k10*k15*k18*k19*k28+k2*k5*k6*k8*k10*k15*k18*k19*k28+k3*k5*k6*k8*k10*k15*k18*k19*k28+k2*k3*k8*k10*k12*k15*k18*k19*k28+k2*k5*k8*k10*k12*k15*k18*k19*k28+k3*k5*k8*k10*k12*k15*k18*k19*k28+k2*k6*k8*k10*k12*k15*k18*k19*k28+k3*k6*k8*k10*k12*k15*k18*k19*k28+k5*k6*k8*k10*k12*k15*k18*k19*k28+k2*k3*k5*k8*k10*k16*k18*k19*k28+k2*k3*k6*k8*k10*k16*k18*k19*k28+k2*k5*k6*k8*k10*k16*k18*k19*k28+k3*k5*k6*k8*k10*k16*k18*k19*k28+k2*k3*k8*k10*k12*k16*k18*k19*k28+k2*k5*k8*k10*k12*k16*k18*k19*k28+k3*k5*k8*k10*k12*k16*k18*k19*k28+k2*k6*k8*k10*k12*k16*k18*k19*k28+k3*k6*k8*k10*k12*k16*k18*k19*k28+k5*k6*k8*k10*k12*k16*k18*k19*k28+k2*k3*k8*k10*k15*k16*k18*k19*k28+k2*k5*k8*k10*k15*k16*k18*k19*k28+k3*k5*k8*k10*k15*k16*k18*k19*k28+k2*k6*k8*k10*k15*k16*k18*k19*k28+k3*k6*k8*k10*k15*k16*k18*k19*k28+k5*k6*k8*k10*k15*k16*k18*k19*k28+k2*k8*k10*k12*k15*k16*k18*k19*k28+k3*k8*k10*k12*k15*k16*k18*k19*k28+k5*k8*k10*k12*k15*k16*k18*k19*k28+k6*k8*k10*k12*k15*k16*k18*k19*k28+k2*k3*k5*k6*k8*k10*k12*k20*k28+k2*k3*k5*k6*k8*k10*k15*k20*k28+k2*k3*k5*k8*k10*k12*k15*k20*k28+k2*k3*k6*k8*k10*k12*k15*k20*k28+k2*k5*k6*k8*k10*k12*k15*k20*k28+k3*k5*k6*k8*k10*k12*k15*k20*k28+k2*k3*k5*k6*k8*k10*k16*k20*k28+k2*k3*k5*k8*k10*k12*k16*k20*k28+k2*k3*k6*k8*k10*k12*k16*k20*k28+k2*k5*k6*k8*k10*k12*k16*k20*k28+k3*k5*k6*k8*k10*k12*k16*k20*k28+k2*k3*k5*k8*k10*k15*k16*k20*k28+k2*k3*k6*k8*k10*k15*k16*k20*k28+k2*k5*k6*k8*k10*k15*k16*k20*k28+k3*k5*k6*k8*k10*k15*k16*k20*k28+k2*k3*k8*k10*k12*k15*k16*k20*k28+k2*k5*k8*k10*k12*k15*k16*k20*k28+k3*k5*k8*k10*k12*k15*k16*k20*k28+k2*k6*k8*k10*k12*k15*k16*k20*k28+k3*k6*k8*k10*k12*k15*k16*k20*k28+k5*k6*k8*k10*k12*k15*k16*k20*k28+k2*k3*k5*k6*k8*k10*k18*k20*k28+k2*k3*k5*k8*k10*k12*k18*k20*k28+k2*k3*k6*k8*k10*k12*k18*k20*k28+k2*k5*k6*k8*k10*k12*k18*k20*k28+k3*k5*k6*k8*k10*k12*k18*k20*k28+k2*k3*k5*k8*k10*k15*k18*k20*k28+k2*k3*k6*k8*k10*k15*k18*k20*k28+k2*k5*k6*k8*k10*k15*k18*k20*k28+k3*k5*k6*k8*k10*k15*k18*k20*k28+k2*k3*k8*k10*k12*k15*k18*k20*k28+k2*k5*k8*k10*k12*k15*k18*k20*k28+k3*k5*k8*k10*k12*k15*k18*k20*k28+k2*k6*k8*k10*k12*k15*k18*k20*k28+k3*k6*k8*k10*k12*k15*k18*k20*k28+k5*k6*k8*k10*k12*k15*k18*k20*k28+k2*k3*k5*k8*k10*k16*k18*k20*k28+k2*k3*k6*k8*k10*k16*k18*k20*k28+k2*k5*k6*k8*k10*k16*k18*k20*k28+k3*k5*k6*k8*k10*k16*k18*k20*k28+k2*k3*k8*k10*k12*k16*k18*k20*k28+k2*k5*k8*k10*k12*k16*k18*k20*k28+k3*k5*k8*k10*k12*k16*k18*k20*k28+k2*k6*k8*k10*k12*k16*k18*k20*k28+k3*k6*k8*k10*k12*k16*k18*k20*k28+k5*k6*k8*k10*k12*k16*k18*k20*k28+k2*k3*k8*k10*k15*k16*k18*k20*k28+k2*k5*k8*k10*k15*k16*k18*k20*k28+k3*k5*k8*k10*k15*k16*k18*k20*k28+k2*k6*k8*k10*k15*k16*k18*k20*k28+k3*k6*k8*k10*k15*k16*k18*k20*k28+k5*k6*k8*k10*k15*k16*k18*k20*k28+k2*k8*k10*k12*k15*k16*k18*k20*k28+k3*k8*k10*k12*k15*k16*k18*k20*k28+k5*k8*k10*k12*k15*k16*k18*k20*k28+k6*k8*k10*k12*k15*k16*k18*k20*k28+k2*k3*k5*k6*k8*k10*k19*k20*k28+k2*k3*k5*k8*k10*k12*k19*k20*k28+k2*k3*k6*k8*k10*k12*k19*k20*k28+k2*k5*k6*k8*k10*k12*k19*k20*k28+k3*k5*k6*k8*k10*k12*k19*k20*k28+k2*k3*k5*k8*k10*k15*k19*k20*k28+k2*k3*k6*k8*k10*k15*k19*k20*k28+k2*k5*k6*k8*k10*k15*k19*k20*k28+k3*k5*k6*k8*k10*k15*k19*k20*k28+k2*k3*k8*k10*k12*k15*k19*k20*k28+k2*k5*k8*k10*k12*k15*k19*k20*k28+k3*k5*k8*k10*k12*k15*k19*k20*k28+k2*k6*k8*k10*k12*k15*k19*k20*k28+k3*k6*k8*k10*k12*k15*k19*k20*k28+k5*k6*k8*k10*k12*k15*k19*k20*k28+k2*k3*k5*k8*k10*k16*k19*k20*k28+k2*k3*k6*k8*k10*k16*k19*k20*k28+k2*k5*k6*k8*k10*k16*k19*k20*k28+k3*k5*k6*k8*k10*k16*k19*k20*k28+k2*k3*k8*k10*k12*k16*k19*k20*k28+k2*k5*k8*k10*k12*k16*k19*k20*k28+k3*k5*k8*k10*k12*k16*k19*k20*k28+k2*k6*k8*k10*k12*k16*k19*k20*k28+k3*k6*k8*k10*k12*k16*k19*k20*k28+k5*k6*k8*k10*k12*k16*k19*k20*k28+k2*k3*k8*k10*k15*k16*k19*k20*k28+k2*k5*k8*k10*k15*k16*k19*k20*k28+k3*k5*k8*k10*k15*k16*k19*k20*k28+k2*k6*k8*k10*k15*k16*k19*k20*k28+k3*k6*k8*k10*k15*k16*k19*k20*k28+k5*k6*k8*k10*k15*k16*k19*k20*k28+k2*k8*k10*k12*k15*k16*k19*k20*k28+k3*k8*k10*k12*k15*k16*k19*k20*k28+k5*k8*k10*k12*k15*k16*k19*k20*k28+k6*k8*k10*k12*k15*k16*k19*k20*k28+k2*k3*k5*k8*k10*k18*k19*k20*k28+k2*k3*k6*k8*k10*k18*k19*k20*k28+k2*k5*k6*k8*k10*k18*k19*k20*k28+k3*k5*k6*k8*k10*k18*k19*k20*k28+k2*k3*k8*k10*k12*k18*k19*k20*k28+k2*k5*k8*k10*k12*k18*k19*k20*k28+k3*k5*k8*k10*k12*k18*k19*k20*k28+k2*k6*k8*k10*k12*k18*k19*k20*k28+k3*k6*k8*k10*k12*k18*k19*k20*k28+k5*k6*k8*k10*k12*k18*k19*k20*k28+k2*k3*k8*k10*k15*k18*k19*k20*k28+k2*k5*k8*k10*k15*k18*k19*k20*k28+k3*k5*k8*k10*k15*k18*k19*k20*k28+k2*k6*k8*k10*k15*k18*k19*k20*k28+k3*k6*k8*k10*k15*k18*k19*k20*k28+k5*k6*k8*k10*k15*k18*k19*k20*k28+k2*k8*k10*k12*k15*k18*k19*k20*k28+k3*k8*k10*k12*k15*k18*k19*k20*k28+k5*k8*k10*k12*k15*k18*k19*k20*k28+k6*k8*k10*k12*k15*k18*k19*k20*k28+k2*k3*k8*k10*k16*k18*k19*k20*k28+k2*k5*k8*k10*k16*k18*k19*k20*k28+k3*k5*k8*k10*k16*k18*k19*k20*k28+k2*k6*k8*k10*k16*k18*k19*k20*k28+k3*k6*k8*k10*k16*k18*k19*k20*k28+k5*k6*k8*k10*k16*k18*k19*k20*k28+k2*k8*k10*k12*k16*k18*k19*k20*k28+k3*k8*k10*k12*k16*k18*k19*k20*k28+k5*k8*k10*k12*k16*k18*k19*k20*k28+k6*k8*k10*k12*k16*k18*k19*k20*k28+k2*k8*k10*k15*k16*k18*k19*k20*k28+k3*k8*k10*k15*k16*k18*k19*k20*k28+k5*k8*k10*k15*k16*k18*k19*k20*k28+k6*k8*k10*k15*k16*k18*k19*k20*k28+k8*k10*k12*k15*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12*k15+k2*k3*k5*k6*k8*k10*k12*k16+k2*k3*k5*k6*k8*k10*k15*k16+k2*k3*k5*k8*k10*k12*k15*k16+k2*k3*k6*k8*k10*k12*k15*k16+k2*k5*k6*k8*k10*k12*k15*k16+k3*k5*k6*k8*k10*k12*k15*k16+k2*k3*k5*k6*k8*k10*k12*k18+k2*k3*k5*k6*k8*k10*k15*k18+k2*k3*k5*k8*k10*k12*k15*k18+k2*k3*k6*k8*k10*k12*k15*k18+k2*k5*k6*k8*k10*k12*k15*k18+k3*k5*k6*k8*k10*k12*k15*k18+k2*k3*k5*k6*k8*k10*k16*k18+k2*k3*k5*k8*k10*k12*k16*k18+k2*k3*k6*k8*k10*k12*k16*k18+k2*k5*k6*k8*k10*k12*k16*k18+k3*k5*k6*k8*k10*k12*k16*k18+k2*k3*k5*k8*k10*k15*k16*k18+k2*k3*k6*k8*k10*k15*k16*k18+k2*k5*k6*k8*k10*k15*k16*k18+k3*k5*k6*k8*k10*k15*k16*k18+k2*k3*k8*k10*k12*k15*k16*k18+k2*k5*k8*k10*k12*k15*k16*k18+k3*k5*k8*k10*k12*k15*k16*k18+k2*k6*k8*k10*k12*k15*k16*k18+k3*k6*k8*k10*k12*k15*k16*k18+k5*k6*k8*k10*k12*k15*k16*k18+k2*k3*k5*k6*k8*k10*k12*k19+k2*k3*k5*k6*k8*k10*k15*k19+k2*k3*k5*k8*k10*k12*k15*k19+k2*k3*k6*k8*k10*k12*k15*k19+k2*k5*k6*k8*k10*k12*k15*k19+k3*k5*k6*k8*k10*k12*k15*k19+k2*k3*k5*k6*k8*k10*k16*k19+k2*k3*k5*k8*k10*k12*k16*k19+k2*k3*k6*k8*k10*k12*k16*k19+k2*k5*k6*k8*k10*k12*k16*k19+k3*k5*k6*k8*k10*k12*k16*k19+k2*k3*k5*k8*k10*k15*k16*k19+k2*k3*k6*k8*k10*k15*k16*k19+k2*k5*k6*k8*k10*k15*k16*k19+k3*k5*k6*k8*k10*k15*k16*k19+k2*k3*k8*k10*k12*k15*k16*k19+k2*k5*k8*k10*k12*k15*k16*k19+k3*k5*k8*k10*k12*k15*k16*k19+k2*k6*k8*k10*k12*k15*k16*k19+k3*k6*k8*k10*k12*k15*k16*k19+k5*k6*k8*k10*k12*k15*k16*k19+k2*k3*k5*k6*k8*k10*k18*k19+k2*k3*k5*k8*k10*k12*k18*k19+k2*k3*k6*k8*k10*k12*k18*k19+k2*k5*k6*k8*k10*k12*k18*k19+k3*k5*k6*k8*k10*k12*k18*k19+k2*k3*k5*k8*k10*k15*k18*k19+k2*k3*k6*k8*k10*k15*k18*k19+k2*k5*k6*k8*k10*k15*k18*k19+k3*k5*k6*k8*k10*k15*k18*k19+k2*k3*k8*k10*k12*k15*k18*k19+k2*k5*k8*k10*k12*k15*k18*k19+k3*k5*k8*k10*k12*k15*k18*k19+k2*k6*k8*k10*k12*k15*k18*k19+k3*k6*k8*k10*k12*k15*k18*k19+k5*k6*k8*k10*k12*k15*k18*k19+k2*k3*k5*k8*k10*k16*k18*k19+k2*k3*k6*k8*k10*k16*k18*k19+k2*k5*k6*k8*k10*k16*k18*k19+k3*k5*k6*k8*k10*k16*k18*k19+k2*k3*k8*k10*k12*k16*k18*k19+k2*k5*k8*k10*k12*k16*k18*k19+k3*k5*k8*k10*k12*k16*k18*k19+k2*k6*k8*k10*k12*k16*k18*k19+k3*k6*k8*k10*k12*k16*k18*k19+k5*k6*k8*k10*k12*k16*k18*k19+k2*k3*k8*k10*k15*k16*k18*k19+k2*k5*k8*k10*k15*k16*k18*k19+k3*k5*k8*k10*k15*k16*k18*k19+k2*k6*k8*k10*k15*k16*k18*k19+k3*k6*k8*k10*k15*k16*k18*k19+k5*k6*k8*k10*k15*k16*k18*k19+k2*k8*k10*k12*k15*k16*k18*k19+k3*k8*k10*k12*k15*k16*k18*k19+k5*k8*k10*k12*k15*k16*k18*k19+k6*k8*k10*k12*k15*k16*k18*k19+k2*k3*k5*k6*k8*k10*k12*k20+k2*k3*k5*k6*k8*k10*k15*k20+k2*k3*k5*k8*k10*k12*k15*k20+k2*k3*k6*k8*k10*k12*k15*k20+k2*k5*k6*k8*k10*k12*k15*k20+k3*k5*k6*k8*k10*k12*k15*k20+k2*k3*k5*k6*k8*k10*k16*k20+k2*k3*k5*k8*k10*k12*k16*k20+k2*k3*k6*k8*k10*k12*k16*k20+k2*k5*k6*k8*k10*k12*k16*k20+k3*k5*k6*k8*k10*k12*k16*k20+k2*k3*k5*k8*k10*k15*k16*k20+k2*k3*k6*k8*k10*k15*k16*k20+k2*k5*k6*k8*k10*k15*k16*k20+k3*k5*k6*k8*k10*k15*k16*k20+k2*k3*k8*k10*k12*k15*k16*k20+k2*k5*k8*k10*k12*k15*k16*k20+k3*k5*k8*k10*k12*k15*k16*k20+k2*k6*k8*k10*k12*k15*k16*k20+k3*k6*k8*k10*k12*k15*k16*k20+k5*k6*k8*k10*k12*k15*k16*k20+k2*k3*k5*k6*k8*k10*k18*k20+k2*k3*k5*k8*k10*k12*k18*k20+k2*k3*k6*k8*k10*k12*k18*k20+k2*k5*k6*k8*k10*k12*k18*k20+k3*k5*k6*k8*k10*k12*k18*k20+k2*k3*k5*k8*k10*k15*k18*k20+k2*k3*k6*k8*k10*k15*k18*k20+k2*k5*k6*k8*k10*k15*k18*k20+k3*k5*k6*k8*k10*k15*k18*k20+k2*k3*k8*k10*k12*k15*k18*k20+k2*k5*k8*k10*k12*k15*k18*k20+k3*k5*k8*k10*k12*k15*k18*k20+k2*k6*k8*k10*k12*k15*k18*k20+k3*k6*k8*k10*k12*k15*k18*k20+k5*k6*k8*k10*k12*k15*k18*k20+k2*k3*k5*k8*k10*k16*k18*k20+k2*k3*k6*k8*k10*k16*k18*k20+k2*k5*k6*k8*k10*k16*k18*k20+k3*k5*k6*k8*k10*k16*k18*k20+k2*k3*k8*k10*k12*k16*k18*k20+k2*k5*k8*k10*k12*k16*k18*k20+k3*k5*k8*k10*k12*k16*k18*k20+k2*k6*k8*k10*k12*k16*k18*k20+k3*k6*k8*k10*k12*k16*k18*k20+k5*k6*k8*k10*k12*k16*k18*k20+k2*k3*k8*k10*k15*k16*k18*k20+k2*k5*k8*k10*k15*k16*k18*k20+k3*k5*k8*k10*k15*k16*k18*k20+k2*k6*k8*k10*k15*k16*k18*k20+k3*k6*k8*k10*k15*k16*k18*k20+k5*k6*k8*k10*k15*k16*k18*k20+k2*k8*k10*k12*k15*k16*k18*k20+k3*k8*k10*k12*k15*k16*k18*k20+k5*k8*k10*k12*k15*k16*k18*k20+k6*k8*k10*k12*k15*k16*k18*k20+k2*k3*k5*k6*k8*k10*k19*k20+k2*k3*k5*k8*k10*k12*k19*k20+k2*k3*k6*k8*k10*k12*k19*k20+k2*k5*k6*k8*k10*k12*k19*k20+k3*k5*k6*k8*k10*k12*k19*k20+k2*k3*k5*k8*k10*k15*k19*k20+k2*k3*k6*k8*k10*k15*k19*k20+k2*k5*k6*k8*k10*k15*k19*k20+k3*k5*k6*k8*k10*k15*k19*k20+k2*k3*k8*k10*k12*k15*k19*k20+k2*k5*k8*k10*k12*k15*k19*k20+k3*k5*k8*k10*k12*k15*k19*k20+k2*k6*k8*k10*k12*k15*k19*k20+k3*k6*k8*k10*k12*k15*k19*k20+k5*k6*k8*k10*k12*k15*k19*k20+k2*k3*k5*k8*k10*k16*k19*k20+k2*k3*k6*k8*k10*k16*k19*k20+k2*k5*k6*k8*k10*k16*k19*k20+k3*k5*k6*k8*k10*k16*k19*k20+k2*k3*k8*k10*k12*k16*k19*k20+k2*k5*k8*k10*k12*k16*k19*k20+k3*k5*k8*k10*k12*k16*k19*k20+k2*k6*k8*k10*k12*k16*k19*k20+k3*k6*k8*k10*k12*k16*k19*k20+k5*k6*k8*k10*k12*k16*k19*k20+k2*k3*k8*k10*k15*k16*k19*k20+k2*k5*k8*k10*k15*k16*k19*k20+k3*k5*k8*k10*k15*k16*k19*k20+k2*k6*k8*k10*k15*k16*k19*k20+k3*k6*k8*k10*k15*k16*k19*k20+k5*k6*k8*k10*k15*k16*k19*k20+k2*k8*k10*k12*k15*k16*k19*k20+k3*k8*k10*k12*k15*k16*k19*k20+k5*k8*k10*k12*k15*k16*k19*k20+k6*k8*k10*k12*k15*k16*k19*k20+k2*k3*k5*k8*k10*k18*k19*k20+k2*k3*k6*k8*k10*k18*k19*k20+k2*k5*k6*k8*k10*k18*k19*k20+k3*k5*k6*k8*k10*k18*k19*k20+k2*k3*k8*k10*k12*k18*k19*k20+k2*k5*k8*k10*k12*k18*k19*k20+k3*k5*k8*k10*k12*k18*k19*k20+k2*k6*k8*k10*k12*k18*k19*k20+k3*k6*k8*k10*k12*k18*k19*k20+k5*k6*k8*k10*k12*k18*k19*k20+k2*k3*k8*k10*k15*k18*k19*k20+k2*k5*k8*k10*k15*k18*k19*k20+k3*k5*k8*k10*k15*k18*k19*k20+k2*k6*k8*k10*k15*k18*k19*k20+k3*k6*k8*k10*k15*k18*k19*k20+k5*k6*k8*k10*k15*k18*k19*k20+k2*k8*k10*k12*k15*k18*k19*k20+k3*k8*k10*k12*k15*k18*k19*k20+k5*k8*k10*k12*k15*k18*k19*k20+k6*k8*k10*k12*k15*k18*k19*k20+k2*k3*k8*k10*k16*k18*k19*k20+k2*k5*k8*k10*k16*k18*k19*k20+k3*k5*k8*k10*k16*k18*k19*k20+k2*k6*k8*k10*k16*k18*k19*k20+k3*k6*k8*k10*k16*k18*k19*k20+k5*k6*k8*k10*k16*k18*k19*k20+k2*k8*k10*k12*k16*k18*k19*k20+k3*k8*k10*k12*k16*k18*k19*k20+k5*k8*k10*k12*k16*k18*k19*k20+k6*k8*k10*k12*k16*k18*k19*k20+k2*k8*k10*k15*k16*k18*k19*k20+k3*k8*k10*k15*k16*k18*k19*k20+k5*k8*k10*k15*k16*k18*k19*k20+k6*k8*k10*k15*k16*k18*k19*k20+k8*k10*k12*k15*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k12*k28+k2*k3*k5*k6*k8*k10*k15*k28+k2*k3*k5*k8*k10*k12*k15*k28+k2*k3*k6*k8*k10*k12*k15*k28+k2*k5*k6*k8*k10*k12*k15*k28+k3*k5*k6*k8*k10*k12*k15*k28+k2*k3*k5*k6*k8*k10*k16*k28+k2*k3*k5*k8*k10*k12*k16*k28+k2*k3*k6*k8*k10*k12*k16*k28+k2*k5*k6*k8*k10*k12*k16*k28+k3*k5*k6*k8*k10*k12*k16*k28+k2*k3*k5*k8*k10*k15*k16*k28+k2*k3*k6*k8*k10*k15*k16*k28+k2*k5*k6*k8*k10*k15*k16*k28+k3*k5*k6*k8*k10*k15*k16*k28+k2*k3*k8*k10*k12*k15*k16*k28+k2*k5*k8*k10*k12*k15*k16*k28+k3*k5*k8*k10*k12*k15*k16*k28+k2*k6*k8*k10*k12*k15*k16*k28+k3*k6*k8*k10*k12*k15*k16*k28+k5*k6*k8*k10*k12*k15*k16*k28+k2*k3*k5*k6*k8*k10*k18*k28+k2*k3*k5*k8*k10*k12*k18*k28+k2*k3*k6*k8*k10*k12*k18*k28+k2*k5*k6*k8*k10*k12*k18*k28+k3*k5*k6*k8*k10*k12*k18*k28+k2*k3*k5*k8*k10*k15*k18*k28+k2*k3*k6*k8*k10*k15*k18*k28+k2*k5*k6*k8*k10*k15*k18*k28+k3*k5*k6*k8*k10*k15*k18*k28+k2*k3*k8*k10*k12*k15*k18*k28+k2*k5*k8*k10*k12*k15*k18*k28+k3*k5*k8*k10*k12*k15*k18*k28+k2*k6*k8*k10*k12*k15*k18*k28+k3*k6*k8*k10*k12*k15*k18*k28+k5*k6*k8*k10*k12*k15*k18*k28+k2*k3*k5*k8*k10*k16*k18*k28+k2*k3*k6*k8*k10*k16*k18*k28+k2*k5*k6*k8*k10*k16*k18*k28+k3*k5*k6*k8*k10*k16*k18*k28+k2*k3*k8*k10*k12*k16*k18*k28+k2*k5*k8*k10*k12*k16*k18*k28+k3*k5*k8*k10*k12*k16*k18*k28+k2*k6*k8*k10*k12*k16*k18*k28+k3*k6*k8*k10*k12*k16*k18*k28+k5*k6*k8*k10*k12*k16*k18*k28+k2*k3*k8*k10*k15*k16*k18*k28+k2*k5*k8*k10*k15*k16*k18*k28+k3*k5*k8*k10*k15*k16*k18*k28+k2*k6*k8*k10*k15*k16*k18*k28+k3*k6*k8*k10*k15*k16*k18*k28+k5*k6*k8*k10*k15*k16*k18*k28+k2*k8*k10*k12*k15*k16*k18*k28+k3*k8*k10*k12*k15*k16*k18*k28+k5*k8*k10*k12*k15*k16*k18*k28+k6*k8*k10*k12*k15*k16*k18*k28+k2*k3*k5*k6*k8*k10*k19*k28+k2*k3*k5*k8*k10*k12*k19*k28+k2*k3*k6*k8*k10*k12*k19*k28+k2*k5*k6*k8*k10*k12*k19*k28+k3*k5*k6*k8*k10*k12*k19*k28+k2*k3*k5*k8*k10*k15*k19*k28+k2*k3*k6*k8*k10*k15*k19*k28+k2*k5*k6*k8*k10*k15*k19*k28+k3*k5*k6*k8*k10*k15*k19*k28+k2*k3*k8*k10*k12*k15*k19*k28+k2*k5*k8*k10*k12*k15*k19*k28+k3*k5*k8*k10*k12*k15*k19*k28+k2*k6*k8*k10*k12*k15*k19*k28+k3*k6*k8*k10*k12*k15*k19*k28+k5*k6*k8*k10*k12*k15*k19*k28+k2*k3*k5*k8*k10*k16*k19*k28+k2*k3*k6*k8*k10*k16*k19*k28+k2*k5*k6*k8*k10*k16*k19*k28+k3*k5*k6*k8*k10*k16*k19*k28+k2*k3*k8*k10*k12*k16*k19*k28+k2*k5*k8*k10*k12*k16*k19*k28+k3*k5*k8*k10*k12*k16*k19*k28+k2*k6*k8*k10*k12*k16*k19*k28+k3*k6*k8*k10*k12*k16*k19*k28+k5*k6*k8*k10*k12*k16*k19*k28+k2*k3*k8*k10*k15*k16*k19*k28+k2*k5*k8*k10*k15*k16*k19*k28+k3*k5*k8*k10*k15*k16*k19*k28+k2*k6*k8*k10*k15*k16*k19*k28+k3*k6*k8*k10*k15*k16*k19*k28+k5*k6*k8*k10*k15*k16*k19*k28+k2*k8*k10*k12*k15*k16*k19*k28+k3*k8*k10*k12*k15*k16*k19*k28+k5*k8*k10*k12*k15*k16*k19*k28+k6*k8*k10*k12*k15*k16*k19*k28+k2*k3*k5*k8*k10*k18*k19*k28+k2*k3*k6*k8*k10*k18*k19*k28+k2*k5*k6*k8*k10*k18*k19*k28+k3*k5*k6*k8*k10*k18*k19*k28+k2*k3*k8*k10*k12*k18*k19*k28+k2*k5*k8*k10*k12*k18*k19*k28+k3*k5*k8*k10*k12*k18*k19*k28+k2*k6*k8*k10*k12*k18*k19*k28+k3*k6*k8*k10*k12*k18*k19*k28+k5*k6*k8*k10*k12*k18*k19*k28+k2*k3*k8*k10*k15*k18*k19*k28+k2*k5*k8*k10*k15*k18*k19*k28+k3*k5*k8*k10*k15*k18*k19*k28+k2*k6*k8*k10*k15*k18*k19*k28+k3*k6*k8*k10*k15*k18*k19*k28+k5*k6*k8*k10*k15*k18*k19*k28+k2*k8*k10*k12*k15*k18*k19*k28+k3*k8*k10*k12*k15*k18*k19*k28+k5*k8*k10*k12*k15*k18*k19*k28+k6*k8*k10*k12*k15*k18*k19*k28+k2*k3*k8*k10*k16*k18*k19*k28+k2*k5*k8*k10*k16*k18*k19*k28+k3*k5*k8*k10*k16*k18*k19*k28+k2*k6*k8*k10*k16*k18*k19*k28+k3*k6*k8*k10*k16*k18*k19*k28+k5*k6*k8*k10*k16*k18*k19*k28+k2*k8*k10*k12*k16*k18*k19*k28+k3*k8*k10*k12*k16*k18*k19*k28+k5*k8*k10*k12*k16*k18*k19*k28+k6*k8*k10*k12*k16*k18*k19*k28+k2*k8*k10*k15*k16*k18*k19*k28+k3*k8*k10*k15*k16*k18*k19*k28+k5*k8*k10*k15*k16*k18*k19*k28+k6*k8*k10*k15*k16*k18*k19*k28+k8*k10*k12*k15*k16*k18*k19*k28+k2*k3*k5*k6*k8*k10*k20*k28+k2*k3*k5*k8*k10*k12*k20*k28+k2*k3*k6*k8*k10*k12*k20*k28+k2*k5*k6*k8*k10*k12*k20*k28+k3*k5*k6*k8*k10*k12*k20*k28+k2*k3*k5*k8*k10*k15*k20*k28+k2*k3*k6*k8*k10*k15*k20*k28+k2*k5*k6*k8*k10*k15*k20*k28+k3*k5*k6*k8*k10*k15*k20*k28+k2*k3*k8*k10*k12*k15*k20*k28+k2*k5*k8*k10*k12*k15*k20*k28+k3*k5*k8*k10*k12*k15*k20*k28+k2*k6*k8*k10*k12*k15*k20*k28+k3*k6*k8*k10*k12*k15*k20*k28+k5*k6*k8*k10*k12*k15*k20*k28+k2*k3*k5*k8*k10*k16*k20*k28+k2*k3*k6*k8*k10*k16*k20*k28+k2*k5*k6*k8*k10*k16*k20*k28+k3*k5*k6*k8*k10*k16*k20*k28+k2*k3*k8*k10*k12*k16*k20*k28+k2*k5*k8*k10*k12*k16*k20*k28+k3*k5*k8*k10*k12*k16*k20*k28+k2*k6*k8*k10*k12*k16*k20*k28+k3*k6*k8*k10*k12*k16*k20*k28+k5*k6*k8*k10*k12*k16*k20*k28+k2*k3*k8*k10*k15*k16*k20*k28+k2*k5*k8*k10*k15*k16*k20*k28+k3*k5*k8*k10*k15*k16*k20*k28+k2*k6*k8*k10*k15*k16*k20*k28+k3*k6*k8*k10*k15*k16*k20*k28+k5*k6*k8*k10*k15*k16*k20*k28+k2*k8*k10*k12*k15*k16*k20*k28+k3*k8*k10*k12*k15*k16*k20*k28+k5*k8*k10*k12*k15*k16*k20*k28+k6*k8*k10*k12*k15*k16*k20*k28+k2*k3*k5*k8*k10*k18*k20*k28+k2*k3*k6*k8*k10*k18*k20*k28+k2*k5*k6*k8*k10*k18*k20*k28+k3*k5*k6*k8*k10*k18*k20*k28+k2*k3*k8*k10*k12*k18*k20*k28+k2*k5*k8*k10*k12*k18*k20*k28+k3*k5*k8*k10*k12*k18*k20*k28+k2*k6*k8*k10*k12*k18*k20*k28+k3*k6*k8*k10*k12*k18*k20*k28+k5*k6*k8*k10*k12*k18*k20*k28+k2*k3*k8*k10*k15*k18*k20*k28+k2*k5*k8*k10*k15*k18*k20*k28+k3*k5*k8*k10*k15*k18*k20*k28+k2*k6*k8*k10*k15*k18*k20*k28+k3*k6*k8*k10*k15*k18*k20*k28+k5*k6*k8*k10*k15*k18*k20*k28+k2*k8*k10*k12*k15*k18*k20*k28+k3*k8*k10*k12*k15*k18*k20*k28+k5*k8*k10*k12*k15*k18*k20*k28+k6*k8*k10*k12*k15*k18*k20*k28+k2*k3*k8*k10*k16*k18*k20*k28+k2*k5*k8*k10*k16*k18*k20*k28+k3*k5*k8*k10*k16*k18*k20*k28+k2*k6*k8*k10*k16*k18*k20*k28+k3*k6*k8*k10*k16*k18*k20*k28+k5*k6*k8*k10*k16*k18*k20*k28+k2*k8*k10*k12*k16*k18*k20*k28+k3*k8*k10*k12*k16*k18*k20*k28+k5*k8*k10*k12*k16*k18*k20*k28+k6*k8*k10*k12*k16*k18*k20*k28+k2*k8*k10*k15*k16*k18*k20*k28+k3*k8*k10*k15*k16*k18*k20*k28+k5*k8*k10*k15*k16*k18*k20*k28+k6*k8*k10*k15*k16*k18*k20*k28+k8*k10*k12*k15*k16*k18*k20*k28+k2*k3*k5*k8*k10*k19*k20*k28+k2*k3*k6*k8*k10*k19*k20*k28+k2*k5*k6*k8*k10*k19*k20*k28+k3*k5*k6*k8*k10*k19*k20*k28+k2*k3*k8*k10*k12*k19*k20*k28+k2*k5*k8*k10*k12*k19*k20*k28+k3*k5*k8*k10*k12*k19*k20*k28+k2*k6*k8*k10*k12*k19*k20*k28+k3*k6*k8*k10*k12*k19*k20*k28+k5*k6*k8*k10*k12*k19*k20*k28+k2*k3*k8*k10*k15*k19*k20*k28+k2*k5*k8*k10*k15*k19*k20*k28+k3*k5*k8*k10*k15*k19*k20*k28+k2*k6*k8*k10*k15*k19*k20*k28+k3*k6*k8*k10*k15*k19*k20*k28+k5*k6*k8*k10*k15*k19*k20*k28+k2*k8*k10*k12*k15*k19*k20*k28+k3*k8*k10*k12*k15*k19*k20*k28+k5*k8*k10*k12*k15*k19*k20*k28+k6*k8*k10*k12*k15*k19*k20*k28+k2*k3*k8*k10*k16*k19*k20*k28+k2*k5*k8*k10*k16*k19*k20*k28+k3*k5*k8*k10*k16*k19*k20*k28+k2*k6*k8*k10*k16*k19*k20*k28+k3*k6*k8*k10*k16*k19*k20*k28+k5*k6*k8*k10*k16*k19*k20*k28+k2*k8*k10*k12*k16*k19*k20*k28+k3*k8*k10*k12*k16*k19*k20*k28+k5*k8*k10*k12*k16*k19*k20*k28+k6*k8*k10*k12*k16*k19*k20*k28+k2*k8*k10*k15*k16*k19*k20*k28+k3*k8*k10*k15*k16*k19*k20*k28+k5*k8*k10*k15*k16*k19*k20*k28+k6*k8*k10*k15*k16*k19*k20*k28+k8*k10*k12*k15*k16*k19*k20*k28+k2*k3*k8*k10*k18*k19*k20*k28+k2*k5*k8*k10*k18*k19*k20*k28+k3*k5*k8*k10*k18*k19*k20*k28+k2*k6*k8*k10*k18*k19*k20*k28+k3*k6*k8*k10*k18*k19*k20*k28+k5*k6*k8*k10*k18*k19*k20*k28+k2*k8*k10*k12*k18*k19*k20*k28+k3*k8*k10*k12*k18*k19*k20*k28+k5*k8*k10*k12*k18*k19*k20*k28+k6*k8*k10*k12*k18*k19*k20*k28+k2*k8*k10*k15*k18*k19*k20*k28+k3*k8*k10*k15*k18*k19*k20*k28+k5*k8*k10*k15*k18*k19*k20*k28+k6*k8*k10*k15*k18*k19*k20*k28+k8*k10*k12*k15*k18*k19*k20*k28+k2*k8*k10*k16*k18*k19*k20*k28+k3*k8*k10*k16*k18*k19*k20*k28+k5*k8*k10*k16*k18*k19*k20*k28+k6*k8*k10*k16*k18*k19*k20*k28+k8*k10*k12*k16*k18*k19*k20*k28+k8*k10*k15*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10*k12+k2*k3*k5*k6*k8*k10*k15+k2*k3*k5*k8*k10*k12*k15+k2*k3*k6*k8*k10*k12*k15+k2*k5*k6*k8*k10*k12*k15+k3*k5*k6*k8*k10*k12*k15+k2*k3*k5*k6*k8*k10*k16+k2*k3*k5*k8*k10*k12*k16+k2*k3*k6*k8*k10*k12*k16+k2*k5*k6*k8*k10*k12*k16+k3*k5*k6*k8*k10*k12*k16+k2*k3*k5*k8*k10*k15*k16+k2*k3*k6*k8*k10*k15*k16+k2*k5*k6*k8*k10*k15*k16+k3*k5*k6*k8*k10*k15*k16+k2*k3*k8*k10*k12*k15*k16+k2*k5*k8*k10*k12*k15*k16+k3*k5*k8*k10*k12*k15*k16+k2*k6*k8*k10*k12*k15*k16+k3*k6*k8*k10*k12*k15*k16+k5*k6*k8*k10*k12*k15*k16+k2*k3*k5*k6*k8*k10*k18+k2*k3*k5*k8*k10*k12*k18+k2*k3*k6*k8*k10*k12*k18+k2*k5*k6*k8*k10*k12*k18+k3*k5*k6*k8*k10*k12*k18+k2*k3*k5*k8*k10*k15*k18+k2*k3*k6*k8*k10*k15*k18+k2*k5*k6*k8*k10*k15*k18+k3*k5*k6*k8*k10*k15*k18+k2*k3*k8*k10*k12*k15*k18+k2*k5*k8*k10*k12*k15*k18+k3*k5*k8*k10*k12*k15*k18+k2*k6*k8*k10*k12*k15*k18+k3*k6*k8*k10*k12*k15*k18+k5*k6*k8*k10*k12*k15*k18+k2*k3*k5*k8*k10*k16*k18+k2*k3*k6*k8*k10*k16*k18+k2*k5*k6*k8*k10*k16*k18+k3*k5*k6*k8*k10*k16*k18+k2*k3*k8*k10*k12*k16*k18+k2*k5*k8*k10*k12*k16*k18+k3*k5*k8*k10*k12*k16*k18+k2*k6*k8*k10*k12*k16*k18+k3*k6*k8*k10*k12*k16*k18+k5*k6*k8*k10*k12*k16*k18+k2*k3*k8*k10*k15*k16*k18+k2*k5*k8*k10*k15*k16*k18+k3*k5*k8*k10*k15*k16*k18+k2*k6*k8*k10*k15*k16*k18+k3*k6*k8*k10*k15*k16*k18+k5*k6*k8*k10*k15*k16*k18+k2*k8*k10*k12*k15*k16*k18+k3*k8*k10*k12*k15*k16*k18+k5*k8*k10*k12*k15*k16*k18+k6*k8*k10*k12*k15*k16*k18+k2*k3*k5*k6*k8*k10*k19+k2*k3*k5*k8*k10*k12*k19+k2*k3*k6*k8*k10*k12*k19+k2*k5*k6*k8*k10*k12*k19+k3*k5*k6*k8*k10*k12*k19+k2*k3*k5*k8*k10*k15*k19+k2*k3*k6*k8*k10*k15*k19+k2*k5*k6*k8*k10*k15*k19+k3*k5*k6*k8*k10*k15*k19+k2*k3*k8*k10*k12*k15*k19+k2*k5*k8*k10*k12*k15*k19+k3*k5*k8*k10*k12*k15*k19+k2*k6*k8*k10*k12*k15*k19+k3*k6*k8*k10*k12*k15*k19+k5*k6*k8*k10*k12*k15*k19+k2*k3*k5*k8*k10*k16*k19+k2*k3*k6*k8*k10*k16*k19+k2*k5*k6*k8*k10*k16*k19+k3*k5*k6*k8*k10*k16*k19+k2*k3*k8*k10*k12*k16*k19+k2*k5*k8*k10*k12*k16*k19+k3*k5*k8*k10*k12*k16*k19+k2*k6*k8*k10*k12*k16*k19+k3*k6*k8*k10*k12*k16*k19+k5*k6*k8*k10*k12*k16*k19+k2*k3*k8*k10*k15*k16*k19+k2*k5*k8*k10*k15*k16*k19+k3*k5*k8*k10*k15*k16*k19+k2*k6*k8*k10*k15*k16*k19+k3*k6*k8*k10*k15*k16*k19+k5*k6*k8*k10*k15*k16*k19+k2*k8*k10*k12*k15*k16*k19+k3*k8*k10*k12*k15*k16*k19+k5*k8*k10*k12*k15*k16*k19+k6*k8*k10*k12*k15*k16*k19+k2*k3*k5*k8*k10*k18*k19+k2*k3*k6*k8*k10*k18*k19+k2*k5*k6*k8*k10*k18*k19+k3*k5*k6*k8*k10*k18*k19+k2*k3*k8*k10*k12*k18*k19+k2*k5*k8*k10*k12*k18*k19+k3*k5*k8*k10*k12*k18*k19+k2*k6*k8*k10*k12*k18*k19+k3*k6*k8*k10*k12*k18*k19+k5*k6*k8*k10*k12*k18*k19+k2*k3*k8*k10*k15*k18*k19+k2*k5*k8*k10*k15*k18*k19+k3*k5*k8*k10*k15*k18*k19+k2*k6*k8*k10*k15*k18*k19+k3*k6*k8*k10*k15*k18*k19+k5*k6*k8*k10*k15*k18*k19+k2*k8*k10*k12*k15*k18*k19+k3*k8*k10*k12*k15*k18*k19+k5*k8*k10*k12*k15*k18*k19+k6*k8*k10*k12*k15*k18*k19+k2*k3*k8*k10*k16*k18*k19+k2*k5*k8*k10*k16*k18*k19+k3*k5*k8*k10*k16*k18*k19+k2*k6*k8*k10*k16*k18*k19+k3*k6*k8*k10*k16*k18*k19+k5*k6*k8*k10*k16*k18*k19+k2*k8*k10*k12*k16*k18*k19+k3*k8*k10*k12*k16*k18*k19+k5*k8*k10*k12*k16*k18*k19+k6*k8*k10*k12*k16*k18*k19+k2*k8*k10*k15*k16*k18*k19+k3*k8*k10*k15*k16*k18*k19+k5*k8*k10*k15*k16*k18*k19+k6*k8*k10*k15*k16*k18*k19+k8*k10*k12*k15*k16*k18*k19+k2*k3*k5*k6*k8*k10*k20+k2*k3*k5*k8*k10*k12*k20+k2*k3*k6*k8*k10*k12*k20+k2*k5*k6*k8*k10*k12*k20+k3*k5*k6*k8*k10*k12*k20+k2*k3*k5*k8*k10*k15*k20+k2*k3*k6*k8*k10*k15*k20+k2*k5*k6*k8*k10*k15*k20+k3*k5*k6*k8*k10*k15*k20+k2*k3*k8*k10*k12*k15*k20+k2*k5*k8*k10*k12*k15*k20+k3*k5*k8*k10*k12*k15*k20+k2*k6*k8*k10*k12*k15*k20+k3*k6*k8*k10*k12*k15*k20+k5*k6*k8*k10*k12*k15*k20+k2*k3*k5*k8*k10*k16*k20+k2*k3*k6*k8*k10*k16*k20+k2*k5*k6*k8*k10*k16*k20+k3*k5*k6*k8*k10*k16*k20+k2*k3*k8*k10*k12*k16*k20+k2*k5*k8*k10*k12*k16*k20+k3*k5*k8*k10*k12*k16*k20+k2*k6*k8*k10*k12*k16*k20+k3*k6*k8*k10*k12*k16*k20+k5*k6*k8*k10*k12*k16*k20+k2*k3*k8*k10*k15*k16*k20+k2*k5*k8*k10*k15*k16*k20+k3*k5*k8*k10*k15*k16*k20+k2*k6*k8*k10*k15*k16*k20+k3*k6*k8*k10*k15*k16*k20+k5*k6*k8*k10*k15*k16*k20+k2*k8*k10*k12*k15*k16*k20+k3*k8*k10*k12*k15*k16*k20+k5*k8*k10*k12*k15*k16*k20+k6*k8*k10*k12*k15*k16*k20+k2*k3*k5*k8*k10*k18*k20+k2*k3*k6*k8*k10*k18*k20+k2*k5*k6*k8*k10*k18*k20+k3*k5*k6*k8*k10*k18*k20+k2*k3*k8*k10*k12*k18*k20+k2*k5*k8*k10*k12*k18*k20+k3*k5*k8*k10*k12*k18*k20+k2*k6*k8*k10*k12*k18*k20+k3*k6*k8*k10*k12*k18*k20+k5*k6*k8*k10*k12*k18*k20+k2*k3*k8*k10*k15*k18*k20+k2*k5*k8*k10*k15*k18*k20+k3*k5*k8*k10*k15*k18*k20+k2*k6*k8*k10*k15*k18*k20+k3*k6*k8*k10*k15*k18*k20+k5*k6*k8*k10*k15*k18*k20+k2*k8*k10*k12*k15*k18*k20+k3*k8*k10*k12*k15*k18*k20+k5*k8*k10*k12*k15*k18*k20+k6*k8*k10*k12*k15*k18*k20+k2*k3*k8*k10*k16*k18*k20+k2*k5*k8*k10*k16*k18*k20+k3*k5*k8*k10*k16*k18*k20+k2*k6*k8*k10*k16*k18*k20+k3*k6*k8*k10*k16*k18*k20+k5*k6*k8*k10*k16*k18*k20+k2*k8*k10*k12*k16*k18*k20+k3*k8*k10*k12*k16*k18*k20+k5*k8*k10*k12*k16*k18*k20+k6*k8*k10*k12*k16*k18*k20+k2*k8*k10*k15*k16*k18*k20+k3*k8*k10*k15*k16*k18*k20+k5*k8*k10*k15*k16*k18*k20+k6*k8*k10*k15*k16*k18*k20+k8*k10*k12*k15*k16*k18*k20+k2*k3*k5*k8*k10*k19*k20+k2*k3*k6*k8*k10*k19*k20+k2*k5*k6*k8*k10*k19*k20+k3*k5*k6*k8*k10*k19*k20+k2*k3*k8*k10*k12*k19*k20+k2*k5*k8*k10*k12*k19*k20+k3*k5*k8*k10*k12*k19*k20+k2*k6*k8*k10*k12*k19*k20+k3*k6*k8*k10*k12*k19*k20+k5*k6*k8*k10*k12*k19*k20+k2*k3*k8*k10*k15*k19*k20+k2*k5*k8*k10*k15*k19*k20+k3*k5*k8*k10*k15*k19*k20+k2*k6*k8*k10*k15*k19*k20+k3*k6*k8*k10*k15*k19*k20+k5*k6*k8*k10*k15*k19*k20+k2*k8*k10*k12*k15*k19*k20+k3*k8*k10*k12*k15*k19*k20+k5*k8*k10*k12*k15*k19*k20+k6*k8*k10*k12*k15*k19*k20+k2*k3*k8*k10*k16*k19*k20+k2*k5*k8*k10*k16*k19*k20+k3*k5*k8*k10*k16*k19*k20+k2*k6*k8*k10*k16*k19*k20+k3*k6*k8*k10*k16*k19*k20+k5*k6*k8*k10*k16*k19*k20+k2*k8*k10*k12*k16*k19*k20+k3*k8*k10*k12*k16*k19*k20+k5*k8*k10*k12*k16*k19*k20+k6*k8*k10*k12*k16*k19*k20+k2*k8*k10*k15*k16*k19*k20+k3*k8*k10*k15*k16*k19*k20+k5*k8*k10*k15*k16*k19*k20+k6*k8*k10*k15*k16*k19*k20+k8*k10*k12*k15*k16*k19*k20+k2*k3*k8*k10*k18*k19*k20+k2*k5*k8*k10*k18*k19*k20+k3*k5*k8*k10*k18*k19*k20+k2*k6*k8*k10*k18*k19*k20+k3*k6*k8*k10*k18*k19*k20+k5*k6*k8*k10*k18*k19*k20+k2*k8*k10*k12*k18*k19*k20+k3*k8*k10*k12*k18*k19*k20+k5*k8*k10*k12*k18*k19*k20+k6*k8*k10*k12*k18*k19*k20+k2*k8*k10*k15*k18*k19*k20+k3*k8*k10*k15*k18*k19*k20+k5*k8*k10*k15*k18*k19*k20+k6*k8*k10*k15*k18*k19*k20+k8*k10*k12*k15*k18*k19*k20+k2*k8*k10*k16*k18*k19*k20+k3*k8*k10*k16*k18*k19*k20+k5*k8*k10*k16*k18*k19*k20+k6*k8*k10*k16*k18*k19*k20+k8*k10*k12*k16*k18*k19*k20+k8*k10*k15*k16*k18*k19*k20+k2*k3*k5*k6*k8*k10*k28+k2*k3*k5*k8*k10*k12*k28+k2*k3*k6*k8*k10*k12*k28+k2*k5*k6*k8*k10*k12*k28+k3*k5*k6*k8*k10*k12*k28+k2*k3*k5*k8*k10*k15*k28+k2*k3*k6*k8*k10*k15*k28+k2*k5*k6*k8*k10*k15*k28+k3*k5*k6*k8*k10*k15*k28+k2*k3*k8*k10*k12*k15*k28+k2*k5*k8*k10*k12*k15*k28+k3*k5*k8*k10*k12*k15*k28+k2*k6*k8*k10*k12*k15*k28+k3*k6*k8*k10*k12*k15*k28+k5*k6*k8*k10*k12*k15*k28+k2*k3*k5*k8*k10*k16*k28+k2*k3*k6*k8*k10*k16*k28+k2*k5*k6*k8*k10*k16*k28+k3*k5*k6*k8*k10*k16*k28+k2*k3*k8*k10*k12*k16*k28+k2*k5*k8*k10*k12*k16*k28+k3*k5*k8*k10*k12*k16*k28+k2*k6*k8*k10*k12*k16*k28+k3*k6*k8*k10*k12*k16*k28+k5*k6*k8*k10*k12*k16*k28+k2*k3*k8*k10*k15*k16*k28+k2*k5*k8*k10*k15*k16*k28+k3*k5*k8*k10*k15*k16*k28+k2*k6*k8*k10*k15*k16*k28+k3*k6*k8*k10*k15*k16*k28+k5*k6*k8*k10*k15*k16*k28+k2*k8*k10*k12*k15*k16*k28+k3*k8*k10*k12*k15*k16*k28+k5*k8*k10*k12*k15*k16*k28+k6*k8*k10*k12*k15*k16*k28+k2*k3*k5*k8*k10*k18*k28+k2*k3*k6*k8*k10*k18*k28+k2*k5*k6*k8*k10*k18*k28+k3*k5*k6*k8*k10*k18*k28+k2*k3*k8*k10*k12*k18*k28+k2*k5*k8*k10*k12*k18*k28+k3*k5*k8*k10*k12*k18*k28+k2*k6*k8*k10*k12*k18*k28+k3*k6*k8*k10*k12*k18*k28+k5*k6*k8*k10*k12*k18*k28+k2*k3*k8*k10*k15*k18*k28+k2*k5*k8*k10*k15*k18*k28+k3*k5*k8*k10*k15*k18*k28+k2*k6*k8*k10*k15*k18*k28+k3*k6*k8*k10*k15*k18*k28+k5*k6*k8*k10*k15*k18*k28+k2*k8*k10*k12*k15*k18*k28+k3*k8*k10*k12*k15*k18*k28+k5*k8*k10*k12*k15*k18*k28+k6*k8*k10*k12*k15*k18*k28+k2*k3*k8*k10*k16*k18*k28+k2*k5*k8*k10*k16*k18*k28+k3*k5*k8*k10*k16*k18*k28+k2*k6*k8*k10*k16*k18*k28+k3*k6*k8*k10*k16*k18*k28+k5*k6*k8*k10*k16*k18*k28+k2*k8*k10*k12*k16*k18*k28+k3*k8*k10*k12*k16*k18*k28+k5*k8*k10*k12*k16*k18*k28+k6*k8*k10*k12*k16*k18*k28+k2*k8*k10*k15*k16*k18*k28+k3*k8*k10*k15*k16*k18*k28+k5*k8*k10*k15*k16*k18*k28+k6*k8*k10*k15*k16*k18*k28+k8*k10*k12*k15*k16*k18*k28+k2*k3*k5*k8*k10*k19*k28+k2*k3*k6*k8*k10*k19*k28+k2*k5*k6*k8*k10*k19*k28+k3*k5*k6*k8*k10*k19*k28+k2*k3*k8*k10*k12*k19*k28+k2*k5*k8*k10*k12*k19*k28+k3*k5*k8*k10*k12*k19*k28+k2*k6*k8*k10*k12*k19*k28+k3*k6*k8*k10*k12*k19*k28+k5*k6*k8*k10*k12*k19*k28+k2*k3*k8*k10*k15*k19*k28+k2*k5*k8*k10*k15*k19*k28+k3*k5*k8*k10*k15*k19*k28+k2*k6*k8*k10*k15*k19*k28+k3*k6*k8*k10*k15*k19*k28+k5*k6*k8*k10*k15*k19*k28+k2*k8*k10*k12*k15*k19*k28+k3*k8*k10*k12*k15*k19*k28+k5*k8*k10*k12*k15*k19*k28+k6*k8*k10*k12*k15*k19*k28+k2*k3*k8*k10*k16*k19*k28+k2*k5*k8*k10*k16*k19*k28+k3*k5*k8*k10*k16*k19*k28+k2*k6*k8*k10*k16*k19*k28+k3*k6*k8*k10*k16*k19*k28+k5*k6*k8*k10*k16*k19*k28+k2*k8*k10*k12*k16*k19*k28+k3*k8*k10*k12*k16*k19*k28+k5*k8*k10*k12*k16*k19*k28+k6*k8*k10*k12*k16*k19*k28+k2*k8*k10*k15*k16*k19*k28+k3*k8*k10*k15*k16*k19*k28+k5*k8*k10*k15*k16*k19*k28+k6*k8*k10*k15*k16*k19*k28+k8*k10*k12*k15*k16*k19*k28+k2*k3*k8*k10*k18*k19*k28+k2*k5*k8*k10*k18*k19*k28+k3*k5*k8*k10*k18*k19*k28+k2*k6*k8*k10*k18*k19*k28+k3*k6*k8*k10*k18*k19*k28+k5*k6*k8*k10*k18*k19*k28+k2*k8*k10*k12*k18*k19*k28+k3*k8*k10*k12*k18*k19*k28+k5*k8*k10*k12*k18*k19*k28+k6*k8*k10*k12*k18*k19*k28+k2*k8*k10*k15*k18*k19*k28+k3*k8*k10*k15*k18*k19*k28+k5*k8*k10*k15*k18*k19*k28+k6*k8*k10*k15*k18*k19*k28+k8*k10*k12*k15*k18*k19*k28+k2*k8*k10*k16*k18*k19*k28+k3*k8*k10*k16*k18*k19*k28+k5*k8*k10*k16*k18*k19*k28+k6*k8*k10*k16*k18*k19*k28+k8*k10*k12*k16*k18*k19*k28+k8*k10*k15*k16*k18*k19*k28+k2*k3*k5*k8*k10*k20*k28+k2*k3*k6*k8*k10*k20*k28+k2*k5*k6*k8*k10*k20*k28+k3*k5*k6*k8*k10*k20*k28+k2*k3*k8*k10*k12*k20*k28+k2*k5*k8*k10*k12*k20*k28+k3*k5*k8*k10*k12*k20*k28+k2*k6*k8*k10*k12*k20*k28+k3*k6*k8*k10*k12*k20*k28+k5*k6*k8*k10*k12*k20*k28+k2*k3*k8*k10*k15*k20*k28+k2*k5*k8*k10*k15*k20*k28+k3*k5*k8*k10*k15*k20*k28+k2*k6*k8*k10*k15*k20*k28+k3*k6*k8*k10*k15*k20*k28+k5*k6*k8*k10*k15*k20*k28+k2*k8*k10*k12*k15*k20*k28+k3*k8*k10*k12*k15*k20*k28+k5*k8*k10*k12*k15*k20*k28+k6*k8*k10*k12*k15*k20*k28+k2*k3*k8*k10*k16*k20*k28+k2*k5*k8*k10*k16*k20*k28+k3*k5*k8*k10*k16*k20*k28+k2*k6*k8*k10*k16*k20*k28+k3*k6*k8*k10*k16*k20*k28+k5*k6*k8*k10*k16*k20*k28+k2*k8*k10*k12*k16*k20*k28+k3*k8*k10*k12*k16*k20*k28+k5*k8*k10*k12*k16*k20*k28+k6*k8*k10*k12*k16*k20*k28+k2*k8*k10*k15*k16*k20*k28+k3*k8*k10*k15*k16*k20*k28+k5*k8*k10*k15*k16*k20*k28+k6*k8*k10*k15*k16*k20*k28+k8*k10*k12*k15*k16*k20*k28+k2*k3*k8*k10*k18*k20*k28+k2*k5*k8*k10*k18*k20*k28+k3*k5*k8*k10*k18*k20*k28+k2*k6*k8*k10*k18*k20*k28+k3*k6*k8*k10*k18*k20*k28+k5*k6*k8*k10*k18*k20*k28+k2*k8*k10*k12*k18*k20*k28+k3*k8*k10*k12*k18*k20*k28+k5*k8*k10*k12*k18*k20*k28+k6*k8*k10*k12*k18*k20*k28+k2*k8*k10*k15*k18*k20*k28+k3*k8*k10*k15*k18*k20*k28+k5*k8*k10*k15*k18*k20*k28+k6*k8*k10*k15*k18*k20*k28+k8*k10*k12*k15*k18*k20*k28+k2*k8*k10*k16*k18*k20*k28+k3*k8*k10*k16*k18*k20*k28+k5*k8*k10*k16*k18*k20*k28+k6*k8*k10*k16*k18*k20*k28+k8*k10*k12*k16*k18*k20*k28+k8*k10*k15*k16*k18*k20*k28+k2*k3*k8*k10*k19*k20*k28+k2*k5*k8*k10*k19*k20*k28+k3*k5*k8*k10*k19*k20*k28+k2*k6*k8*k10*k19*k20*k28+k3*k6*k8*k10*k19*k20*k28+k5*k6*k8*k10*k19*k20*k28+k2*k8*k10*k12*k19*k20*k28+k3*k8*k10*k12*k19*k20*k28+k5*k8*k10*k12*k19*k20*k28+k6*k8*k10*k12*k19*k20*k28+k2*k8*k10*k15*k19*k20*k28+k3*k8*k10*k15*k19*k20*k28+k5*k8*k10*k15*k19*k20*k28+k6*k8*k10*k15*k19*k20*k28+k8*k10*k12*k15*k19*k20*k28+k2*k8*k10*k16*k19*k20*k28+k3*k8*k10*k16*k19*k20*k28+k5*k8*k10*k16*k19*k20*k28+k6*k8*k10*k16*k19*k20*k28+k8*k10*k12*k16*k19*k20*k28+k8*k10*k15*k16*k19*k20*k28+k2*k8*k10*k18*k19*k20*k28+k3*k8*k10*k18*k19*k20*k28+k5*k8*k10*k18*k19*k20*k28+k6*k8*k10*k18*k19*k20*k28+k8*k10*k12*k18*k19*k20*k28+k8*k10*k15*k18*k19*k20*k28+k8*k10*k16*k18*k19*k20*k28+k2*k3*k5*k6*k8*k10+k2*k3*k5*k8*k10*k12+k2*k3*k6*k8*k10*k12+k2*k5*k6*k8*k10*k12+k3*k5*k6*k8*k10*k12+k2*k3*k5*k8*k10*k15+k2*k3*k6*k8*k10*k15+k2*k5*k6*k8*k10*k15+k3*k5*k6*k8*k10*k15+k2*k3*k8*k10*k12*k15+k2*k5*k8*k10*k12*k15+k3*k5*k8*k10*k12*k15+k2*k6*k8*k10*k12*k15+k3*k6*k8*k10*k12*k15+k5*k6*k8*k10*k12*k15+k2*k3*k5*k8*k10*k16+k2*k3*k6*k8*k10*k16+k2*k5*k6*k8*k10*k16+k3*k5*k6*k8*k10*k16+k2*k3*k8*k10*k12*k16+k2*k5*k8*k10*k12*k16+k3*k5*k8*k10*k12*k16+k2*k6*k8*k10*k12*k16+k3*k6*k8*k10*k12*k16+k5*k6*k8*k10*k12*k16+k2*k3*k8*k10*k15*k16+k2*k5*k8*k10*k15*k16+k3*k5*k8*k10*k15*k16+k2*k6*k8*k10*k15*k16+k3*k6*k8*k10*k15*k16+k5*k6*k8*k10*k15*k16+k2*k8*k10*k12*k15*k16+k3*k8*k10*k12*k15*k16+k5*k8*k10*k12*k15*k16+k6*k8*k10*k12*k15*k16+k2*k3*k5*k8*k10*k18+k2*k3*k6*k8*k10*k18+k2*k5*k6*k8*k10*k18+k3*k5*k6*k8*k10*k18+k2*k3*k8*k10*k12*k18+k2*k5*k8*k10*k12*k18+k3*k5*k8*k10*k12*k18+k2*k6*k8*k10*k12*k18+k3*k6*k8*k10*k12*k18+k5*k6*k8*k10*k12*k18+k2*k3*k8*k10*k15*k18+k2*k5*k8*k10*k15*k18+k3*k5*k8*k10*k15*k18+k2*k6*k8*k10*k15*k18+k3*k6*k8*k10*k15*k18+k5*k6*k8*k10*k15*k18+k2*k8*k10*k12*k15*k18+k3*k8*k10*k12*k15*k18+k5*k8*k10*k12*k15*k18+k6*k8*k10*k12*k15*k18+k2*k3*k8*k10*k16*k18+k2*k5*k8*k10*k16*k18+k3*k5*k8*k10*k16*k18+k2*k6*k8*k10*k16*k18+k3*k6*k8*k10*k16*k18+k5*k6*k8*k10*k16*k18+k2*k8*k10*k12*k16*k18+k3*k8*k10*k12*k16*k18+k5*k8*k10*k12*k16*k18+k6*k8*k10*k12*k16*k18+k2*k8*k10*k15*k16*k18+k3*k8*k10*k15*k16*k18+k5*k8*k10*k15*k16*k18+k6*k8*k10*k15*k16*k18+k8*k10*k12*k15*k16*k18+k2*k3*k5*k8*k10*k19+k2*k3*k6*k8*k10*k19+k2*k5*k6*k8*k10*k19+k3*k5*k6*k8*k10*k19+k2*k3*k8*k10*k12*k19+k2*k5*k8*k10*k12*k19+k3*k5*k8*k10*k12*k19+k2*k6*k8*k10*k12*k19+k3*k6*k8*k10*k12*k19+k5*k6*k8*k10*k12*k19+k2*k3*k8*k10*k15*k19+k2*k5*k8*k10*k15*k19+k3*k5*k8*k10*k15*k19+k2*k6*k8*k10*k15*k19+k3*k6*k8*k10*k15*k19+k5*k6*k8*k10*k15*k19+k2*k8*k10*k12*k15*k19+k3*k8*k10*k12*k15*k19+k5*k8*k10*k12*k15*k19+k6*k8*k10*k12*k15*k19+k2*k3*k8*k10*k16*k19+k2*k5*k8*k10*k16*k19+k3*k5*k8*k10*k16*k19+k2*k6*k8*k10*k16*k19+k3*k6*k8*k10*k16*k19+k5*k6*k8*k10*k16*k19+k2*k8*k10*k12*k16*k19+k3*k8*k10*k12*k16*k19+k5*k8*k10*k12*k16*k19+k6*k8*k10*k12*k16*k19+k2*k8*k10*k15*k16*k19+k3*k8*k10*k15*k16*k19+k5*k8*k10*k15*k16*k19+k6*k8*k10*k15*k16*k19+k8*k10*k12*k15*k16*k19+k2*k3*k8*k10*k18*k19+k2*k5*k8*k10*k18*k19+k3*k5*k8*k10*k18*k19+k2*k6*k8*k10*k18*k19+k3*k6*k8*k10*k18*k19+k5*k6*k8*k10*k18*k19+k2*k8*k10*k12*k18*k19+k3*k8*k10*k12*k18*k19+k5*k8*k10*k12*k18*k19+k6*k8*k10*k12*k18*k19+k2*k8*k10*k15*k18*k19+k3*k8*k10*k15*k18*k19+k5*k8*k10*k15*k18*k19+k6*k8*k10*k15*k18*k19+k8*k10*k12*k15*k18*k19+k2*k8*k10*k16*k18*k19+k3*k8*k10*k16*k18*k19+k5*k8*k10*k16*k18*k19+k6*k8*k10*k16*k18*k19+k8*k10*k12*k16*k18*k19+k8*k10*k15*k16*k18*k19+k2*k3*k5*k8*k10*k20+k2*k3*k6*k8*k10*k20+k2*k5*k6*k8*k10*k20+k3*k5*k6*k8*k10*k20+k2*k3*k8*k10*k12*k20+k2*k5*k8*k10*k12*k20+k3*k5*k8*k10*k12*k20+k2*k6*k8*k10*k12*k20+k3*k6*k8*k10*k12*k20+k5*k6*k8*k10*k12*k20+k2*k3*k8*k10*k15*k20+k2*k5*k8*k10*k15*k20+k3*k5*k8*k10*k15*k20+k2*k6*k8*k10*k15*k20+k3*k6*k8*k10*k15*k20+k5*k6*k8*k10*k15*k20+k2*k8*k10*k12*k15*k20+k3*k8*k10*k12*k15*k20+k5*k8*k10*k12*k15*k20+k6*k8*k10*k12*k15*k20+k2*k3*k8*k10*k16*k20+k2*k5*k8*k10*k16*k20+k3*k5*k8*k10*k16*k20+k2*k6*k8*k10*k16*k20+k3*k6*k8*k10*k16*k20+k5*k6*k8*k10*k16*k20+k2*k8*k10*k12*k16*k20+k3*k8*k10*k12*k16*k20+k5*k8*k10*k12*k16*k20+k6*k8*k10*k12*k16*k20+k2*k8*k10*k15*k16*k20+k3*k8*k10*k15*k16*k20+k5*k8*k10*k15*k16*k20+k6*k8*k10*k15*k16*k20+k8*k10*k12*k15*k16*k20+k2*k3*k8*k10*k18*k20+k2*k5*k8*k10*k18*k20+k3*k5*k8*k10*k18*k20+k2*k6*k8*k10*k18*k20+k3*k6*k8*k10*k18*k20+k5*k6*k8*k10*k18*k20+k2*k8*k10*k12*k18*k20+k3*k8*k10*k12*k18*k20+k5*k8*k10*k12*k18*k20+k6*k8*k10*k12*k18*k20+k2*k8*k10*k15*k18*k20+k3*k8*k10*k15*k18*k20+k5*k8*k10*k15*k18*k20+k6*k8*k10*k15*k18*k20+k8*k10*k12*k15*k18*k20+k2*k8*k10*k16*k18*k20+k3*k8*k10*k16*k18*k20+k5*k8*k10*k16*k18*k20+k6*k8*k10*k16*k18*k20+k8*k10*k12*k16*k18*k20+k8*k10*k15*k16*k18*k20+k2*k3*k8*k10*k19*k20+k2*k5*k8*k10*k19*k20+k3*k5*k8*k10*k19*k20+k2*k6*k8*k10*k19*k20+k3*k6*k8*k10*k19*k20+k5*k6*k8*k10*k19*k20+k2*k8*k10*k12*k19*k20+k3*k8*k10*k12*k19*k20+k5*k8*k10*k12*k19*k20+k6*k8*k10*k12*k19*k20+k2*k8*k10*k15*k19*k20+k3*k8*k10*k15*k19*k20+k5*k8*k10*k15*k19*k20+k6*k8*k10*k15*k19*k20+k8*k10*k12*k15*k19*k20+k2*k8*k10*k16*k19*k20+k3*k8*k10*k16*k19*k20+k5*k8*k10*k16*k19*k20+k6*k8*k10*k16*k19*k20+k8*k10*k12*k16*k19*k20+k8*k10*k15*k16*k19*k20+k2*k8*k10*k18*k19*k20+k3*k8*k10*k18*k19*k20+k5*k8*k10*k18*k19*k20+k6*k8*k10*k18*k19*k20+k8*k10*k12*k18*k19*k20+k8*k10*k15*k18*k19*k20+k8*k10*k16*k18*k19*k20+k2*k3*k5*k8*k10*k28+k2*k3*k6*k8*k10*k28+k2*k5*k6*k8*k10*k28+k3*k5*k6*k8*k10*k28+k2*k3*k8*k10*k12*k28+k2*k5*k8*k10*k12*k28+k3*k5*k8*k10*k12*k28+k2*k6*k8*k10*k12*k28+k3*k6*k8*k10*k12*k28+k5*k6*k8*k10*k12*k28+k2*k3*k8*k10*k15*k28+k2*k5*k8*k10*k15*k28+k3*k5*k8*k10*k15*k28+k2*k6*k8*k10*k15*k28+k3*k6*k8*k10*k15*k28+k5*k6*k8*k10*k15*k28+k2*k8*k10*k12*k15*k28+k3*k8*k10*k12*k15*k28+k5*k8*k10*k12*k15*k28+k6*k8*k10*k12*k15*k28+k2*k3*k8*k10*k16*k28+k2*k5*k8*k10*k16*k28+k3*k5*k8*k10*k16*k28+k2*k6*k8*k10*k16*k28+k3*k6*k8*k10*k16*k28+k5*k6*k8*k10*k16*k28+k2*k8*k10*k12*k16*k28+k3*k8*k10*k12*k16*k28+k5*k8*k10*k12*k16*k28+k6*k8*k10*k12*k16*k28+k2*k8*k10*k15*k16*k28+k3*k8*k10*k15*k16*k28+k5*k8*k10*k15*k16*k28+k6*k8*k10*k15*k16*k28+k8*k10*k12*k15*k16*k28+k2*k3*k8*k10*k18*k28+k2*k5*k8*k10*k18*k28+k3*k5*k8*k10*k18*k28+k2*k6*k8*k10*k18*k28+k3*k6*k8*k10*k18*k28+k5*k6*k8*k10*k18*k28+k2*k8*k10*k12*k18*k28+k3*k8*k10*k12*k18*k28+k5*k8*k10*k12*k18*k28+k6*k8*k10*k12*k18*k28+k2*k8*k10*k15*k18*k28+k3*k8*k10*k15*k18*k28+k5*k8*k10*k15*k18*k28+k6*k8*k10*k15*k18*k28+k8*k10*k12*k15*k18*k28+k2*k8*k10*k16*k18*k28+k3*k8*k10*k16*k18*k28+k5*k8*k10*k16*k18*k28+k6*k8*k10*k16*k18*k28+k8*k10*k12*k16*k18*k28+k8*k10*k15*k16*k18*k28+k2*k3*k8*k10*k19*k28+k2*k5*k8*k10*k19*k28+k3*k5*k8*k10*k19*k28+k2*k6*k8*k10*k19*k28+k3*k6*k8*k10*k19*k28+k5*k6*k8*k10*k19*k28+k2*k8*k10*k12*k19*k28+k3*k8*k10*k12*k19*k28+k5*k8*k10*k12*k19*k28+k6*k8*k10*k12*k19*k28+k2*k8*k10*k15*k19*k28+k3*k8*k10*k15*k19*k28+k5*k8*k10*k15*k19*k28+k6*k8*k10*k15*k19*k28+k8*k10*k12*k15*k19*k28+k2*k8*k10*k16*k19*k28+k3*k8*k10*k16*k19*k28+k5*k8*k10*k16*k19*k28+k6*k8*k10*k16*k19*k28+k8*k10*k12*k16*k19*k28+k8*k10*k15*k16*k19*k28+k2*k8*k10*k18*k19*k28+k3*k8*k10*k18*k19*k28+k5*k8*k10*k18*k19*k28+k6*k8*k10*k18*k19*k28+k8*k10*k12*k18*k19*k28+k8*k10*k15*k18*k19*k28+k8*k10*k16*k18*k19*k28+k2*k3*k8*k10*k20*k28+k2*k5*k8*k10*k20*k28+k3*k5*k8*k10*k20*k28+k2*k6*k8*k10*k20*k28+k3*k6*k8*k10*k20*k28+k5*k6*k8*k10*k20*k28+k2*k8*k10*k12*k20*k28+k3*k8*k10*k12*k20*k28+k5*k8*k10*k12*k20*k28+k6*k8*k10*k12*k20*k28+k2*k8*k10*k15*k20*k28+k3*k8*k10*k15*k20*k28+k5*k8*k10*k15*k20*k28+k6*k8*k10*k15*k20*k28+k8*k10*k12*k15*k20*k28+k2*k8*k10*k16*k20*k28+k3*k8*k10*k16*k20*k28+k5*k8*k10*k16*k20*k28+k6*k8*k10*k16*k20*k28+k8*k10*k12*k16*k20*k28+k8*k10*k15*k16*k20*k28+k2*k8*k10*k18*k20*k28+k3*k8*k10*k18*k20*k28+k5*k8*k10*k18*k20*k28+k6*k8*k10*k18*k20*k28+k8*k10*k12*k18*k20*k28+k8*k10*k15*k18*k20*k28+k8*k10*k16*k18*k20*k28+k2*k8*k10*k19*k20*k28+k3*k8*k10*k19*k20*k28+k5*k8*k10*k19*k20*k28+k6*k8*k10*k19*k20*k28+k8*k10*k12*k19*k20*k28+k8*k10*k15*k19*k20*k28+k8*k10*k16*k19*k20*k28+k8*k10*k18*k19*k20*k28+k2*k3*k5*k8*k10+k2*k3*k6*k8*k10+k2*k5*k6*k8*k10+k3*k5*k6*k8*k10+k2*k3*k8*k10*k12+k2*k5*k8*k10*k12+k3*k5*k8*k10*k12+k2*k6*k8*k10*k12+k3*k6*k8*k10*k12+k5*k6*k8*k10*k12+k2*k3*k8*k10*k15+k2*k5*k8*k10*k15+k3*k5*k8*k10*k15+k2*k6*k8*k10*k15+k3*k6*k8*k10*k15+k5*k6*k8*k10*k15+k2*k8*k10*k12*k15+k3*k8*k10*k12*k15+k5*k8*k10*k12*k15+k6*k8*k10*k12*k15+k2*k3*k8*k10*k16+k2*k5*k8*k10*k16+k3*k5*k8*k10*k16+k2*k6*k8*k10*k16+k3*k6*k8*k10*k16+k5*k6*k8*k10*k16+k2*k8*k10*k12*k16+k3*k8*k10*k12*k16+k5*k8*k10*k12*k16+k6*k8*k10*k12*k16+k2*k8*k10*k15*k16+k3*k8*k10*k15*k16+k5*k8*k10*k15*k16+k6*k8*k10*k15*k16+k8*k10*k12*k15*k16+k2*k3*k8*k10*k18+k2*k5*k8*k10*k18+k3*k5*k8*k10*k18+k2*k6*k8*k10*k18+k3*k6*k8*k10*k18+k5*k6*k8*k10*k18+k2*k8*k10*k12*k18+k3*k8*k10*k12*k18+k5*k8*k10*k12*k18+k6*k8*k10*k12*k18+k2*k8*k10*k15*k18+k3*k8*k10*k15*k18+k5*k8*k10*k15*k18+k6*k8*k10*k15*k18+k8*k10*k12*k15*k18+k2*k8*k10*k16*k18+k3*k8*k10*k16*k18+k5*k8*k10*k16*k18+k6*k8*k10*k16*k18+k8*k10*k12*k16*k18+k8*k10*k15*k16*k18+k2*k3*k8*k10*k19+k2*k5*k8*k10*k19+k3*k5*k8*k10*k19+k2*k6*k8*k10*k19+k3*k6*k8*k10*k19+k5*k6*k8*k10*k19+k2*k8*k10*k12*k19+k3*k8*k10*k12*k19+k5*k8*k10*k12*k19+k6*k8*k10*k12*k19+k2*k8*k10*k15*k19+k3*k8*k10*k15*k19+k5*k8*k10*k15*k19+k6*k8*k10*k15*k19+k8*k10*k12*k15*k19+k2*k8*k10*k16*k19+k3*k8*k10*k16*k19+k5*k8*k10*k16*k19+k6*k8*k10*k16*k19+k8*k10*k12*k16*k19+k8*k10*k15*k16*k19+k2*k8*k10*k18*k19+k3*k8*k10*k18*k19+k5*k8*k10*k18*k19+k6*k8*k10*k18*k19+k8*k10*k12*k18*k19+k8*k10*k15*k18*k19+k8*k10*k16*k18*k19+k2*k3*k8*k10*k20+k2*k5*k8*k10*k20+k3*k5*k8*k10*k20+k2*k6*k8*k10*k20+k3*k6*k8*k10*k20+k5*k6*k8*k10*k20+k2*k8*k10*k12*k20+k3*k8*k10*k12*k20+k5*k8*k10*k12*k20+k6*k8*k10*k12*k20+k2*k8*k10*k15*k20+k3*k8*k10*k15*k20+k5*k8*k10*k15*k20+k6*k8*k10*k15*k20+k8*k10*k12*k15*k20+k2*k8*k10*k16*k20+k3*k8*k10*k16*k20+k5*k8*k10*k16*k20+k6*k8*k10*k16*k20+k8*k10*k12*k16*k20+k8*k10*k15*k16*k20+k2*k8*k10*k18*k20+k3*k8*k10*k18*k20+k5*k8*k10*k18*k20+k6*k8*k10*k18*k20+k8*k10*k12*k18*k20+k8*k10*k15*k18*k20+k8*k10*k16*k18*k20+k2*k8*k10*k19*k20+k3*k8*k10*k19*k20+k5*k8*k10*k19*k20+k6*k8*k10*k19*k20+k8*k10*k12*k19*k20+k8*k10*k15*k19*k20+k8*k10*k16*k19*k20+k8*k10*k18*k19*k20+k2*k3*k8*k10*k28+k2*k5*k8*k10*k28+k3*k5*k8*k10*k28+k2*k6*k8*k10*k28+k3*k6*k8*k10*k28+k5*k6*k8*k10*k28+k2*k8*k10*k12*k28+k3*k8*k10*k12*k28+k5*k8*k10*k12*k28+k6*k8*k10*k12*k28+k2*k8*k10*k15*k28+k3*k8*k10*k15*k28+k5*k8*k10*k15*k28+k6*k8*k10*k15*k28+k8*k10*k12*k15*k28+k2*k8*k10*k16*k28+k3*k8*k10*k16*k28+k5*k8*k10*k16*k28+k6*k8*k10*k16*k28+k8*k10*k12*k16*k28+k8*k10*k15*k16*k28+k2*k8*k10*k18*k28+k3*k8*k10*k18*k28+k5*k8*k10*k18*k28+k6*k8*k10*k18*k28+k8*k10*k12*k18*k28+k8*k10*k15*k18*k28+k8*k10*k16*k18*k28+k2*k8*k10*k19*k28+k3*k8*k10*k19*k28+k5*k8*k10*k19*k28+k6*k8*k10*k19*k28+k8*k10*k12*k19*k28+k8*k10*k15*k19*k28+k8*k10*k16*k19*k28+k8*k10*k18*k19*k28+k2*k8*k10*k20*k28+k3*k8*k10*k20*k28+k5*k8*k10*k20*k28+k6*k8*k10*k20*k28+k8*k10*k12*k20*k28+k8*k10*k15*k20*k28+k8*k10*k16*k20*k28+k8*k10*k18*k20*k28+k8*k10*k19*k20*k28+k2*k3*k8*k10+k2*k5*k8*k10+k3*k5*k8*k10+k2*k6*k8*k10+k3*k6*k8*k10+k5*k6*k8*k10+k2*k8*k10*k12+k3*k8*k10*k12+k5*k8*k10*k12+k6*k8*k10*k12+k2*k8*k10*k15+k3*k8*k10*k15+k5*k8*k10*k15+k6*k8*k10*k15+k8*k10*k12*k15+k2*k8*k10*k16+k3*k8*k10*k16+k5*k8*k10*k16+k6*k8*k10*k16+k8*k10*k12*k16+k8*k10*k15*k16+k2*k8*k10*k18+k3*k8*k10*k18+k5*k8*k10*k18+k6*k8*k10*k18+k8*k10*k12*k18+k8*k10*k15*k18+k8*k10*k16*k18+k2*k8*k10*k19+k3*k8*k10*k19+k5*k8*k10*k19+k6*k8*k10*k19+k8*k10*k12*k19+k8*k10*k15*k19+k8*k10*k16*k19+k8*k10*k18*k19+k2*k8*k10*k20+k3*k8*k10*k20+k5*k8*k10*k20+k6*k8*k10*k20+k8*k10*k12*k20+k8*k10*k15*k20+k8*k10*k16*k20+k8*k10*k17*k20+k8*k10*k18*k20+k8*k10*k19*k20+k2*k8*k10*k28+k3*k8*k10*k28+k5*k8*k10*k28+k6*k8*k10*k28+k8*k10*k12*k28+k8*k10*k15*k28+k8*k10*k16*k28+k8*k10*k18*k28+k8*k10*k19*k28+k8*k10*k20*k28+k2*k8*k10+k3*k8*k10+k5*k8*k10+k6*k8*k10+k8*k10*k12+k8*k10*k15+k8*k10*k16+k8*k10*k18+k8*k10*k19+k8*k10*k20+k8*k17*k20+k8*k10*k28",
+      "possibleInputVariables": ["k28","k10","k8","k2","k3","k5","k19","k20","k17","k18","k6","k16","k15","k12"]
+      },
+    "x21": {
+      "polynomialFunction": "k8*k9*k10*k15*k16*k17*k18+k8*k9*k10*k15*k16*k17+k8*k9*k10*k15*k16*k18+k8*k9*k10*k15*k17*k18+k8*k9*k10*k16*k17*k18+k9*k10*k15*k16*k17*k18+k8*k9*k10*k15*k16+k8*k9*k10*k15*k17+k8*k9*k10*k16*k17+k9*k10*k15*k16*k17+k8*k9*k10*k15*k18+k8*k9*k10*k16*k18+k9*k10*k15*k16*k18+k8*k9*k10*k17*k18+k9*k10*k15*k17*k18+k9*k10*k16*k17*k18+k8*k9*k10*k15+k8*k9*k10*k16+k9*k10*k15*k16+k8*k9*k10*k17+k9*k10*k15*k17+k9*k10*k16*k17+k8*k9*k10*k18+k9*k10*k15*k18+k9*k10*k16*k18+k9*k10*k17*k18+k9*k10*k15+k9*k10*k16+k9*k10*k17+k9*k10*k18",
+      "possibleInputVariables": ["k9","k10","k8","k17","k18","k16","k15"]
+      },
+    "x22": {
+      "polynomialFunction": "k2*k3*k10*k15*k16*k18*k19*k20+k2*k3*k10*k15*k16*k18*k19+k2*k3*k10*k15*k16*k18*k20+k2*k3*k10*k15*k16*k19*k20+k2*k3*k10*k15*k18*k19*k20+k2*k3*k10*k16*k18*k19*k20+k2*k10*k15*k16*k18*k19*k20+k3*k10*k15*k16*k18*k19*k20+k2*k3*k10*k15*k16*k18+k2*k3*k10*k15*k16*k19+k2*k3*k10*k15*k18*k19+k2*k3*k10*k16*k18*k19+k2*k10*k15*k16*k18*k19+k3*k10*k15*k16*k18*k19+k2*k3*k10*k15*k16*k20+k2*k3*k10*k15*k18*k20+k2*k3*k10*k16*k18*k20+k2*k10*k15*k16*k18*k20+k3*k10*k15*k16*k18*k20+k2*k3*k10*k15*k19*k20+k2*k3*k10*k16*k19*k20+k2*k10*k15*k16*k19*k20+k3*k10*k15*k16*k19*k20+k2*k3*k10*k18*k19*k20+k2*k10*k15*k18*k19*k20+k3*k10*k15*k18*k19*k20+k2*k10*k16*k18*k19*k20+k3*k10*k16*k18*k19*k20+k10*k15*k16*k18*k19*k20+k2*k3*k10*k15*k16+k2*k3*k10*k15*k18+k2*k3*k10*k16*k18+k2*k10*k15*k16*k18+k3*k10*k15*k16*k18+k2*k3*k10*k15*k19+k2*k3*k10*k16*k19+k2*k10*k15*k16*k19+k3*k10*k15*k16*k19+k2*k3*k10*k18*k19+k2*k10*k15*k18*k19+k3*k10*k15*k18*k19+k2*k10*k16*k18*k19+k3*k10*k16*k18*k19+k10*k15*k16*k18*k19+k2*k3*k10*k15*k20+k2*k3*k10*k16*k20+k2*k10*k15*k16*k20+k3*k10*k15*k16*k20+k2*k3*k10*k18*k20+k2*k10*k15*k18*k20+k3*k10*k15*k18*k20+k2*k10*k16*k18*k20+k3*k10*k16*k18*k20+k10*k15*k16*k18*k20+k2*k3*k10*k19*k20+k2*k10*k15*k19*k20+k3*k10*k15*k19*k20+k2*k10*k16*k19*k20+k3*k10*k16*k19*k20+k10*k15*k16*k19*k20+k2*k10*k18*k19*k20+k3*k10*k18*k19*k20+k10*k15*k18*k19*k20+k10*k16*k18*k19*k20+k2*k3*k10*k15+k2*k3*k10*k16+k2*k10*k15*k16+k3*k10*k15*k16+k2*k3*k10*k18+k2*k10*k15*k18+k3*k10*k15*k18+k2*k10*k16*k18+k3*k10*k16*k18+k10*k15*k16*k18+k2*k3*k10*k19+k2*k10*k15*k19+k3*k10*k15*k19+k2*k10*k16*k19+k3*k10*k16*k19+k10*k15*k16*k19+k2*k10*k18*k19+k3*k10*k18*k19+k10*k15*k18*k19+k10*k16*k18*k19+k2*k3*k10*k20+k2*k10*k15*k20+k3*k10*k15*k20+k2*k10*k16*k20+k3*k10*k16*k20+k10*k15*k16*k20+k2*k10*k18*k20+k3*k10*k18*k20+k10*k15*k18*k20+k10*k16*k18*k20+k2*k10*k19*k20+k3*k10*k19*k20+k10*k15*k19*k20+k10*k16*k19*k20+k10*k18*k19*k20+k2*k3*k10+k2*k10*k15+k3*k10*k15+k2*k10*k16+k3*k10*k16+k10*k15*k16+k2*k10*k18+k3*k10*k18+k10*k15*k18+k10*k16*k18+k2*k10*k19+k3*k10*k19+k10*k15*k19+k10*k16*k19+k10*k18*k19+k2*k10*k20+k3*k10*k20+k10*k15*k20+k10*k16*k20+k10*k18*k20+k10*k19*k20+k2*k10+k3*k10+k10*k15+k10*k16+k10*k18+k10*k19+k10*k20",
+      "possibleInputVariables": ["k10","k2","k3","k19","k20","k18","k16","k15"]
+      },
+    "x23": {
+      "polynomialFunction": "x31",
+      "possibleInputVariables": ["x31"]
+      },
+    "x24": {
+      "polynomialFunction": "x15*x25*x52+x15*x25+x15*x52+x25*x52+x15+x25+x52",
+      "possibleInputVariables": ["x52","x15","x25"]
+      },
+    "x25": {
+      "polynomialFunction": "x15*x16*x17*x18*x19*x20*x21*x22*x65+x15*x16*x17*x18*x19*x20*x21*x22+x15*x16*x17*x18*x19*x20*x21*x65+x15*x16*x17*x18*x19*x20*x22*x65+x15*x16*x17*x18*x19*x21*x22*x65+x15*x16*x17*x18*x20*x21*x22*x65+x15*x16*x17*x19*x20*x21*x22*x65+x15*x16*x18*x19*x20*x21*x22*x65+x15*x17*x18*x19*x20*x21*x22*x65+x16*x17*x18*x19*x20*x21*x22*x65+x15*x16*x17*x18*x19*x20*x21+x15*x16*x17*x18*x19*x20*x22+x15*x16*x17*x18*x19*x21*x22+x15*x16*x17*x18*x20*x21*x22+x15*x16*x17*x19*x20*x21*x22+x15*x16*x18*x19*x20*x21*x22+x15*x17*x18*x19*x20*x21*x22+x16*x17*x18*x19*x20*x21*x22+x15*x16*x17*x18*x19*x20*x65+x15*x16*x17*x18*x19*x21*x65+x15*x16*x17*x18*x20*x21*x65+x15*x16*x17*x19*x20*x21*x65+x15*x16*x18*x19*x20*x21*x65+x15*x17*x18*x19*x20*x21*x65+x16*x17*x18*x19*x20*x21*x65+x15*x16*x17*x18*x19*x22*x65+x15*x16*x17*x18*x20*x22*x65+x15*x16*x17*x19*x20*x22*x65+x15*x16*x18*x19*x20*x22*x65+x15*x17*x18*x19*x20*x22*x65+x16*x17*x18*x19*x20*x22*x65+x15*x16*x17*x18*x21*x22*x65+x15*x16*x17*x19*x21*x22*x65+x15*x16*x18*x19*x21*x22*x65+x15*x17*x18*x19*x21*x22*x65+x16*x17*x18*x19*x21*x22*x65+x15*x16*x17*x20*x21*x22*x65+x15*x16*x18*x20*x21*x22*x65+x15*x17*x18*x20*x21*x22*x65+x16*x17*x18*x20*x21*x22*x65+x15*x16*x19*x20*x21*x22*x65+x15*x17*x19*x20*x21*x22*x65+x16*x17*x19*x20*x21*x22*x65+x15*x18*x19*x20*x21*x22*x65+x16*x18*x19*x20*x21*x22*x65+x17*x18*x19*x20*x21*x22*x65+x15*x16*x17*x18*x19*x20+x15*x16*x17*x18*x19*x21+x15*x16*x17*x18*x20*x21+x15*x16*x17*x19*x20*x21+x15*x16*x18*x19*x20*x21+x15*x17*x18*x19*x20*x21+x16*x17*x18*x19*x20*x21+x15*x16*x17*x18*x19*x22+x15*x16*x17*x18*x20*x22+x15*x16*x17*x19*x20*x22+x15*x16*x18*x19*x20*x22+x15*x17*x18*x19*x20*x22+x16*x17*x18*x19*x20*x22+x15*x16*x17*x18*x21*x22+x15*x16*x17*x19*x21*x22+x15*x16*x18*x19*x21*x22+x15*x17*x18*x19*x21*x22+x16*x17*x18*x19*x21*x22+x15*x16*x17*x20*x21*x22+x15*x16*x18*x20*x21*x22+x15*x17*x18*x20*x21*x22+x16*x17*x18*x20*x21*x22+x15*x16*x19*x20*x21*x22+x15*x17*x19*x20*x21*x22+x16*x17*x19*x20*x21*x22+x15*x18*x19*x20*x21*x22+x16*x18*x19*x20*x21*x22+x17*x18*x19*x20*x21*x22+x15*x16*x17*x18*x19*x65+x15*x16*x17*x18*x20*x65+x15*x16*x17*x19*x20*x65+x15*x16*x18*x19*x20*x65+x15*x17*x18*x19*x20*x65+x16*x17*x18*x19*x20*x65+x15*x16*x17*x18*x21*x65+x15*x16*x17*x19*x21*x65+x15*x16*x18*x19*x21*x65+x15*x17*x18*x19*x21*x65+x16*x17*x18*x19*x21*x65+x15*x16*x17*x20*x21*x65+x15*x16*x18*x20*x21*x65+x15*x17*x18*x20*x21*x65+x16*x17*x18*x20*x21*x65+x15*x16*x19*x20*x21*x65+x15*x17*x19*x20*x21*x65+x16*x17*x19*x20*x21*x65+x15*x18*x19*x20*x21*x65+x16*x18*x19*x20*x21*x65+x17*x18*x19*x20*x21*x65+x15*x16*x17*x18*x22*x65+x15*x16*x17*x19*x22*x65+x15*x16*x18*x19*x22*x65+x15*x17*x18*x19*x22*x65+x16*x17*x18*x19*x22*x65+x15*x16*x17*x20*x22*x65+x15*x16*x18*x20*x22*x65+x15*x17*x18*x20*x22*x65+x16*x17*x18*x20*x22*x65+x15*x16*x19*x20*x22*x65+x15*x17*x19*x20*x22*x65+x16*x17*x19*x20*x22*x65+x15*x18*x19*x20*x22*x65+x16*x18*x19*x20*x22*x65+x17*x18*x19*x20*x22*x65+x15*x16*x17*x21*x22*x65+x15*x16*x18*x21*x22*x65+x15*x17*x18*x21*x22*x65+x16*x17*x18*x21*x22*x65+x15*x16*x19*x21*x22*x65+x15*x17*x19*x21*x22*x65+x16*x17*x19*x21*x22*x65+x15*x18*x19*x21*x22*x65+x16*x18*x19*x21*x22*x65+x17*x18*x19*x21*x22*x65+x15*x16*x20*x21*x22*x65+x15*x17*x20*x21*x22*x65+x16*x17*x20*x21*x22*x65+x15*x18*x20*x21*x22*x65+x16*x18*x20*x21*x22*x65+x17*x18*x20*x21*x22*x65+x15*x19*x20*x21*x22*x65+x16*x19*x20*x21*x22*x65+x17*x19*x20*x21*x22*x65+x18*x19*x20*x21*x22*x65+x15*x16*x17*x18*x19+x15*x16*x17*x18*x20+x15*x16*x17*x19*x20+x15*x16*x18*x19*x20+x15*x17*x18*x19*x20+x16*x17*x18*x19*x20+x15*x16*x17*x18*x21+x15*x16*x17*x19*x21+x15*x16*x18*x19*x21+x15*x17*x18*x19*x21+x16*x17*x18*x19*x21+x15*x16*x17*x20*x21+x15*x16*x18*x20*x21+x15*x17*x18*x20*x21+x16*x17*x18*x20*x21+x15*x16*x19*x20*x21+x15*x17*x19*x20*x21+x16*x17*x19*x20*x21+x15*x18*x19*x20*x21+x16*x18*x19*x20*x21+x17*x18*x19*x20*x21+x15*x16*x17*x18*x22+x15*x16*x17*x19*x22+x15*x16*x18*x19*x22+x15*x17*x18*x19*x22+x16*x17*x18*x19*x22+x15*x16*x17*x20*x22+x15*x16*x18*x20*x22+x15*x17*x18*x20*x22+x16*x17*x18*x20*x22+x15*x16*x19*x20*x22+x15*x17*x19*x20*x22+x16*x17*x19*x20*x22+x15*x18*x19*x20*x22+x16*x18*x19*x20*x22+x17*x18*x19*x20*x22+x15*x16*x17*x21*x22+x15*x16*x18*x21*x22+x15*x17*x18*x21*x22+x16*x17*x18*x21*x22+x15*x16*x19*x21*x22+x15*x17*x19*x21*x22+x16*x17*x19*x21*x22+x15*x18*x19*x21*x22+x16*x18*x19*x21*x22+x17*x18*x19*x21*x22+x15*x16*x20*x21*x22+x15*x17*x20*x21*x22+x16*x17*x20*x21*x22+x15*x18*x20*x21*x22+x16*x18*x20*x21*x22+x17*x18*x20*x21*x22+x15*x19*x20*x21*x22+x16*x19*x20*x21*x22+x17*x19*x20*x21*x22+x18*x19*x20*x21*x22+x15*x16*x17*x18*x65+x15*x16*x17*x19*x65+x15*x16*x18*x19*x65+x15*x17*x18*x19*x65+x16*x17*x18*x19*x65+x15*x16*x17*x20*x65+x15*x16*x18*x20*x65+x15*x17*x18*x20*x65+x16*x17*x18*x20*x65+x15*x16*x19*x20*x65+x15*x17*x19*x20*x65+x16*x17*x19*x20*x65+x15*x18*x19*x20*x65+x16*x18*x19*x20*x65+x17*x18*x19*x20*x65+x15*x16*x17*x21*x65+x15*x16*x18*x21*x65+x15*x17*x18*x21*x65+x16*x17*x18*x21*x65+x15*x16*x19*x21*x65+x15*x17*x19*x21*x65+x16*x17*x19*x21*x65+x15*x18*x19*x21*x65+x16*x18*x19*x21*x65+x17*x18*x19*x21*x65+x15*x16*x20*x21*x65+x15*x17*x20*x21*x65+x16*x17*x20*x21*x65+x15*x18*x20*x21*x65+x16*x18*x20*x21*x65+x17*x18*x20*x21*x65+x15*x19*x20*x21*x65+x16*x19*x20*x21*x65+x17*x19*x20*x21*x65+x18*x19*x20*x21*x65+x15*x16*x17*x22*x65+x15*x16*x18*x22*x65+x15*x17*x18*x22*x65+x16*x17*x18*x22*x65+x15*x16*x19*x22*x65+x15*x17*x19*x22*x65+x16*x17*x19*x22*x65+x15*x18*x19*x22*x65+x16*x18*x19*x22*x65+x17*x18*x19*x22*x65+x15*x16*x20*x22*x65+x15*x17*x20*x22*x65+x16*x17*x20*x22*x65+x15*x18*x20*x22*x65+x16*x18*x20*x22*x65+x17*x18*x20*x22*x65+x15*x19*x20*x22*x65+x16*x19*x20*x22*x65+x17*x19*x20*x22*x65+x18*x19*x20*x22*x65+x15*x16*x21*x22*x65+x15*x17*x21*x22*x65+x16*x17*x21*x22*x65+x15*x18*x21*x22*x65+x16*x18*x21*x22*x65+x17*x18*x21*x22*x65+x15*x19*x21*x22*x65+x16*x19*x21*x22*x65+x17*x19*x21*x22*x65+x18*x19*x21*x22*x65+x15*x20*x21*x22*x65+x16*x20*x21*x22*x65+x17*x20*x21*x22*x65+x18*x20*x21*x22*x65+x19*x20*x21*x22*x65+x15*x16*x17*x18+x15*x16*x17*x19+x15*x16*x18*x19+x15*x17*x18*x19+x16*x17*x18*x19+x15*x16*x17*x20+x15*x16*x18*x20+x15*x17*x18*x20+x16*x17*x18*x20+x15*x16*x19*x20+x15*x17*x19*x20+x16*x17*x19*x20+x15*x18*x19*x20+x16*x18*x19*x20+x17*x18*x19*x20+x15*x16*x17*x21+x15*x16*x18*x21+x15*x17*x18*x21+x16*x17*x18*x21+x15*x16*x19*x21+x15*x17*x19*x21+x16*x17*x19*x21+x15*x18*x19*x21+x16*x18*x19*x21+x17*x18*x19*x21+x15*x16*x20*x21+x15*x17*x20*x21+x16*x17*x20*x21+x15*x18*x20*x21+x16*x18*x20*x21+x17*x18*x20*x21+x15*x19*x20*x21+x16*x19*x20*x21+x17*x19*x20*x21+x18*x19*x20*x21+x15*x16*x17*x22+x15*x16*x18*x22+x15*x17*x18*x22+x16*x17*x18*x22+x15*x16*x19*x22+x15*x17*x19*x22+x16*x17*x19*x22+x15*x18*x19*x22+x16*x18*x19*x22+x17*x18*x19*x22+x15*x16*x20*x22+x15*x17*x20*x22+x16*x17*x20*x22+x15*x18*x20*x22+x16*x18*x20*x22+x17*x18*x20*x22+x15*x19*x20*x22+x16*x19*x20*x22+x17*x19*x20*x22+x18*x19*x20*x22+x15*x16*x21*x22+x15*x17*x21*x22+x16*x17*x21*x22+x15*x18*x21*x22+x16*x18*x21*x22+x17*x18*x21*x22+x15*x19*x21*x22+x16*x19*x21*x22+x17*x19*x21*x22+x18*x19*x21*x22+x15*x20*x21*x22+x16*x20*x21*x22+x17*x20*x21*x22+x18*x20*x21*x22+x19*x20*x21*x22+x15*x16*x17*x65+x15*x16*x18*x65+x15*x17*x18*x65+x16*x17*x18*x65+x15*x16*x19*x65+x15*x17*x19*x65+x16*x17*x19*x65+x15*x18*x19*x65+x16*x18*x19*x65+x17*x18*x19*x65+x15*x16*x20*x65+x15*x17*x20*x65+x16*x17*x20*x65+x15*x18*x20*x65+x16*x18*x20*x65+x17*x18*x20*x65+x15*x19*x20*x65+x16*x19*x20*x65+x17*x19*x20*x65+x18*x19*x20*x65+x15*x16*x21*x65+x15*x17*x21*x65+x16*x17*x21*x65+x15*x18*x21*x65+x16*x18*x21*x65+x17*x18*x21*x65+x15*x19*x21*x65+x16*x19*x21*x65+x17*x19*x21*x65+x18*x19*x21*x65+x15*x20*x21*x65+x16*x20*x21*x65+x17*x20*x21*x65+x18*x20*x21*x65+x19*x20*x21*x65+x15*x16*x22*x65+x15*x17*x22*x65+x16*x17*x22*x65+x15*x18*x22*x65+x16*x18*x22*x65+x17*x18*x22*x65+x15*x19*x22*x65+x16*x19*x22*x65+x17*x19*x22*x65+x18*x19*x22*x65+x15*x20*x22*x65+x16*x20*x22*x65+x17*x20*x22*x65+x18*x20*x22*x65+x19*x20*x22*x65+x15*x21*x22*x65+x16*x21*x22*x65+x17*x21*x22*x65+x18*x21*x22*x65+x19*x21*x22*x65+x20*x21*x22*x65+x15*x16*x17+x15*x16*x18+x15*x17*x18+x16*x17*x18+x15*x16*x19+x15*x17*x19+x16*x17*x19+x15*x18*x19+x16*x18*x19+x17*x18*x19+x15*x16*x20+x15*x17*x20+x16*x17*x20+x15*x18*x20+x16*x18*x20+x17*x18*x20+x15*x19*x20+x16*x19*x20+x17*x19*x20+x18*x19*x20+x15*x16*x21+x15*x17*x21+x16*x17*x21+x15*x18*x21+x16*x18*x21+x17*x18*x21+x15*x19*x21+x16*x19*x21+x17*x19*x21+x18*x19*x21+x15*x20*x21+x16*x20*x21+x17*x20*x21+x18*x20*x21+x19*x20*x21+x15*x16*x22+x15*x17*x22+x16*x17*x22+x15*x18*x22+x16*x18*x22+x17*x18*x22+x15*x19*x22+x16*x19*x22+x17*x19*x22+x18*x19*x22+x15*x20*x22+x16*x20*x22+x17*x20*x22+x18*x20*x22+x19*x20*x22+x15*x21*x22+x16*x21*x22+x17*x21*x22+x18*x21*x22+x19*x21*x22+x20*x21*x22+x15*x16*x65+x15*x17*x65+x16*x17*x65+x15*x18*x65+x16*x18*x65+x17*x18*x65+x15*x19*x65+x16*x19*x65+x17*x19*x65+x18*x19*x65+x15*x20*x65+x16*x20*x65+x17*x20*x65+x18*x20*x65+x19*x20*x65+x15*x21*x65+x16*x21*x65+x17*x21*x65+x18*x21*x65+x19*x21*x65+x20*x21*x65+x15*x22*x65+x16*x22*x65+x17*x22*x65+x18*x22*x65+x19*x22*x65+x20*x22*x65+x21*x22*x65+x15*x16+x15*x17+x16*x17+x15*x18+x16*x18+x17*x18+x15*x19+x16*x19+x17*x19+x18*x19+x15*x20+x16*x20+x17*x20+x18*x20+x19*x20+x15*x21+x16*x21+x17*x21+x18*x21+x19*x21+x20*x21+x15*x22+x16*x22+x17*x22+x18*x22+x19*x22+x20*x22+x21*x22+x15*x65+x16*x65+x17*x65+x18*x65+x19*x65+x20*x65+x21*x65+x22*x65+x15+x16+x17+x18+x19+x20+x21+x22+x65",
+      "possibleInputVariables": ["x65","x19","x20","x16","x17","x15","x18","x22","x21"]
+      },
+    "x26": {
+      "polynomialFunction": "x2*x47+1",
+      "possibleInputVariables": ["x47","x2"]
+      },
+    "x27": {
+      "polynomialFunction": "x34",
+      "possibleInputVariables": ["x34"]
+      },
+    "x28": {
+      "polynomialFunction": "x54",
+      "possibleInputVariables": ["x54"]
+      },
+    "x29": {
+      "polynomialFunction": "x36*x38",
+      "possibleInputVariables": ["x36","x38"]
+      },
+    "x30": {
+      "polynomialFunction": "x49",
+      "possibleInputVariables": ["x49"]
+      },
+    "x31": {
+      "polynomialFunction": "x32*x59+x32+x59",
+      "possibleInputVariables": ["x59","x32"]
+      },
+    "x32": {
+      "polynomialFunction": "x58",
+      "possibleInputVariables": ["x58"]
+      },
+    "x33": {
+      "polynomialFunction": "x58",
+      "possibleInputVariables": ["x58"]
+      },
+    "x34": {
+      "polynomialFunction": "x44",
+      "possibleInputVariables": ["x44"]
+      },
+    "x35": {
+      "polynomialFunction": "x39",
+      "possibleInputVariables": ["x39"]
+      },
+    "x36": {
+      "polynomialFunction": "x32*x33*x39+x32*x33+x32*x39+x33*x39+x32+x33+x39",
+      "possibleInputVariables": ["x39","x32","x33"]
+      },
+    "x37": {
+      "polynomialFunction": "x39",
+      "possibleInputVariables": ["x39"]
+      },
+    "x38": {
+      "polynomialFunction": "x32",
+      "possibleInputVariables": ["x32"]
+      },
+    "x39": {
+      "polynomialFunction": "x58",
+      "possibleInputVariables": ["x58"]
+      },
+    "x40": {
+      "polynomialFunction": "k14*x62",
+      "possibleInputVariables": ["k14","x62"]
+      },
+    "x41": {
+      "polynomialFunction": "k14",
+      "possibleInputVariables": ["k14"]
+      },
+    "x42": {
+      "polynomialFunction": "x15*x18*x22+x15*x18+x15*x22+x18*x22+x15+x18+x22",
+      "possibleInputVariables": ["x15","x18","x22"]
+      },
+    "x43": {
+      "polynomialFunction": "(k13+1)*x23",
+      "possibleInputVariables": ["x23","k13"]
+      },
+    "x44": {
+      "polynomialFunction": "x35*x36*x37+x35*x36+x35*x37+x36*x37+x35+x36+x37",
+      "possibleInputVariables": ["x35","x36","x37"]
+      },
+    "x45": {
+      "polynomialFunction": "x23*x29+x23+x29",
+      "possibleInputVariables": ["x23","x29"]
+      },
+    "x46": {
+      "polynomialFunction": "k21*x40*x45",
+      "possibleInputVariables": ["x45","k21","x40"]
+      },
+    "x47": {
+      "polynomialFunction": "k21*x23",
+      "possibleInputVariables": ["x23","k21"]
+      },
+    "x48": {
+      "polynomialFunction": "x23*x47",
+      "possibleInputVariables": ["x23","x47"]
+      },
+    "x49": {
+      "polynomialFunction": "x25*x42*x58+x25*x58+x42*x58",
+      "possibleInputVariables": ["x42","x58","x25"]
+      },
+    "x50": {
+      "polynomialFunction": "k22*x17*x19*x21*x24*x60+k22*x17*x19*x21*x24+k22*x17*x19*x21*x60+k22*x17*x19*x24*x60+k22*x17*x21*x24*x60+k22*x19*x21*x24*x60+k22*x17*x19*x21+k22*x17*x19*x24+k22*x17*x21*x24+k22*x19*x21*x24+k22*x17*x19*x60+k22*x17*x21*x60+k22*x19*x21*x60+k22*x17*x24*x60+k22*x19*x24*x60+k22*x21*x24*x60+k22*x17*x19+k22*x17*x21+k22*x19*x21+k22*x17*x24+k22*x19*x24+k22*x21*x24+k22*x17*x60+k22*x19*x60+k22*x21*x60+k22*x24*x60+k22*x17+k22*x19+k22*x21+k22*x24+k22*x60",
+      "possibleInputVariables": ["x24","x19","x17","k22","x60","x21"]
+      },
+    "x51": {
+      "polynomialFunction": "x50*x56*x66+x50*x66",
+      "possibleInputVariables": ["x56","x50","x66"]
+      },
+    "x52": {
+      "polynomialFunction": "x50*x56*x66+x50",
+      "possibleInputVariables": ["x56","x50","x66"]
+      },
+    "x53": {
+      "polynomialFunction": "k21*x6*x12",
+      "possibleInputVariables": ["k21","x6","x12"]
+      },
+    "x54": {
+      "polynomialFunction": "x15",
+      "possibleInputVariables": ["x15"]
+      },
+    "x55": {
+      "polynomialFunction": "x5",
+      "possibleInputVariables": ["x5"]
+      },
+    "x56": {
+      "polynomialFunction": "k25",
+      "possibleInputVariables": ["k25"]
+      },
+    "x57": {
+      "polynomialFunction": "x63*x64+x63",
+      "possibleInputVariables": ["x64","x63"]
+      },
+    "x58": {
+      "polynomialFunction": "x71*x76+x71+x76",
+      "possibleInputVariables": ["x71","x76"]
+      },
+    "x59": {
+      "polynomialFunction": "(k4+1)*x3*x49*x60+k4*x3*x60+(k4+1)*x49*x60+k4*x60",
+      "possibleInputVariables": ["x3","x49","x60","k4"]
+      },
+    "x60": {
+      "polynomialFunction": "x61*x70+x70",
+      "possibleInputVariables": ["x61","x70"]
+      },
+    "x61": {
+      "polynomialFunction": "x24*x69+x24",
+      "possibleInputVariables": ["x24","x69"]
+      },
+    "x62": {
+      "polynomialFunction": "x75+1",
+      "possibleInputVariables": ["x75"]
+      },
+    "x63": {
+      "polynomialFunction": "x60",
+      "possibleInputVariables": ["x60"]
+      },
+    "x64": {
+      "polynomialFunction": "k11*x15",
+      "possibleInputVariables": ["x15","k11"]
+      },
+    "x65": {
+      "polynomialFunction": "x15*x16*x17*x18*x19*x20*x21*x22+x15*x16*x17*x18*x19*x20*x21+x15*x16*x17*x18*x19*x20*x22+x15*x16*x17*x18*x19*x21*x22+x15*x16*x17*x18*x20*x21*x22+x15*x16*x17*x19*x20*x21*x22+x15*x16*x18*x19*x20*x21*x22+x15*x17*x18*x19*x20*x21*x22+x16*x17*x18*x19*x20*x21*x22+x15*x16*x17*x18*x19*x20+x15*x16*x17*x18*x19*x21+x15*x16*x17*x18*x20*x21+x15*x16*x17*x19*x20*x21+x15*x16*x18*x19*x20*x21+x15*x17*x18*x19*x20*x21+x16*x17*x18*x19*x20*x21+x15*x16*x17*x18*x19*x22+x15*x16*x17*x18*x20*x22+x15*x16*x17*x19*x20*x22+x15*x16*x18*x19*x20*x22+x15*x17*x18*x19*x20*x22+x16*x17*x18*x19*x20*x22+x15*x16*x17*x18*x21*x22+x15*x16*x17*x19*x21*x22+x15*x16*x18*x19*x21*x22+x15*x17*x18*x19*x21*x22+x16*x17*x18*x19*x21*x22+x15*x16*x17*x20*x21*x22+x15*x16*x18*x20*x21*x22+x15*x17*x18*x20*x21*x22+x16*x17*x18*x20*x21*x22+x15*x16*x19*x20*x21*x22+x15*x17*x19*x20*x21*x22+x16*x17*x19*x20*x21*x22+x15*x18*x19*x20*x21*x22+x16*x18*x19*x20*x21*x22+x17*x18*x19*x20*x21*x22+x15*x16*x17*x18*x19+x15*x16*x17*x18*x20+x15*x16*x17*x19*x20+x15*x16*x18*x19*x20+x15*x17*x18*x19*x20+x16*x17*x18*x19*x20+x15*x16*x17*x18*x21+x15*x16*x17*x19*x21+x15*x16*x18*x19*x21+x15*x17*x18*x19*x21+x16*x17*x18*x19*x21+x15*x16*x17*x20*x21+x15*x16*x18*x20*x21+x15*x17*x18*x20*x21+x16*x17*x18*x20*x21+x15*x16*x19*x20*x21+x15*x17*x19*x20*x21+x16*x17*x19*x20*x21+x15*x18*x19*x20*x21+x16*x18*x19*x20*x21+x17*x18*x19*x20*x21+x15*x16*x17*x18*x22+x15*x16*x17*x19*x22+x15*x16*x18*x19*x22+x15*x17*x18*x19*x22+x16*x17*x18*x19*x22+x15*x16*x17*x20*x22+x15*x16*x18*x20*x22+x15*x17*x18*x20*x22+x16*x17*x18*x20*x22+x15*x16*x19*x20*x22+x15*x17*x19*x20*x22+x16*x17*x19*x20*x22+x15*x18*x19*x20*x22+x16*x18*x19*x20*x22+x17*x18*x19*x20*x22+x15*x16*x17*x21*x22+x15*x16*x18*x21*x22+x15*x17*x18*x21*x22+x16*x17*x18*x21*x22+x15*x16*x19*x21*x22+x15*x17*x19*x21*x22+x16*x17*x19*x21*x22+x15*x18*x19*x21*x22+x16*x18*x19*x21*x22+x17*x18*x19*x21*x22+x15*x16*x20*x21*x22+x15*x17*x20*x21*x22+x16*x17*x20*x21*x22+x15*x18*x20*x21*x22+x16*x18*x20*x21*x22+x17*x18*x20*x21*x22+x15*x19*x20*x21*x22+x16*x19*x20*x21*x22+x17*x19*x20*x21*x22+x18*x19*x20*x21*x22+x15*x16*x17*x18+x15*x16*x17*x19+x15*x16*x18*x19+x15*x17*x18*x19+x16*x17*x18*x19+x15*x16*x17*x20+x15*x16*x18*x20+x15*x17*x18*x20+x16*x17*x18*x20+x15*x16*x19*x20+x15*x17*x19*x20+x16*x17*x19*x20+x15*x18*x19*x20+x16*x18*x19*x20+x17*x18*x19*x20+x15*x16*x17*x21+x15*x16*x18*x21+x15*x17*x18*x21+x16*x17*x18*x21+x15*x16*x19*x21+x15*x17*x19*x21+x16*x17*x19*x21+x15*x18*x19*x21+x16*x18*x19*x21+x17*x18*x19*x21+x15*x16*x20*x21+x15*x17*x20*x21+x16*x17*x20*x21+x15*x18*x20*x21+x16*x18*x20*x21+x17*x18*x20*x21+x15*x19*x20*x21+x16*x19*x20*x21+x17*x19*x20*x21+x18*x19*x20*x21+x15*x16*x17*x22+x15*x16*x18*x22+x15*x17*x18*x22+x16*x17*x18*x22+x15*x16*x19*x22+x15*x17*x19*x22+x16*x17*x19*x22+x15*x18*x19*x22+x16*x18*x19*x22+x17*x18*x19*x22+x15*x16*x20*x22+x15*x17*x20*x22+x16*x17*x20*x22+x15*x18*x20*x22+x16*x18*x20*x22+x17*x18*x20*x22+x15*x19*x20*x22+x16*x19*x20*x22+x17*x19*x20*x22+x18*x19*x20*x22+x15*x16*x21*x22+x15*x17*x21*x22+x16*x17*x21*x22+x15*x18*x21*x22+x16*x18*x21*x22+x17*x18*x21*x22+x15*x19*x21*x22+x16*x19*x21*x22+x17*x19*x21*x22+x18*x19*x21*x22+x15*x20*x21*x22+x16*x20*x21*x22+x17*x20*x21*x22+x18*x20*x21*x22+x19*x20*x21*x22+x15*x16*x17+x15*x16*x18+x15*x17*x18+x16*x17*x18+x15*x16*x19+x15*x17*x19+x16*x17*x19+x15*x18*x19+x16*x18*x19+x17*x18*x19+x15*x16*x20+x15*x17*x20+x16*x17*x20+x15*x18*x20+x16*x18*x20+x17*x18*x20+x15*x19*x20+x16*x19*x20+x17*x19*x20+x18*x19*x20+x15*x16*x21+x15*x17*x21+x16*x17*x21+x15*x18*x21+x16*x18*x21+x17*x18*x21+x15*x19*x21+x16*x19*x21+x17*x19*x21+x18*x19*x21+x15*x20*x21+x16*x20*x21+x17*x20*x21+x18*x20*x21+x19*x20*x21+x15*x16*x22+x15*x17*x22+x16*x17*x22+x15*x18*x22+x16*x18*x22+x17*x18*x22+x15*x19*x22+x16*x19*x22+x17*x19*x22+x18*x19*x22+x15*x20*x22+x16*x20*x22+x17*x20*x22+x18*x20*x22+x19*x20*x22+x15*x21*x22+x16*x21*x22+x17*x21*x22+x18*x21*x22+x19*x21*x22+x20*x21*x22+x15*x16+x15*x17+x16*x17+x15*x18+x16*x18+x17*x18+x15*x19+x16*x19+x17*x19+x18*x19+x15*x20+x16*x20+x17*x20+x18*x20+x19*x20+x15*x21+x16*x21+x17*x21+x18*x21+x19*x21+x20*x21+x15*x22+x16*x22+x17*x22+x18*x22+x19*x22+x20*x22+x21*x22+x15+x16+x17+x18+x19+x20+x21+x22",
+      "possibleInputVariables": ["x19","x20","x16","x17","x15","x18","x22","x21"]
+      },
+    "x66": {
+      "polynomialFunction": "k26",
+      "possibleInputVariables": ["k26"]
+      },
+    "x67": {
+      "polynomialFunction": "x15",
+      "possibleInputVariables": ["x15"]
+      },
+    "x68": {
+      "polynomialFunction": "x67",
+      "possibleInputVariables": ["x67"]
+      },
+    "x69": {
+      "polynomialFunction": "x24",
+      "possibleInputVariables": ["x24"]
+      },
+    "x70": {
+      "polynomialFunction": "k27*x25*x48+k27*x25",
+      "possibleInputVariables": ["k27","x25","x48"]
+      },
+    "x71": {
+      "polynomialFunction": "k11*k22*k27*x52",
+      "possibleInputVariables": ["x52","k27","k11","k22"]
+      },
+    "x72": {
+      "polynomialFunction": "k4*x15",
+      "possibleInputVariables": ["x15","k4"]
+      },
+    "x73": {
+      "polynomialFunction": "k4*x15",
+      "possibleInputVariables": ["x15","k4"]
+      },
+    "x74": {
+      "polynomialFunction": "k4*x15*x20+k4*x15+k4*x20",
+      "possibleInputVariables": ["x20","x15","k4"]
+      },
+    "x75": {
+      "polynomialFunction": "x2+1",
+      "possibleInputVariables": ["x2"]
+      },
+    "x76": {
+      "polynomialFunction": "x15*x51*x52+x15*x51+x15*x52",
+      "possibleInputVariables": ["x51","x52","x15"]
+      }
+    },
+  "variables": [
+      {
+      "id": "x1",
+      "name": "actinreorg",
+      "states": [0,1]
+      },
+      {
+      "id": "x2",
+      "name": "akt",
+      "states": [0,1]
+      },
+      {
+      "id": "x3",
+      "name": "aktd",
+      "states": [0,1]
+      },
+      {
+      "id": "x4",
+      "name": "ap1",
+      "states": [0,1]
+      },
+      {
+      "id": "x5",
+      "name": "bad",
+      "states": [0,1]
+      },
+      {
+      "id": "x6",
+      "name": "ca",
+      "states": [0,1]
+      },
+      {
+      "id": "x7",
+      "name": "ccbl",
+      "states": [0,1]
+      },
+      {
+      "id": "x8",
+      "name": "cfos",
+      "states": [0,1]
+      },
+      {
+      "id": "x9",
+      "name": "cjun",
+      "states": [0,1]
+      },
+      {
+      "id": "x10",
+      "name": "cmyc",
+      "states": [0,1]
+      },
+      {
+      "id": "x11",
+      "name": "creb",
+      "states": [0,1]
+      },
+      {
+      "id": "x12",
+      "name": "dag",
+      "states": [0,1]
+      },
+      {
+      "id": "x13",
+      "name": "elk1",
+      "states": [0,1]
+      },
+      {
+      "id": "x14",
+      "name": "endocyt_degrad",
+      "states": [0,1]
+      },
+      {
+      "id": "x15",
+      "name": "erbb11",
+      "states": [0,1]
+      },
+      {
+      "id": "x16",
+      "name": "erbb12",
+      "states": [0,1]
+      },
+      {
+      "id": "x17",
+      "name": "erbb13",
+      "states": [0,1]
+      },
+      {
+      "id": "x18",
+      "name": "erbb14",
+      "states": [0,1]
+      },
+      {
+      "id": "x19",
+      "name": "erbb23",
+      "states": [0,1]
+      },
+      {
+      "id": "x20",
+      "name": "erbb24",
+      "states": [0,1]
+      },
+      {
+      "id": "x21",
+      "name": "erbb34",
+      "states": [0,1]
+      },
+      {
+      "id": "x22",
+      "name": "erbb44",
+      "states": [0,1]
+      },
+      {
+      "id": "x23",
+      "name": "erk12",
+      "states": [0,1]
+      },
+      {
+      "id": "x24",
+      "name": "gab1",
+      "states": [0,1]
+      },
+      {
+      "id": "x25",
+      "name": "grb2",
+      "states": [0,1]
+      },
+      {
+      "id": "x26",
+      "name": "gsk3",
+      "states": [0,1]
+      },
+      {
+      "id": "x27",
+      "name": "hsp27",
+      "states": [0,1]
+      },
+      {
+      "id": "x28",
+      "name": "ip3",
+      "states": [0,1]
+      },
+      {
+      "id": "x29",
+      "name": "jnk",
+      "states": [0,1]
+      },
+      {
+      "id": "x30",
+      "name": "limk1",
+      "states": [0,1]
+      },
+      {
+      "id": "x31",
+      "name": "mek12",
+      "states": [0,1]
+      },
+      {
+      "id": "x32",
+      "name": "mekk1",
+      "states": [0,1]
+      },
+      {
+      "id": "x33",
+      "name": "mekk4",
+      "states": [0,1]
+      },
+      {
+      "id": "x34",
+      "name": "mk2",
+      "states": [0,1]
+      },
+      {
+      "id": "x35",
+      "name": "mkk3",
+      "states": [0,1]
+      },
+      {
+      "id": "x36",
+      "name": "mkk4",
+      "states": [0,1]
+      },
+      {
+      "id": "x37",
+      "name": "mkk6",
+      "states": [0,1]
+      },
+      {
+      "id": "x38",
+      "name": "mkk7",
+      "states": [0,1]
+      },
+      {
+      "id": "x39",
+      "name": "mlk3",
+      "states": [0,1]
+      },
+      {
+      "id": "x40",
+      "name": "mtor_rap",
+      "states": [0,1]
+      },
+      {
+      "id": "x41",
+      "name": "mtor_ric",
+      "states": [0,1]
+      },
+      {
+      "id": "x42",
+      "name": "nck",
+      "states": [0,1]
+      },
+      {
+      "id": "x43",
+      "name": "nucerk12",
+      "states": [0,1]
+      },
+      {
+      "id": "x44",
+      "name": "p38",
+      "states": [0,1]
+      },
+      {
+      "id": "x45",
+      "name": "p70s6_1",
+      "states": [0,1]
+      },
+      {
+      "id": "x46",
+      "name": "p70s6_2",
+      "states": [0,1]
+      },
+      {
+      "id": "x47",
+      "name": "p90rsk",
+      "states": [0,1]
+      },
+      {
+      "id": "x48",
+      "name": "p90rskerk12d",
+      "states": [0,1]
+      },
+      {
+      "id": "x49",
+      "name": "pak1",
+      "states": [0,1]
+      },
+      {
+      "id": "x50",
+      "name": "pi3k",
+      "states": [0,1]
+      },
+      {
+      "id": "x51",
+      "name": "pi34p2",
+      "states": [0,1]
+      },
+      {
+      "id": "x52",
+      "name": "pip3",
+      "states": [0,1]
+      },
+      {
+      "id": "x53",
+      "name": "pkc",
+      "states": [0,1]
+      },
+      {
+      "id": "x54",
+      "name": "plcg",
+      "states": [0,1]
+      },
+      {
+      "id": "x55",
+      "name": "pro_apoptotic",
+      "states": [0,1]
+      },
+      {
+      "id": "x56",
+      "name": "ptend",
+      "states": [0,1]
+      },
+      {
+      "id": "x57",
+      "name": "rab5a",
+      "states": [0,1]
+      },
+      {
+      "id": "x58",
+      "name": "raccdc42",
+      "states": [0,1]
+      },
+      {
+      "id": "x59",
+      "name": "raf1",
+      "states": [0,1]
+      },
+      {
+      "id": "x60",
+      "name": "ras",
+      "states": [0,1]
+      },
+      {
+      "id": "x61",
+      "name": "rasgap",
+      "states": [0,1]
+      },
+      {
+      "id": "x62",
+      "name": "rheb",
+      "states": [0,1]
+      },
+      {
+      "id": "x63",
+      "name": "rin1",
+      "states": [0,1]
+      },
+      {
+      "id": "x64",
+      "name": "rntre",
+      "states": [0,1]
+      },
+      {
+      "id": "x65",
+      "name": "shc",
+      "states": [0,1]
+      },
+      {
+      "id": "x66",
+      "name": "ship2d",
+      "states": [0,1]
+      },
+      {
+      "id": "x67",
+      "name": "shp1",
+      "states": [0,1]
+      },
+      {
+      "id": "x68",
+      "name": "shp1d",
+      "states": [0,1]
+      },
+      {
+      "id": "x69",
+      "name": "shp2",
+      "states": [0,1]
+      },
+      {
+      "id": "x70",
+      "name": "sos1",
+      "states": [0,1]
+      },
+      {
+      "id": "x71",
+      "name": "sos1esp8e3b1",
+      "states": [0,1]
+      },
+      {
+      "id": "x72",
+      "name": "stat1",
+      "states": [0,1]
+      },
+      {
+      "id": "x73",
+      "name": "stat3",
+      "states": [0,1]
+      },
+      {
+      "id": "x74",
+      "name": "stat5",
+      "states": [0,1]
+      },
+      {
+      "id": "x75",
+      "name": "tsc1_tsc2",
+      "states": [0,1]
+      },
+      {
+      "id": "x76",
+      "name": "vav2",
+      "states": [0,1]
+      }
+    ],
+  "version": "1.0"
+  }
+}

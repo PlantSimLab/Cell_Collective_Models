@@ -1,0 +1,440 @@
+{
+"model": {
+  "description": "Cholesterol regulatory pathway published in: https://www.biomedcentral.com/1752-0509/2/99",
+  "name": "Cholesterol_Regulatory_Pathway_2008",
+  "parameters": [],
+  "updateRules": {
+    "x1": {
+      "possibleInputVariables": ["x3","x2"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],0],
+          [[1,1],1]
+        ]
+      },
+    "x2": {
+      "possibleInputVariables": ["x2"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x3": {
+      "possibleInputVariables": ["x5"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x4": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x5": {
+      "possibleInputVariables": ["x4"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x6": {
+      "possibleInputVariables": ["x10","x31"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],1],
+          [[1,1],1]
+        ]
+      },
+    "x7": {
+      "possibleInputVariables": ["x9"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x8": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x9": {
+      "possibleInputVariables": ["x8"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x10": {
+      "possibleInputVariables": ["x26"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x11": {
+      "possibleInputVariables": ["x25"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x12": {
+      "possibleInputVariables": ["x13","x16"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],0],
+          [[1,1],0]
+        ]
+      },
+    "x13": {
+      "possibleInputVariables": ["x15"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x14": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x15": {
+      "possibleInputVariables": ["x14"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x16": {
+      "possibleInputVariables": ["x11","x25"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],1],
+          [[1,1],1]
+        ]
+      },
+    "x17": {
+      "possibleInputVariables": ["x1","x21","x2"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],0],
+          [[0,1,0],0],
+          [[0,1,1],0],
+          [[1,0,0],0],
+          [[1,0,1],0],
+          [[1,1,0],0],
+          [[1,1,1],1]
+        ]
+      },
+    "x18": {
+      "possibleInputVariables": ["x34","x20"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],0],
+          [[1,1],0]
+        ]
+      },
+    "x19": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x20": {
+      "possibleInputVariables": ["x19"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x21": {
+      "possibleInputVariables": ["x23"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x22": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x23": {
+      "possibleInputVariables": ["x22"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x24": {
+      "possibleInputVariables": ["x6"],
+      "transitionTable": [
+          [[0],1],
+          [[1],0]
+        ]
+      },
+    "x25": {
+      "possibleInputVariables": ["x28"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x26": {
+      "possibleInputVariables": ["x32"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x27": {
+      "possibleInputVariables": ["x17","x18"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],0],
+          [[1,1],1]
+        ]
+      },
+    "x28": {
+      "possibleInputVariables": ["x27"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x29": {
+      "possibleInputVariables": ["x30"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x30": {
+      "possibleInputVariables": ["x33"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x31": {
+      "possibleInputVariables": ["x26"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x32": {
+      "possibleInputVariables": ["x12"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x33": {
+      "possibleInputVariables": ["x24","x34"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],1],
+          [[1,1],0]
+        ]
+      },
+    "x34": {
+      "possibleInputVariables": ["x34"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      }
+    },
+  "variables": [
+      {
+      "id": "x1",
+      "name": "Acetoacetyl_CoA",
+      "states": [0,1]
+      },
+      {
+      "id": "x2",
+      "name": "Acetyl_CoA",
+      "states": [0,1]
+      },
+      {
+      "id": "x3",
+      "name": "Acetyl_CoA_acetyltransferase",
+      "states": [0,1]
+      },
+      {
+      "id": "x4",
+      "name": "Acetyl_CoA_acetyltransferase_gene",
+      "states": [0,1]
+      },
+      {
+      "id": "x5",
+      "name": "Acetyl_CoA_acetyltransferase_RNA",
+      "states": [0,1]
+      },
+      {
+      "id": "x6",
+      "name": "Cholesterol",
+      "states": [0,1]
+      },
+      {
+      "id": "x7",
+      "name": "Cyp51",
+      "states": [0,1]
+      },
+      {
+      "id": "x8",
+      "name": "Cyp51_gene",
+      "states": [0,1]
+      },
+      {
+      "id": "x9",
+      "name": "Cyp51_RNA",
+      "states": [0,1]
+      },
+      {
+      "id": "x10",
+      "name": "Desmosterol",
+      "states": [0,1]
+      },
+      {
+      "id": "x11",
+      "name": "Dimethyl_allyl_pyrophosphate",
+      "states": [0,1]
+      },
+      {
+      "id": "x12",
+      "name": "Farnesyl_pyrophosphate",
+      "states": [0,1]
+      },
+      {
+      "id": "x13",
+      "name": "FPP_Synthase",
+      "states": [0,1]
+      },
+      {
+      "id": "x14",
+      "name": "FPP_Synthase_gene",
+      "states": [0,1]
+      },
+      {
+      "id": "x15",
+      "name": "FPP_Synthase_RNA",
+      "states": [0,1]
+      },
+      {
+      "id": "x16",
+      "name": "Geranyl_pyrophosphate",
+      "states": [0,1]
+      },
+      {
+      "id": "x17",
+      "name": "HMG_CoA",
+      "states": [0,1]
+      },
+      {
+      "id": "x18",
+      "name": "HMG_CoA_Reductase",
+      "states": [0,1]
+      },
+      {
+      "id": "x19",
+      "name": "HMG_CoA_Reductase_gene",
+      "states": [0,1]
+      },
+      {
+      "id": "x20",
+      "name": "HMG_CoA_Reductase_RNA",
+      "states": [0,1]
+      },
+      {
+      "id": "x21",
+      "name": "HMG_CoA_Synthase",
+      "states": [0,1]
+      },
+      {
+      "id": "x22",
+      "name": "HMG_CoA_Synthase_gene",
+      "states": [0,1]
+      },
+      {
+      "id": "x23",
+      "name": "HMG_CoA_Synthase_RNA",
+      "states": [0,1]
+      },
+      {
+      "id": "x24",
+      "name": "Insig_SREBP_SCAP",
+      "states": [0,1]
+      },
+      {
+      "id": "x25",
+      "name": "Isopentenyl_pyrophosphate",
+      "states": [0,1]
+      },
+      {
+      "id": "x26",
+      "name": "Lanosterol",
+      "states": [0,1]
+      },
+      {
+      "id": "x27",
+      "name": "Mevalonic_Acid",
+      "states": [0,1]
+      },
+      {
+      "id": "x28",
+      "name": "Mevalonyl_pyrophosphate",
+      "states": [0,1]
+      },
+      {
+      "id": "x29",
+      "name": "mSREBP",
+      "states": [0,1]
+      },
+      {
+      "id": "x30",
+      "name": "pSREBP",
+      "states": [0,1]
+      },
+      {
+      "id": "x31",
+      "name": "Septdehydrocholesterol",
+      "states": [0,1]
+      },
+      {
+      "id": "x32",
+      "name": "Squaline",
+      "states": [0,1]
+      },
+      {
+      "id": "x33",
+      "name": "SREBP_SCAP",
+      "states": [0,1]
+      },
+      {
+      "id": "x34",
+      "name": "Statins",
+      "states": [0,1]
+      }
+    ],
+  "version": "1.0"
+  }
+}

@@ -1,0 +1,611 @@
+{
+"model": {
+  "description": "From the article: Mai Z, Liu H. Boolean network-based analysis of the apoptosis network: irreversible apoptosis and stable surviving. J Theor Biol. 2009 Aug 21;259(4):760-9. doi: 10.1016/j.jtbi.2009.04.024. Epub 2009 May 5.",
+  "name": "Apoptosis_Network",
+  "parameters": [
+      {
+      "id": "k1",
+      "name": "GF",
+      "states": [0,1]
+      },
+      {
+      "id": "k2",
+      "name": "TNF",
+      "states": [0,1]
+      }
+    ],
+  "updateRules": {
+    "x1": {
+      "possibleInputVariables": ["x27"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x2": {
+      "possibleInputVariables": ["x32"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x3": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x4": {
+      "possibleInputVariables": ["x3","x13","x26","x19"],
+      "transitionTable": [
+          [[0,0,0,0],0],
+          [[0,0,0,1],0],
+          [[0,0,1,0],0],
+          [[0,0,1,1],0],
+          [[0,1,0,0],0],
+          [[0,1,0,1],0],
+          [[0,1,1,0],0],
+          [[0,1,1,1],0],
+          [[1,0,0,0],0],
+          [[1,0,0,1],0],
+          [[1,0,1,0],0],
+          [[1,0,1,1],0],
+          [[1,1,0,0],0],
+          [[1,1,0,1],0],
+          [[1,1,1,0],1],
+          [[1,1,1,1],0]
+        ]
+      },
+    "x5": {
+      "possibleInputVariables": ["x2","x29"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],0],
+          [[1,1],0]
+        ]
+      },
+    "x6": {
+      "possibleInputVariables": ["x27","x5","x29"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],0],
+          [[0,1,0],0],
+          [[0,1,1],0],
+          [[1,0,0],1],
+          [[1,0,1],0],
+          [[1,1,0],0],
+          [[1,1,1],0]
+        ]
+      },
+    "x7": {
+      "possibleInputVariables": ["x22","x12","x6","x29"],
+      "transitionTable": [
+          [[0,0,0,0],0],
+          [[0,0,0,1],0],
+          [[0,0,1,0],0],
+          [[0,0,1,1],0],
+          [[0,1,0,0],0],
+          [[0,1,0,1],1],
+          [[0,1,1,0],0],
+          [[0,1,1,1],0],
+          [[1,0,0,0],0],
+          [[1,0,0,1],1],
+          [[1,0,1,0],0],
+          [[1,0,1,1],0],
+          [[1,1,0,0],0],
+          [[1,1,0,1],1],
+          [[1,1,1,0],0],
+          [[1,1,1,1],0]
+        ]
+      },
+    "x8": {
+      "possibleInputVariables": ["x4","x12","x10","x19"],
+      "transitionTable": [
+          [[0,0,0,0],0],
+          [[0,0,0,1],0],
+          [[0,0,1,0],1],
+          [[0,0,1,1],1],
+          [[0,1,0,0],1],
+          [[0,1,0,1],0],
+          [[0,1,1,0],1],
+          [[0,1,1,1],1],
+          [[1,0,0,0],1],
+          [[1,0,0,1],0],
+          [[1,0,1,0],1],
+          [[1,0,1,1],1],
+          [[1,1,0,0],1],
+          [[1,1,0,1],0],
+          [[1,1,1,0],1],
+          [[1,1,1,1],1]
+        ]
+      },
+    "x9": {
+      "possibleInputVariables": ["x8"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x10": {
+      "possibleInputVariables": ["x8","x19"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],1],
+          [[1,1],0]
+        ]
+      },
+    "x11": {
+      "possibleInputVariables": ["x4","x12","x19"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],0],
+          [[0,1,0],1],
+          [[0,1,1],0],
+          [[1,0,0],1],
+          [[1,0,1],0],
+          [[1,1,0],1],
+          [[1,1,1],0]
+        ]
+      },
+    "x12": {
+      "possibleInputVariables": ["x15","x17","x10"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],1],
+          [[0,1,0],1],
+          [[0,1,1],1],
+          [[1,0,0],0],
+          [[1,0,1],0],
+          [[1,1,0],0],
+          [[1,1,1],0]
+        ]
+      },
+    "x13": {
+      "possibleInputVariables": ["x2","x8","x14","x19"],
+      "transitionTable": [
+          [[0,0,0,0],0],
+          [[0,0,0,1],0],
+          [[0,0,1,0],1],
+          [[0,0,1,1],0],
+          [[0,1,0,0],1],
+          [[0,1,0,1],0],
+          [[0,1,1,0],1],
+          [[0,1,1,1],0],
+          [[1,0,0,0],0],
+          [[1,0,0,1],0],
+          [[1,0,1,0],0],
+          [[1,0,1,1],0],
+          [[1,1,0,0],0],
+          [[1,1,0,1],0],
+          [[1,1,1,0],0],
+          [[1,1,1,1],0]
+        ]
+      },
+    "x14": {
+      "possibleInputVariables": ["x11"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x15": {
+      "possibleInputVariables": ["x38"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x16": {
+      "possibleInputVariables": ["x8","x9"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],0],
+          [[1,1],1]
+        ]
+      },
+    "x17": {
+      "possibleInputVariables": ["x37"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x18": {
+      "possibleInputVariables": ["k1"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x19": {
+      "possibleInputVariables": ["x8","x27","x10","x26"],
+      "transitionTable": [
+          [[0,0,0,0],0],
+          [[0,0,0,1],0],
+          [[0,0,1,0],0],
+          [[0,0,1,1],0],
+          [[0,1,0,0],1],
+          [[0,1,0,1],0],
+          [[0,1,1,0],1],
+          [[0,1,1,1],0],
+          [[1,0,0,0],0],
+          [[1,0,0,1],0],
+          [[1,0,1,0],0],
+          [[1,0,1,1],0],
+          [[1,1,0,0],1],
+          [[1,1,0,1],0],
+          [[1,1,1,0],0],
+          [[1,1,1,1],0]
+        ]
+      },
+    "x20": {
+      "possibleInputVariables": ["x27","x21"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],1],
+          [[1,1],0]
+        ]
+      },
+    "x21": {
+      "possibleInputVariables": ["x2","x1","x28"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],1],
+          [[0,1,0],0],
+          [[0,1,1],0],
+          [[1,0,0],1],
+          [[1,0,1],1],
+          [[1,1,0],0],
+          [[1,1,1],0]
+        ]
+      },
+    "x22": {
+      "possibleInputVariables": ["x23"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x23": {
+      "possibleInputVariables": ["x2","x25"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],0],
+          [[1,1],0]
+        ]
+      },
+    "x24": {
+      "possibleInputVariables": ["x2","x29"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],1],
+          [[1,0],1],
+          [[1,1],1]
+        ]
+      },
+    "x25": {
+      "possibleInputVariables": ["x34"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x26": {
+      "possibleInputVariables": ["x7","x6"],
+      "transitionTable": [
+          [[0,0],0],
+          [[0,1],0],
+          [[1,0],1],
+          [[1,1],0]
+        ]
+      },
+    "x27": {
+      "possibleInputVariables": ["x20"],
+      "transitionTable": [
+          [[0],1],
+          [[1],0]
+        ]
+      },
+    "x28": {
+      "possibleInputVariables": ["x39"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x29": {
+      "possibleInputVariables": ["x22","x16","x24"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],0],
+          [[0,1,0],1],
+          [[0,1,1],1],
+          [[1,0,0],1],
+          [[1,0,1],0],
+          [[1,1,0],1],
+          [[1,1,1],1]
+        ]
+      },
+    "x30": {
+      "possibleInputVariables": ["x18"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x31": {
+      "possibleInputVariables": ["x18"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x32": {
+      "possibleInputVariables": ["x31","x30","x33"],
+      "transitionTable": [
+          [[0,0,0],0],
+          [[0,0,1],0],
+          [[0,1,0],0],
+          [[0,1,1],0],
+          [[1,0,0],0],
+          [[1,0,1],0],
+          [[1,1,0],1],
+          [[1,1,1],0]
+        ]
+      },
+    "x33": {
+      "possibleInputVariables": ["x29"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x34": {
+      "possibleInputVariables": ["x37"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x35": {
+      "possibleInputVariables": ["k2"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x36": {
+      "possibleInputVariables": ["k2"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x37": {
+      "possibleInputVariables": ["x35"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x38": {
+      "possibleInputVariables": ["x37"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      },
+    "x39": {
+      "possibleInputVariables": ["x36"],
+      "transitionTable": [
+          [[0],0],
+          [[1],1]
+        ]
+      }
+    },
+  "variables": [
+      {
+      "id": "x1",
+      "name": "A20",
+      "states": [0,1]
+      },
+      {
+      "id": "x2",
+      "name": "AKT",
+      "states": [0,1]
+      },
+      {
+      "id": "x3",
+      "name": "Apaf1",
+      "states": [0,1]
+      },
+      {
+      "id": "x4",
+      "name": "APC",
+      "states": [0,1]
+      },
+      {
+      "id": "x5",
+      "name": "BAD",
+      "states": [0,1]
+      },
+      {
+      "id": "x6",
+      "name": "BclX",
+      "states": [0,1]
+      },
+      {
+      "id": "x7",
+      "name": "BID",
+      "states": [0,1]
+      },
+      {
+      "id": "x8",
+      "name": "Cas3",
+      "states": [0,1]
+      },
+      {
+      "id": "x9",
+      "name": "Cas3_dummy",
+      "states": [0,1]
+      },
+      {
+      "id": "x10",
+      "name": "Cas6",
+      "states": [0,1]
+      },
+      {
+      "id": "x11",
+      "name": "Cas7",
+      "states": [0,1]
+      },
+      {
+      "id": "x12",
+      "name": "Cas8",
+      "states": [0,1]
+      },
+      {
+      "id": "x13",
+      "name": "Cas9",
+      "states": [0,1]
+      },
+      {
+      "id": "x14",
+      "name": "Cas12",
+      "states": [0,1]
+      },
+      {
+      "id": "x15",
+      "name": "cFLIP",
+      "states": [0,1]
+      },
+      {
+      "id": "x16",
+      "name": "DNADamageEvent",
+      "states": [0,1]
+      },
+      {
+      "id": "x17",
+      "name": "FADD",
+      "states": [0,1]
+      },
+      {
+      "id": "x18",
+      "name": "GFR",
+      "states": [0,1]
+      },
+      {
+      "id": "x19",
+      "name": "IAP",
+      "states": [0,1]
+      },
+      {
+      "id": "x20",
+      "name": "IkB",
+      "states": [0,1]
+      },
+      {
+      "id": "x21",
+      "name": "IKK",
+      "states": [0,1]
+      },
+      {
+      "id": "x22",
+      "name": "JNK",
+      "states": [0,1]
+      },
+      {
+      "id": "x23",
+      "name": "JNKK",
+      "states": [0,1]
+      },
+      {
+      "id": "x24",
+      "name": "Mdm2",
+      "states": [0,1]
+      },
+      {
+      "id": "x25",
+      "name": "MEKK1",
+      "states": [0,1]
+      },
+      {
+      "id": "x26",
+      "name": "Mito",
+      "states": [0,1]
+      },
+      {
+      "id": "x27",
+      "name": "NFkB",
+      "states": [0,1]
+      },
+      {
+      "id": "x28",
+      "name": "NIK",
+      "states": [0,1]
+      },
+      {
+      "id": "x29",
+      "name": "p53",
+      "states": [0,1]
+      },
+      {
+      "id": "x30",
+      "name": "PI3K",
+      "states": [0,1]
+      },
+      {
+      "id": "x31",
+      "name": "PIP2",
+      "states": [0,1]
+      },
+      {
+      "id": "x32",
+      "name": "PIP3",
+      "states": [0,1]
+      },
+      {
+      "id": "x33",
+      "name": "PTEN",
+      "states": [0,1]
+      },
+      {
+      "id": "x34",
+      "name": "RIP",
+      "states": [0,1]
+      },
+      {
+      "id": "x35",
+      "name": "TNFR1",
+      "states": [0,1]
+      },
+      {
+      "id": "x36",
+      "name": "TNFR2",
+      "states": [0,1]
+      },
+      {
+      "id": "x37",
+      "name": "TRADD",
+      "states": [0,1]
+      },
+      {
+      "id": "x38",
+      "name": "TRAF",
+      "states": [0,1]
+      },
+      {
+      "id": "x39",
+      "name": "TRAF2",
+      "states": [0,1]
+      }
+    ],
+  "version": "1.0"
+  }
+}
