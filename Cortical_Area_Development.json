@@ -3,73 +3,98 @@
   "description": "Gene Regulation of Mammalian Cortical Area Development Published in: Giacomantonio CE, Goodhill GJ (2010) A Boolean Model of the Gene Regulatory Network Underlying Mammalian Cortical Area Development. PLoS Comput Biol 6(9): e1000936",
   "name": "Cortical_Area_Development",
   "parameters": [],
-  "updateRules": {
-    "x1": {
-      "possibleInputVariables": ["x3","x5"],
-      "transitionTable": [
-          [[0,0],1],
-          [[0,1],0],
-          [[1,0],0],
-          [[1,1],0]
-        ]
+  "updateRules": [
+      {
+      "functions": [
+          {
+          "inputVariables": ["x3","x5"],
+          "transitionTable": [
+              [[0,0],1],
+              [[0,1],0],
+              [[1,0],0],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x1"
       },
-    "x2": {
-      "possibleInputVariables": ["x3","x5","x4","x1"],
-      "transitionTable": [
-          [[0,0,0,0],0],
-          [[0,0,0,1],1],
-          [[0,0,1,0],0],
-          [[0,0,1,1],0],
-          [[0,1,0,0],0],
-          [[0,1,0,1],0],
-          [[0,1,1,0],0],
-          [[0,1,1,1],0],
-          [[1,0,0,0],0],
-          [[1,0,0,1],0],
-          [[1,0,1,0],0],
-          [[1,0,1,1],0],
-          [[1,1,0,0],0],
-          [[1,1,0,1],0],
-          [[1,1,1,0],0],
-          [[1,1,1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x3","x5","x4","x1"],
+          "transitionTable": [
+              [[0,0,0,0],0],
+              [[0,0,0,1],1],
+              [[0,0,1,0],0],
+              [[0,0,1,1],0],
+              [[0,1,0,0],0],
+              [[0,1,0,1],0],
+              [[0,1,1,0],0],
+              [[0,1,1,1],0],
+              [[1,0,0,0],0],
+              [[1,0,0,1],0],
+              [[1,0,1,0],0],
+              [[1,0,1,1],0],
+              [[1,1,0,0],0],
+              [[1,1,0,1],0],
+              [[1,1,1,0],0],
+              [[1,1,1,1],0]
+            ]
+          }
+        ],
+      "target": "x2"
       },
-    "x3": {
-      "possibleInputVariables": ["x3","x5","x2"],
-      "transitionTable": [
-          [[0,0,0],0],
-          [[0,0,1],0],
-          [[0,1,0],0],
-          [[0,1,1],0],
-          [[1,0,0],0],
-          [[1,0,1],0],
-          [[1,1,0],1],
-          [[1,1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x3","x5","x2"],
+          "transitionTable": [
+              [[0,0,0],0],
+              [[0,0,1],0],
+              [[0,1,0],0],
+              [[0,1,1],0],
+              [[1,0,0],0],
+              [[1,0,1],0],
+              [[1,1,0],1],
+              [[1,1,1],0]
+            ]
+          }
+        ],
+      "target": "x3"
       },
-    "x4": {
-      "possibleInputVariables": ["x5","x2","x1"],
-      "transitionTable": [
-          [[0,0,0],0],
-          [[0,0,1],0],
-          [[0,1,0],0],
-          [[0,1,1],0],
-          [[1,0,0],1],
-          [[1,0,1],0],
-          [[1,1,0],0],
-          [[1,1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x5","x2","x1"],
+          "transitionTable": [
+              [[0,0,0],0],
+              [[0,0,1],0],
+              [[0,1,0],0],
+              [[0,1,1],0],
+              [[1,0,0],1],
+              [[1,0,1],0],
+              [[1,1,0],0],
+              [[1,1,1],0]
+            ]
+          }
+        ],
+      "target": "x4"
       },
-    "x5": {
-      "possibleInputVariables": ["x3","x2"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],0],
-          [[1,0],1],
-          [[1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x3","x2"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],0],
+              [[1,0],1],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x5"
       }
-    },
+    ],
   "variables": [
       {
       "id": "x1",

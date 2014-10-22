@@ -29,152 +29,222 @@
       "states": [0,1]
       }
     ],
-  "updateRules": {
-    "x1": {
-      "possibleInputVariables": ["x1","x14","x13"],
-      "transitionTable": [
-          [[0,0,0],0],
-          [[0,0,1],1],
-          [[0,1,0],0],
-          [[0,1,1],0],
-          [[1,0,0],1],
-          [[1,0,1],1],
-          [[1,1,0],0],
-          [[1,1,1],0]
-        ]
+  "updateRules": [
+      {
+      "functions": [
+          {
+          "inputVariables": ["x1","x14","x13"],
+          "transitionTable": [
+              [[0,0,0],0],
+              [[0,0,1],1],
+              [[0,1,0],0],
+              [[0,1,1],0],
+              [[1,0,0],1],
+              [[1,0,1],1],
+              [[1,1,0],0],
+              [[1,1,1],0]
+            ]
+          }
+        ],
+      "target": "x1"
       },
-    "x2": {
-      "possibleInputVariables": ["k1"],
-      "transitionTable": [
-          [[0],0],
-          [[1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["k1"],
+          "transitionTable": [
+              [[0],0],
+              [[1],1]
+            ]
+          }
+        ],
+      "target": "x2"
       },
-    "x3": {
-      "possibleInputVariables": ["x14","x9","x12","k2"],
-      "transitionTable": [
-          [[0,0,0,0],0],
-          [[0,0,0,1],1],
-          [[0,0,1,0],1],
-          [[0,0,1,1],1],
-          [[0,1,0,0],1],
-          [[0,1,0,1],1],
-          [[0,1,1,0],1],
-          [[0,1,1,1],1],
-          [[1,0,0,0],1],
-          [[1,0,0,1],1],
-          [[1,0,1,0],1],
-          [[1,0,1,1],1],
-          [[1,1,0,0],1],
-          [[1,1,0,1],1],
-          [[1,1,1,0],1],
-          [[1,1,1,1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x14","x9","x12","k2"],
+          "transitionTable": [
+              [[0,0,0,0],0],
+              [[0,0,0,1],1],
+              [[0,0,1,0],1],
+              [[0,0,1,1],1],
+              [[0,1,0,0],1],
+              [[0,1,0,1],1],
+              [[0,1,1,0],1],
+              [[0,1,1,1],1],
+              [[1,0,0,0],1],
+              [[1,0,0,1],1],
+              [[1,0,1,0],1],
+              [[1,0,1,1],1],
+              [[1,1,0,0],1],
+              [[1,1,0,1],1],
+              [[1,1,1,0],1],
+              [[1,1,1,1],1]
+            ]
+          }
+        ],
+      "target": "x3"
       },
-    "x4": {
-      "possibleInputVariables": ["x10","x3"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],1],
-          [[1,0],0],
-          [[1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x10","x3"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],1],
+              [[1,0],0],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x4"
       },
-    "x5": {
-      "possibleInputVariables": ["x11","x1","k3"],
-      "transitionTable": [
-          [[0,0,0],0],
-          [[0,0,1],1],
-          [[0,1,0],1],
-          [[0,1,1],1],
-          [[1,0,0],0],
-          [[1,0,1],1],
-          [[1,1,0],0],
-          [[1,1,1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x11","x1","k3"],
+          "transitionTable": [
+              [[0,0,0],0],
+              [[0,0,1],1],
+              [[0,1,0],1],
+              [[0,1,1],1],
+              [[1,0,0],0],
+              [[1,0,1],1],
+              [[1,1,0],0],
+              [[1,1,1],1]
+            ]
+          }
+        ],
+      "target": "x5"
       },
-    "x6": {
-      "possibleInputVariables": ["x5","x10"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],0],
-          [[1,0],1],
-          [[1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x5","x10"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],0],
+              [[1,0],1],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x6"
       },
-    "x7": {
-      "possibleInputVariables": ["x13","k4"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],1],
-          [[1,0],0],
-          [[1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x13","k4"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],1],
+              [[1,0],0],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x7"
       },
-    "x8": {
-      "possibleInputVariables": ["x13","k5"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],1],
-          [[1,0],0],
-          [[1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x13","k5"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],1],
+              [[1,0],0],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x8"
       },
-    "x9": {
-      "possibleInputVariables": ["x8"],
-      "transitionTable": [
-          [[0],0],
-          [[1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x8"],
+          "transitionTable": [
+              [[0],0],
+              [[1],1]
+            ]
+          }
+        ],
+      "target": "x9"
       },
-    "x10": {
-      "possibleInputVariables": ["x11","x14"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],1],
-          [[1,0],1],
-          [[1,1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x11","x14"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],1],
+              [[1,0],1],
+              [[1,1],1]
+            ]
+          }
+        ],
+      "target": "x10"
       },
-    "x11": {
-      "possibleInputVariables": ["x2","x4"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],1],
-          [[1,0],1],
-          [[1,1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x2","x4"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],1],
+              [[1,0],1],
+              [[1,1],1]
+            ]
+          }
+        ],
+      "target": "x11"
       },
-    "x12": {
-      "possibleInputVariables": ["x1","x7"],
-      "transitionTable": [
-          [[0,0],0],
-          [[0,1],1],
-          [[1,0],0],
-          [[1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x1","x7"],
+          "transitionTable": [
+              [[0,0],0],
+              [[0,1],1],
+              [[1,0],0],
+              [[1,1],0]
+            ]
+          }
+        ],
+      "target": "x12"
       },
-    "x13": {
-      "possibleInputVariables": ["x6"],
-      "transitionTable": [
-          [[0],0],
-          [[1],1]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x6"],
+          "transitionTable": [
+              [[0],0],
+              [[1],1]
+            ]
+          }
+        ],
+      "target": "x13"
       },
-    "x14": {
-      "possibleInputVariables": ["x11","x1","x14"],
-      "transitionTable": [
-          [[0,0,0],0],
-          [[0,0,1],1],
-          [[0,1,0],0],
-          [[0,1,1],0],
-          [[1,0,0],1],
-          [[1,0,1],1],
-          [[1,1,0],0],
-          [[1,1,1],0]
-        ]
+      {
+      "functions": [
+          {
+          "inputVariables": ["x11","x1","x14"],
+          "transitionTable": [
+              [[0,0,0],0],
+              [[0,0,1],1],
+              [[0,1,0],0],
+              [[0,1,1],0],
+              [[1,0,0],1],
+              [[1,0,1],1],
+              [[1,1,0],0],
+              [[1,1,1],0]
+            ]
+          }
+        ],
+      "target": "x14"
       }
-    },
+    ],
   "variables": [
       {
       "id": "x1",
